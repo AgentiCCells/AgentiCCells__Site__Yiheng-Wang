@@ -1,16 +1,17 @@
 // The top bar and the design picker: the same site in five designs. The choice is kept in this browser only. Code Apache-2.0.
 (() => {
-  const me = document.currentScript, slug = me.dataset.slug || 'profile';
+  const me = document.currentScript, slug = me.dataset.slug || 'brief';
   const KEY = 'yw-design';
   const store = { get() { try { return localStorage.getItem(KEY); } catch { return null; } }, set(v) { try { localStorage.setItem(KEY, v); } catch {} } };
   const q = new URLSearchParams(location.search).get('design');
   if (q) store.set(q);
   // The home page remembers a chosen design and opens it, unless ?design= says otherwise.
-  if (slug === 'profile' && !q) { const saved = store.get(); if (saved && saved !== 'profile') fetch('/designs.json').then(r => r.json()).then(m => { const d = m.designs.find(x => x.slug === saved); if (d) location.replace(d.path); }).catch(() => {}); }
+  const home = location.pathname === '/' || location.pathname === '/index.html';
+  if (home && !q) { const saved = store.get(); if (saved && saved !== slug) fetch('/designs.json').then(r => r.json()).then(m => { const d = m.designs.find(x => x.slug === saved); if (d) location.replace(d.path); }).catch(() => {}); }
   if (slug !== 'page' && !q) store.set(slug);
   const bar = document.createElement('div');
   bar.className = 'yw-bar';
-  bar.innerHTML = '<span>Yiheng Wang, project and operations manager</span><span class="yw-bar-sep" aria-hidden="true">|</span><button type="button" class="yw-bar-pick" data-yw-picker>Choose a design</button><a href="/photos/">Photos</a><a href="/agents/">Use with AI</a><a href="/#contact">Hire Yiheng</a>';
+  bar.innerHTML = '<span>Yiheng Wang, Project Manager and PMO Coordinator</span><span class="yw-bar-sep" aria-hidden="true">|</span><button type="button" class="yw-bar-pick" data-yw-picker>Choose a design</button><a href="/photos/">Photos</a><a href="/agents/">Use with AI</a><a href="/#contact">Contact</a><a href="/assets/cv/YihengWang_CV.pdf">CV (PDF)</a>';
   document.body.prepend(bar);
   let box;
   async function open() {

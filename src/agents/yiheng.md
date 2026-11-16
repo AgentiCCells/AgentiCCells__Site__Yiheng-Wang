@@ -19,10 +19,10 @@ The same site comes in **five designs**. A visitor picks one with the "Choose a 
 
 | Design | File | Look |
 |---|---|---|
-| The Profile (the default, at `/`) | `src/index.html` | warm, editorial |
+| The Brief (the default, at `/`) | `src/index.html` | one clear page for recruiters; prints |
 | Mission Control | `src/d/control/index.html` | dark, her agents as a live network |
 | The Pass | `src/d/pass/index.html` | the pastry kitchen as the frame |
-| The Brief | `src/d/brief/index.html` | one clear page for recruiters; prints |
+| The Profile | `src/d/profile/index.html` | warm, editorial |
 | The Journey | `src/d/journey/index.html` | photo-led story of her path |
 
 Shared by all five:
@@ -85,7 +85,6 @@ The question bank is `src/agents/questions.md` (https://yiheng-wang.agenticcells
 
 ## What is waiting on Yiheng
 
-- **Contact details:** only what she chooses to publish.
 - **Her kitchen and product years:** places, years, team sizes, her exact titles (the question bank, sections 2 and 3).
 - **Photos:** from the kitchen, product work, the summit. Anyone else in a photo must agree, or be cropped out.
 - **The role she wants:** titles, places, remote or not (question bank, section 1).

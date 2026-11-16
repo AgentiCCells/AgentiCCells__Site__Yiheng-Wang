@@ -1,6 +1,6 @@
-# Yiheng Wang: project and operations manager
+# Yiheng Wang: Project Manager and PMO Coordinator
 
-*Source: https://yiheng-wang.agenticcells.site/ · version __VERSION__ · this is the whole site as Markdown, for AI agents, and the master copy of its facts: the five designs of the home page show the same facts. Instructions for agents: https://yiheng-wang.agenticcells.site/llms.txt*
+*Source: https://yiheng-wang.agenticcells.site/ · version __VERSION__ · this is the whole site as Markdown, for AI agents, and the master copy of its facts: the five designs of the home page show the same facts; The Brief (https://yiheng-wang.agenticcells.site/) is the default. Instructions for agents: https://yiheng-wang.agenticcells.site/llms.txt*
 
 **She ran a team of 26 AI agents at Web Summit 2026, with no technical background, and learnt how in two weeks.** Before that: years as a pastry chef, then product development, then project management.
 
@@ -8,7 +8,17 @@
 >
 > Yiheng Wang, on LinkedIn, about 15 November 2026 (screenshot supplied by Dinis Cruz, 2026-11-16)
 
-Yiheng is looking for a role as a **project manager, operations manager or project coordinator**.
+Yiheng is looking for a role as a **Project Manager, Project Coordinator, PMO Coordinator or Junior Project Manager**, in Lisbon (on-site or hybrid) or remote. She is available now and authorised to work in Portugal [CV].
+
+**Contact:** LinkedIn https://www.linkedin.com/in/yihengwang9 · email yihengw2994@gmail.com · CV (PDF): https://yiheng-wang.agenticcells.site/assets/cv/YihengWang_CV.pdf
+
+**Three results:**
+
+- **26 AI agents** run at Web Summit 2026 as project manager for the RiskMandate team; they wrote about 53 of the 73 articles on PrompTugal.news [P][N1].
+- **Order errors from 30% to under 5%** in three months, as sole coordinator between clients in China and a US head office, Ninth Heaven Technology, 2022 to 2023 [CV].
+- **98% on-time delivery** across 200+ units a day, running daily stand-ups for a production team of four, Un P'tit Truc, Lisbon, 2025 [CV].
+
+**Certifications:** PSM I (Scrum.org, Dec 2025), Google Project Management Certificate (Jun 2026), Certified Agile Facilitator (Scrum Alliance, Aug 2026) [CV]. **Languages:** Mandarin (native), English (fluent), Portuguese (conversational) [CV].
 
 - **I run teams to a standard.** In a kitchen, at an event stand, and in a newsroom of AI agents.
 - **I deliver under pressure.** Four days of Web Summit Lisbon 2026, and a storm night on a live news site.
@@ -77,16 +87,22 @@ Her advice to a colleague starting with agents tomorrow [I]: "Start with one con
 
 ## The journey
 
-1. **Pastry chef**, for years: recipes, standards and a team [I].
-2. **Product development** [I].
-3. **Project management**; she used AI for her job search, her portfolio website and organising documents [I].
-4. **2 and 3 November 2026:** fully set up (level L6, all steps done) on the team's setup leaderboard [P][B].
-5. **3 to 13 November 2026:** Web Summit with the RiskMandate team; her agents write most of PrompTugal.news [N1][N2].
-6. **14 November 2026:** her interview published on PrompTugal.news [I].
-7. **Now:** looking for a project management or operations role. "I'm still learning every day, and I'm glad this is where I started." [I]
+1. **2015 to 2017:** Advanced Diploma of Hospitality Management, Le Cordon Bleu, Sydney [CV].
+2. **Pastry chef**, for years, in professional kitchens in Australia and China, including leading kitchen teams in China: recipes, standards and a team [I][LI].
+3. **Sep 2022 to Oct 2023: Project Coordinator, Ninth Heaven Technology, Shenzhen.** Sole coordinator between clients in China and the US technical head office; order errors from 30% to under 5% in three months [CV].
+4. **Dec 2023 to Feb 2025:** moved to Lisbon; Portuguese language programme, University of Lisbon [CV][LI].
+5. **Mar to Nov 2025: Pastry Chef (Production Coordination), Un P'tit Truc, Lisbon.** 98% on-time delivery across 200+ units a day; production time cut by 17%; spoilage cut by about a third [CV].
+6. **Dec 2025 to Sep 2026:** career transition into project management: PSM I, Google Project Management Certificate, Certified Agile Facilitator; event volunteering in Lisbon [CV].
+7. **Oct 2026 to now: Project Manager (part-time), RiskMandate**, and from Nov 2026 **Editor, Editorial Operations, PrompTugal.news** [CV].
+8. **2 and 3 November 2026:** fully set up (level L6, all steps done) on the team's setup leaderboard [P][B].
+9. **3 to 13 November 2026:** Web Summit with the RiskMandate team; her agents write most of PrompTugal.news [N1][N2].
+10. **14 November 2026:** her interview published on PrompTugal.news [I].
+11. **Now:** looking for a Project Manager, Project Coordinator or PMO Coordinator role. "I'm still learning every day, and I'm glad this is where I started." [I]
 
 ## Sources
 
+- [CV] Her CV, supplied by Yiheng, 2026-11-16: https://yiheng-wang.agenticcells.site/assets/cv/YihengWang_CV.pdf
+- [LI] Her LinkedIn profile, supplied by Yiheng, 2026-11-16: https://www.linkedin.com/in/yihengwang9
 - [I] Her approved interview, PrompTugal.news, 2026-11-14: https://promptugal.news/articles/humans-and-ai-vicky-wang.md
 - [N1] Don't micromanage your agents, Dinis Cruz, newsroom.sgit.ai, 2026-11-15 (figures from the PrompTugal.news repository): https://newsroom.sgit.ai/articles/dont-micromanage-your-agents.md
 - [N2] Ten days at Web Summit, newsroom.sgit.ai, read 2026-11-16: https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md
@@ -104,4 +120,6 @@ https://yiheng-wang.agenticcells.site/photos/ (list: https://yiheng-wang.agentic
 
 ## Get in touch
 
-Contact details to follow; Yiheng will add them herself. Hiring? Ask your AI assistant about her: https://yiheng-wang.agenticcells.site/agents/#hiring
+LinkedIn: https://www.linkedin.com/in/yihengwang9 · Email: yihengw2994@gmail.com · CV (PDF): https://yiheng-wang.agenticcells.site/assets/cv/YihengWang_CV.pdf
+
+Hiring? Ask your AI assistant about her: https://yiheng-wang.agenticcells.site/agents/#hiring
