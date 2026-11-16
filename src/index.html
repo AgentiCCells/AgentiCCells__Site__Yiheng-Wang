@@ -77,7 +77,8 @@ section{padding:clamp(64px,9vw,120px) 0;border-bottom:1px solid var(--rule);posi
 .hero .title{font-size:clamp(22px,2.4vw,30px);line-height:1.2;margin:0 0 14px;color:var(--ink)}
 .hero .motto{font-size:clamp(20px,2vw,26px);line-height:1.3;margin:0 0 18px;color:var(--ink-2)}
 .hero .motto em{font-style:italic;color:var(--rasp)}
-.hero .reach{font-size:15px;color:var(--muted);margin:14px 0 0}
+.hero .reach{display:none;font-size:15px;color:var(--muted);margin:14px 0 0}
+@media print{.hero .reach{display:block}}
 .who{display:flex;flex-wrap:wrap;gap:.4rem .9rem;align-items:center;margin-bottom:6px}
 .who .pill{font:600 12px/1 var(--cond);font-stretch:condensed;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--rasp);color:var(--rasp);padding:.45rem .7rem;border-radius:999px}
 .hero .lede{max-width:40ch}
@@ -363,8 +364,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
         <h1 id="h-top">Yiheng Wang</h1>
         <p class="title">Project Manager and PMO Coordinator</p>
         <p class="motto">Set the standard. Hand out the work. <em>Check the result.</em></p>
-        <div class="who"><span class="pill">Project manager</span><span class="pill">Project coordinator</span><span class="pill">PMO coordinator</span><span class="pill">Junior project manager</span></div>
-        <p class="lede">A pastry chef turned project coordinator. In November 2026 she ran <strong>a team of 26 AI agents</strong><a class="fn" href="#s-p">P</a> at Web Summit as project manager for the RiskMandate team, and her journalists wrote <strong>about 53 of the 73 articles</strong> on PrompTugal.news<a class="fn" href="#s-n1">N1</a>.</p>
+        <p class="lede">A pastry chef turned project coordinator, who ran a team of AI agents at Web Summit 2026 as project manager for the RiskMandate team.</p>
         <div class="ctas"><a class="btn solid" href="https://www.linkedin.com/in/yihengwang9">LinkedIn</a><a class="btn" href="mailto:yihengw2994@gmail.com">Email</a><a class="btn" href="/assets/cv/YihengWang_CV.pdf">CV (PDF)</a></div>
         <p class="reach">yihengw2994@gmail.com &middot; linkedin.com/in/yihengwang9 &middot; Lisbon (on-site or hybrid) or remote</p>
       </div>
@@ -376,7 +376,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
     <div class="rail" aria-label="Four results, each with its source">
       <div class="rail-bar" aria-hidden="true"></div>
       <div class="tickets">
-        <div class="ticket"><div class="label">Agents</div><div class="n">26</div><div class="t">in her team, 25 running<a class="fn" href="#s-p">P</a></div></div>
+        <div class="ticket"><div class="label">Agents</div><div class="n">26</div><div class="t">in her team; they wrote about 53 of the 73 articles on PrompTugal.news<a class="fn" href="#s-p">P</a><a class="fn" href="#s-n1">N1</a></div></div>
         <div class="ticket"><div class="label">Order errors</div><div class="n">&lt;5%</div><div class="t">down from 30% in three months, Ninth Heaven Technology, Shenzhen<a class="fn" href="#s-cv">CV</a></div></div>
         <div class="ticket"><div class="label">On time</div><div class="n">98%</div><div class="t">across 200+ units a day, Un P'tit Truc, Lisbon<a class="fn" href="#s-cv">CV</a></div></div>
         <div class="ticket"><div class="label">Certified</div><div class="n">3</div><div class="t">PSM I, Certified Agile Facilitator, Google Project Management<a class="fn" href="#s-cv">CV</a></div></div>
@@ -390,9 +390,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 <section id="work" aria-labelledby="h-work">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="no"><span class="label"><b>No. 1</b> The brigade</span></div>
       <h2 id="h-work">Her agent team, drawn as a kitchen</h2>
-      <p class="lede">Twenty-six agents, 25 of them running<a class="fn" href="#s-p">P</a>. She talks to one, the conductor, which calls the orders; agents report back to it, and she reads one brief each morning<a class="fn" href="#s-i">I</a>. Each circle is an agent, sized by its commits. Choose one to read its ticket.</p>
+      <p class="lede">She talks to one agent, the conductor, which calls the orders; the others report back to it<a class="fn" href="#s-i">I</a>. Each circle is an agent, sized by its commits. Choose one to read its ticket.</p>
     </div>
     <div class="brig">
         <div class="plan" id="plan"><noscript><p>The drawing needs JavaScript. The full roster is in <a href="/data/agents.json">/data/agents.json</a>.</p></noscript></div>
@@ -415,7 +414,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
         <p class="kit" id="slip-k">In a kitchen, the one who calls the orders from the pass and hears every station report back.</p>
       </aside>
       <div>
-    <div class="analogy" style="margin-top:0"><b>An analogy, not a job history</b>Yiheng was a pastry chef<a class="fn" href="#s-i">I</a>; she never held the kitchen titles drawn here. The kitchen is how she explains the job: &ldquo;set the standard, hand out the work, and check the result.&rdquo; Agents, groups and commit counts come from her dashboard, read 2026-11-16<a class="fn" href="#s-p">P</a>; that count is per agent across two repositories and differs from the 1,171 and 767 totals elsewhere on this page, which come from other sources.</div>
+    <div class="analogy" style="margin-top:0">The kitchen titles are an analogy, not her job history. Agents and commit counts from her dashboard, 16 Nov<a class="fn" href="#s-p">P</a>.</div>
     <details class="roster"><summary>The whole brigade as a list</summary><div class="tbl-wrap"><table class="tbl" id="roster"><thead><tr><th scope="col">Agent</th><th scope="col">Station</th><th scope="col">What it does</th><th scope="col">Commits</th></tr></thead><tbody></tbody></table></div></details>
       </div>
     </div>
@@ -423,11 +422,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
     <div class="office rv">
       <figure>
         <img src="/assets/photos/live-ai-office.jpg" width="2000" height="1318" loading="lazy" alt="Screenshot of Yiheng's Live AI Office view: her agents as a network, with counts of agents, policies and conversations">
-        <figcaption>Screenshot of her Live AI Office, supplied by Dinis Cruz, 2026-11-16. At that moment it showed 23 agents (20 with policy, 3 without), 13 pairs talking and 165 messages from the conductor. It is a different moment from the 26 above.</figcaption>
+        <figcaption>Her Live AI Office at one moment on 16 Nov: 23 agents, 13 pairs talking. Screenshot: Dinis Cruz.</figcaption>
       </figure>
       <div>
-        <p class="label"><b>From the pass</b></p>
-        <h3 style="margin:8px 0 12px">One of the largest agent teams at Web Summit</h3>
+        <h3 style="margin:0 0 12px">One of the largest agent teams at Web Summit</h3>
         <p class="small">Journalists on several desks, a reviewer, a curator, a weather desk, a developer, a designer and more<a class="fn" href="#s-n1">N1</a>. Her agents worked with the rest of the team's agents through shared channels on one team site; when stuck, she asked Dinis's agents for help<a class="fn" href="#s-n1">N1</a><a class="fn" href="#s-i">I</a>. She managed at two altitudes: direction where the work was outside her expertise, depth in editorial judgement, where she knew best<a class="fn" href="#s-n1">N1</a>.</p>
         <p class="small muted">&ldquo;She became a manager, not a micromanager.&rdquo; Dinis Cruz<a class="fn" href="#s-n1">N1</a></p>
       </div>
@@ -439,7 +437,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 <section id="setup" aria-labelledby="h-setup">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="no"><span class="label"><b>No. 2</b> Mise en place</span></div>
       <h2 id="h-setup">Everything in its place before service</h2>
       <p class="lede">A pastry kitchen is won in the preparation. So was this: before the doors opened, she had her tools set up, her rules written and her morning brief in shape.</p>
     </div>
@@ -448,13 +445,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
         <div class="prep rv">
           <div class="label"><span>Prep list</span><span>Nov 2026</span></div>
           <ol>
-            <li><span class="when">Before</span><span class="tick" aria-hidden="true"></span><span>Used AI for her job search, to build a portfolio website and to organise documents<a class="fn" href="#s-i">I</a></span></li>
             <li><span class="when">2 Nov</span><span class="tick" aria-hidden="true"></span><span>Reached setup level L5<a class="fn" href="#s-p">P</a><a class="fn" href="#s-b">B</a></span></li>
             <li><span class="when">3 Nov</span><span class="tick" aria-hidden="true"></span><span>Reached L6, &ldquo;the vaults: fully wired&rdquo;, with every setup step done: 9 of 9 on the team's setup leaderboard<a class="fn" href="#s-p">P</a><a class="fn" href="#s-b">B</a></span></li>
-            <li><span class="when">One voice</span><span class="tick" aria-hidden="true"></span><span>Works mostly through one conductor agent, which hands out the work; agents report back to it<a class="fn" href="#s-i">I</a></span></li>
             <li><span class="when">Daily</span><span class="tick" aria-hidden="true"></span><span>Two stand-ups, at 12:00 and 18:00, before and during the summit<a class="fn" href="#s-i">I</a></span></li>
             <li><span class="when">Mornings</span><span class="tick" aria-hidden="true"></span><span>One brief, rebuilt to fit how she works: her actions first, most urgent at the top, each with where to go, what to reply and why<a class="fn" href="#s-i">I</a></span></li>
-            <li><span class="when">Rules</span><span class="tick" aria-hidden="true"></span><span>New rules talked through with the conductor before they are added<a class="fn" href="#s-i">I</a></span></li>
           </ol>
         </div>
         <div class="tray" aria-hidden="true">
@@ -473,7 +467,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
       </div>
       <figure class="mep-side rv" style="margin:0">
         <img src="/assets/photos/yiheng-at-work.jpg" width="931" height="1600" loading="lazy" alt="Yiheng Wang working on a laptop at a table at Web Summit, in a lilac hoodie">
-        <figcaption>At work at the summit. &ldquo;And you don't need a technical background to start. I don't have one either. Two weeks ago I was starting from zero.&rdquo;<a class="fn" href="#s-i">I</a></figcaption>
+        <figcaption>At work at the summit</figcaption>
       </figure>
     </div>
   </div>
@@ -483,7 +477,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 <section id="service" aria-labelledby="h-service">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="no"><span class="label"><b>No. 3</b> Service</span></div>
       <h2 id="h-service">Ten days at Web Summit</h2>
       <p class="lede">From 3 to 13 November she was the project manager for the RiskMandate team: the structure, the deadlines, the logistics (printing, merchandise, deliveries, the stand) and everyone's schedule<a class="fn" href="#s-b">B</a><a class="fn" href="#s-t">T</a>.</p>
     </div>
@@ -513,20 +506,19 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
           <li>A lead story put out straight away</li>
           <li>The PrompTugal.news home page changed to match<a class="fn" href="#s-i">I</a></li>
         </ul>
-        <p class="small muted" style="margin-top:12px">A kitchen calls this reading the room: when the night changes, the menu changes with it.</p>
+        
       </div>
       <figure class="svc-photo rv" style="margin:0">
         <img src="/assets/photos/yiheng-in-the-arena.jpg" width="729" height="1600" loading="lazy" alt="Yiheng Wang in the arena at Web Summit 2026, in a grey hoodie and her summit badge">
-        <figcaption>At the RiskMandate stand. Since the summit she has been following up the people she met<a class="fn" href="#s-i">I</a>.</figcaption>
+        <figcaption>In the arena, Web Summit 2026</figcaption>
       </figure>
       <ul class="facts rv">
-        <li><span class="n">767</span><span class="t">commits by her agents on the team's site<a class="fn" href="#s-n2">N2</a></span></li>
         <li><span class="n">6 + ~250</span><span class="t">people and agents in the whole team over ten days<a class="fn" href="#s-n2">N2</a></span></li>
         <li><span class="n">359</span><span class="t">commits by her reviewer to PrompTugal.news<a class="fn" href="#s-n1">N1</a></span></li>
         <li><span class="n">26</span><span class="t">articles from her desks in the seven days to 16 Nov<a class="fn" href="#s-p">P</a></span></li>
       </ul>
     </div>
-    <blockquote class="pq rv"><p style="margin:0">&ldquo;I only found out from this article that my agents made 767 commits in ten days. I didn't write a single line of code myself.&rdquo;</p><cite>Yiheng Wang, LinkedIn<a class="fn" href="#s-l">L</a></cite></blockquote>
+    <blockquote class="pq rv"><p style="margin:0">&ldquo;I only found out from this article that my agents made 767 commits in ten days. I didn't write a single line of code myself.&rdquo;<a class="fn" href="#s-n2">N2</a></p><cite>Yiheng Wang, LinkedIn<a class="fn" href="#s-l">L</a></cite></blockquote>
   </div>
 </section>
 
@@ -534,9 +526,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 <section id="how" aria-labelledby="h-how">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="no"><span class="label"><b>No. 4</b> At the pass</span></div>
       <h2 id="h-how">Every plate checked before it goes out</h2>
-      <p class="lede">&ldquo;When an agent says it's done, it usually is, but not always. I still check a few things myself.&rdquo;<a class="fn" href="#s-i">I</a> &ldquo;Most of my time went on deciding what to do next and checking what the agents said they had done.&rdquo;<a class="fn" href="#s-l">L</a></p>
+      <p class="lede">&ldquo;When an agent says it's done, it usually is, but not always. I still check a few things myself.&rdquo;<a class="fn" href="#s-i">I</a></p>
     </div>
     <div class="passgrid">
       <div class="bigticket rv" role="group" aria-label="Order ticket: the image check, 15 plus 12 equals 27">
@@ -548,10 +539,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
         <div class="row sum"><span>Fixed in all</span><span>27</span></div>
         <div class="plates" aria-hidden="true" id="plates"></div>
         <div class="pkey"><span><i style="background:var(--steel);border:1px solid var(--steel-3)"></i>15 in the first report</span><span><i style="background:var(--rasp)"></i>12 found after her check</span></div>
-        <p style="font-family:var(--serif);font-size:15px;margin:14px 0 0;color:var(--muted)">Source: her interview<a class="fn" href="#s-i">I</a>. Her spot check turned a report of 15 into 27 fixed.</p>
       </div>
       <div>
-        <p class="label" style="margin-bottom:12px"><b>More tickets</b> how she runs the pass</p>
         <div class="slips">
           <div class="slip rv"><p class="label">Hand-over</p><h3>A new conductor, nothing lost</h3>The old conductor started its successor itself. She said &ldquo;go&rdquo; and sent one line to her vault agent. About an hour<a class="fn" href="#s-i">I</a>.</div>
           <div class="slip rv"><p class="label">Stop files</p><h3>Off by hand, then fixed</h3>After the summit one researcher ran twice more after a stop. She switched off all 25 scheduled tasks by hand; now every agent checks four stop files at the start of each run<a class="fn" href="#s-i">I</a>.</div>
@@ -568,33 +557,19 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 <section id="recipes" aria-labelledby="h-recipes">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="no"><span class="label"><b>No. 5</b> Recipes</span></div>
       <h2 id="h-recipes">Her method, written down</h2>
-      <p class="lede">What she would tell someone starting their own agent team, in her own words<a class="fn" href="#s-i">I</a>.</p>
+      
     </div>
     <article class="recipe rv" aria-labelledby="h-recipe">
       <aside>
-        <p class="label"><b>Recipe card</b></p>
-        <h3 id="h-recipe" style="font-size:clamp(26px,3vw,34px);margin-top:8px">A team of agents, from zero</h3>
+        <h3 id="h-recipe" style="font-size:clamp(26px,3vw,34px);margin-top:0">A team of agents, from zero</h3>
         <dl class="meta"><dt>Serves</dt><dd>One manager</dd><dt>Prep</dt><dd>Two weeks<a class="fn" href="#s-i">I</a></dd><dt>Skill</dt><dd>No technical background needed</dd></dl>
-        <p class="label">Ingredients</p>
-        <ul class="ing">
-          <li><b>1</b>conductor agent</li>
-          <li><b>1</b>morning brief, her actions first</li>
-          <li><b>2</b>stand-ups a day</li>
-          <li><b>4</b>stop files, checked every run</li>
-          <li><b>&nbsp;</b>rules, added slowly</li>
-          <li><b>&nbsp;</b>a habit of checking</li>
-        </ul>
       </aside>
       <div class="method">
-        <p class="label">Method</p>
         <ol>
           <li><div><q>Start with one conductor and only talk to that one. Let it hand out the work.</q></div></li>
           <li><div><q>If you don't understand a technical choice, ask for the options and the reasons. Then decide.</q></div></li>
           <li><div><q>Don't add a rule as soon as you think of it. Talk it through with your conductor first.</q></div></li>
-          <li><div><q>When an agent says it's done, it usually is, but not always. I still check a few things myself.</q></div></li>
-          <li><div><q>And you don't need a technical background to start. I don't have one either.</q></div></li>
         </ol>
         <p class="chefnote">Chef's note: &ldquo;I'm sure people alone could never have done it.&rdquo;<a class="fn" href="#s-i">I</a></p>
       </div>
@@ -606,26 +581,22 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 <section id="journey" aria-labelledby="h-journey">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="no"><span class="label"><b>No. 6</b> Experience</span></div>
       <h2 id="h-journey">From the pastry kitchen to project management</h2>
     </div>
     <div class="jgrid">
       <div class="menu rv">
-        <p class="label">Menu</p>
-        <p class="mh">Yiheng Wang, course by course</p>
-        <p class="small muted" style="margin:0">Titles and dates as on her CV and LinkedIn profile<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-li">LI</a></p>
         <ol class="courses">
           <li class="course"><span class="cn">2015 to 2017, then years in kitchens</span><h3>Pastry chef and kitchen team lead</h3><p>Le Cordon Bleu, Sydney; kitchens in Australia and China, leading kitchen teams in China<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-li">LI</a>. &ldquo;In a kitchen I managed recipes, standards and a team.&rdquo;<a class="fn" href="#s-i">I</a></p></li>
           <li class="course"><span class="cn">Sep 2022 to Oct 2023</span><h3>Project Coordinator, Ninth Heaven Technology</h3><p>Shenzhen. Sole coordinator between clients in China and the US head office, 12 hours apart; order errors from 30% to under 5% in three months<a class="fn" href="#s-cv">CV</a>.</p></li>
           <li class="course"><span class="cn">Mar to Nov 2025</span><h3>Pastry Chef (Production Coordination), Un P'tit Truc</h3><p>Lisbon. Daily stand-ups for a team of four, 98% on time across 200+ units a day; production time cut by 17%<a class="fn" href="#s-cv">CV</a>.</p></li>
           <li class="course"><span class="cn">Dec 2025 to Sep 2026</span><h3>Into project management</h3><p>PSM I, Google Project Management Certificate, Certified Agile Facilitator; event volunteering in Lisbon<a class="fn" href="#s-cv">CV</a>.</p></li>
-          <li class="course"><span class="cn">Oct 2026 to now</span><h3>Project Manager, RiskMandate; Editor, PrompTugal.news</h3><p>Web Summit 3 to 13 Nov with 26 agents<a class="fn" href="#s-p">P</a>; 18 agent-policy tests; a two-day audit of 206 claims<a class="fn" href="#s-cv">CV</a>.</p><span class="when">Part-time</span></li>
+          <li class="course"><span class="cn">Oct 2026 to now</span><h3>Project Manager, RiskMandate; Editor, PrompTugal.news</h3><p>Project manager for the six-person Web Summit team<a class="fn" href="#s-cv">CV</a>; 18 agent-policy tests; a two-day audit of 206 claims<a class="fn" href="#s-cv">CV</a>.</p><span class="when">Part-time</span></li>
           <li class="course now"><span class="cn">Next</span><h3>Your project team</h3><p>&ldquo;I'm still learning every day, and I'm glad this is where I started.&rdquo;<a class="fn" href="#s-i">I</a></p></li>
         </ol>
       </div>
       <figure class="jphoto rv" style="margin:0">
         <img src="/assets/photos/yiheng-with-the-team.jpg" width="574" height="1600" loading="lazy" alt="Yiheng Wang standing in a hall at Web Summit, in a lilac hoodie">
-        <figcaption>In the hall at Web Summit, 2026</figcaption>
+        <figcaption>Web Summit, 2026</figcaption>
       </figure>
     </div>
   </div>
@@ -636,17 +607,13 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
   <div class="wrap">
     <div class="resv">
       <div class="rv">
-        <div class="no sec-head" style="margin-bottom:16px"><span class="label"><b>No. 7</b> Reservations</span></div>
-        <h2 id="h-contact">Book Yiheng for your team</h2>
-        <p class="lede" style="margin-top:18px">She is looking for a role as a project manager, project coordinator or PMO coordinator: someone who sets the standard, hands out the work and checks the result, whether the team is people, agents or both.</p>
+        <h2 id="h-contact">Contact</h2>
+        <p class="lede" style="margin-top:18px">Lisbon, on-site or hybrid, or remote. Available now.</p>
         <div class="ctas"><a class="btn solid" href="/agents/#hiring">Ask your AI assistant about Yiheng</a><a class="btn" href="/agents/hiring.md">Hiring brief for agents</a></div>
       </div>
       <div class="card rv">
-        <p class="label"><b>Reservation card</b></p>
         <dl>
-          <dt>Name</dt><dd>Yiheng Wang</dd>
           <dt>Roles</dt><dd>Project manager, project coordinator, PMO coordinator, junior project manager</dd>
-          <dt>Proof</dt><dd>Ran 26 AI agents at Web Summit 2026<a class="fn" href="#s-p">P</a></dd>
         </dl>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/yihengwang9">linkedin.com/in/yihengwang9</a> &middot; Email: <a href="mailto:yihengw2994@gmail.com">yihengw2994@gmail.com</a> &middot; <a href="/assets/cv/YihengWang_CV.pdf">Download her CV (PDF)</a></p>
         <p class="small muted" style="margin:0">Photos: <a href="/photos/">all photos</a>. For AI assistants: <a href="/agents/">use this site with AI</a>.</p>
@@ -658,7 +625,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 <!-- Sources -->
 <section class="sources" id="sources" aria-labelledby="h-src">
   <div class="wrap">
-    <div class="sec-head"><div class="no"><span class="label"><b>Footnotes</b> Sources</span></div><h2 id="h-src" style="font-size:clamp(28px,3.4vw,40px)">Every figure names its source</h2></div>
+    <div class="sec-head"><h2 id="h-src" style="font-size:clamp(28px,3.4vw,40px)">Sources</h2></div>
     <ol>
       <li id="s-i"><b>I</b><a href="https://promptugal.news/articles/humans-and-ai-vicky-wang.html">Humans and AI: her approved interview</a>, PrompTugal.news, 2026-11-14. All her quoted words except [L].</li>
       <li id="s-cv"><b>CV</b><a href="/assets/cv/YihengWang_CV.pdf">Her CV</a>, supplied by Yiheng, 2026-11-16.</li>
