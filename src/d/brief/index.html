@@ -75,6 +75,7 @@ h1{font-size:clamp(40px,6.4vw,76px);line-height:.95;letter-spacing:-.035em}
 .lab h2{font-size:clamp(21px,2.1vw,26px);line-height:1.15}
 .lab p{font-size:14px;color:var(--ink-3);margin-top:8px}
 .body{grid-column:4/span 9;min-width:0}
+.oneline{margin:0;font:500 clamp(20px,2.2vw,26px)/1.4 var(--sans);letter-spacing:-.01em;max-width:46ch}
 /* One minute */
 .minute{list-style:none;margin:0;padding:0;counter-reset:m}
 .minute li{display:grid;grid-template-columns:2.2rem 1fr;padding:12px 0;border-top:1px solid var(--rule);font-size:clamp(17px,1.5vw,19px);line-height:1.45}
@@ -362,6 +363,13 @@ footer p{margin:0}
 </header>
 
 <main id="main">
+
+<section class="sec" id="minute" aria-labelledby="h-minute">
+  <div class="wrap g12">
+    <div class="lab"><h2 id="h-minute">In one minute</h2></div>
+    <div class="body"><p class="oneline">I came to project management through cross-border B2B operations and high-volume kitchens, where I learned to spot problems early and build processes the team could run on its own.<a class="ref" href="#s-LI">LI</a></p></div>
+  </div>
+</section>
 
 <section class="sec" id="results" aria-labelledby="h-results">
   <div class="wrap g12">
