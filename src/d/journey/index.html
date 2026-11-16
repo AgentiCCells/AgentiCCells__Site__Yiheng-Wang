@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Journey: Yiheng Wang, from the pastry kitchen to a team of 26 AI agents</title>
+<meta name="description" content="Yiheng Wang, project and operations manager: her path from pastry chef to running a team of 26 AI agents at Web Summit 2026 and on PrompTugal.news, told in photos and chapters.">
+<meta name="theme-color" content="#1a0b2e">
+<meta name="color-scheme" content="light">
+<link rel="alternate" type="text/markdown" href="/index.md">
+<link rel="stylesheet" href="/assets/chrome.css">
+<script src="/assets/chrome.js" data-slug="journey" defer></script>
+<!-- The Journey, by design.journey@AgentiCCells.dinis. Designed for one mode on purpose: deep violet story sections and off-white reading sections, in any system theme. Code Apache-2.0, text CC BY 4.0. -->
+<style>
+:root{
+  --night:#14082a;--violet-9:#1f0b3d;--violet-8:#2c1058;--violet-6:#5b21b6;--violet-5:#7c3aed;--violet-3:#c4b5fd;
+  --magenta:#d61f7f;--pink:#ff5fae;--cyan:#39c6f4;--gold:#ffd58a;--lilac:#b99bff;
+  --paper:#f8f5f0;--paper-2:#efe9f4;--ink:#1d1426;--ink-2:#4a3d58;--rule:#ddd3e6;
+  --grot:"Avenir Next","Segoe UI",system-ui,-apple-system,sans-serif;
+  --serif:Charter,"Iowan Old Style",Georgia,serif;
+  --mono:ui-monospace,"SF Mono",Menlo,monospace;
+  --wrap:min(1120px,100% - 32px);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 var(--grot);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--violet-6)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:3px}
+h1,h2,h3{font-family:var(--grot);line-height:1.08;margin:0}
+p{margin:0 0 1em}
+.wrap{width:var(--wrap);margin-inline:auto}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:16px;top:56px;z-index:50;background:#fff;color:var(--ink);padding:.5rem 1rem}
+.fn{display:inline-block;font:700 .62em/1 var(--mono);vertical-align:super;text-decoration:none;color:var(--violet-6);background:rgba(124,58,237,.1);border-radius:4px;padding:.18em .32em;margin-left:.12em;letter-spacing:0}
+.dark .fn{color:var(--gold);background:rgba(255,213,138,.14)}
+.kicker{font:700 13px/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--magenta)}
+.dark .kicker{color:var(--pink)}
+.dark{background:var(--night);color:#f1ecf8}
+.dark a{color:var(--gold)}
+
+/* hero */
+.hero{position:relative;min-height:min(92vh,860px);display:grid;align-items:end;overflow:hidden;background:var(--night);color:#fff;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:40% 50%;transform:scale(1.08);animation:drift 26s ease-in-out infinite alternate;filter:saturate(1.15)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,8,42,.25) 0%,rgba(20,8,42,.55) 40%,rgba(20,8,42,.96) 82%),linear-gradient(90deg,rgba(31,11,61,.85),rgba(31,11,61,.1) 70%)}
+@keyframes drift{to{transform:scale(1.18) translateX(-3%)}}
+.hero-in{width:var(--wrap);margin:0 auto;padding:120px 0 56px;display:grid;grid-template-columns:1.5fr 1fr;gap:32px;align-items:end}
+.hero h1{font-size:clamp(56px,10vw,150px);font-weight:800;letter-spacing:-.04em;line-height:.9}
+.hero h1 span{display:block;background:linear-gradient(90deg,#fff 0%,#ffc2e2 60%,var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .role{font:600 clamp(15px,1.6vw,19px)/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin:0 0 18px}
+.hero .line{font:400 clamp(24px,3vw,38px)/1.2 var(--serif);margin:24px 0 28px;max-width:20ch}
+.proof{display:flex;flex-wrap:wrap;gap:12px;margin:0;padding:0;list-style:none}
+.proof li{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(6px);border-radius:14px;padding:10px 16px;font-size:15px;line-height:1.3}
+.proof b{display:block;font-size:28px;font-weight:800;letter-spacing:-.02em;color:#fff}
+.hero .fn{color:var(--gold);background:rgba(255,213,138,.16)}
+.cut{position:relative;justify-self:end;width:min(320px,100%)}
+.cut img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 12%;clip-path:polygon(6% 2%,22% 0,38% 3%,55% 0,72% 2%,90% 0,100% 6%,98% 30%,100% 55%,97% 78%,100% 96%,82% 100%,60% 97%,40% 100%,18% 97%,0 100%,3% 74%,0 50%,2% 24%);transform:rotate(2.5deg)}
+.cut::before{content:"";position:absolute;inset:6% -6% -4% 8%;background:linear-gradient(135deg,var(--magenta),var(--violet-5));clip-path:polygon(0 4%,100% 0,96% 100%,4% 96%);transform:rotate(-4deg);z-index:-1}
+.cut figcaption{position:absolute;left:-12px;bottom:18px;background:var(--gold);color:var(--ink);font:700 12px/1.3 var(--mono);padding:6px 10px;transform:rotate(-3deg);max-width:220px}
+.scroll-cue{font:600 13px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#d9cdf0;margin-top:28px}
+
+/* big quote band */
+.band{background:linear-gradient(120deg,var(--violet-8),var(--magenta));color:#fff;padding:clamp(56px,9vw,110px) 0}
+.band blockquote{margin:0;font:400 clamp(28px,4.4vw,58px)/1.15 var(--serif);max-width:22ch;letter-spacing:-.01em}
+.band blockquote strong{font-weight:700;color:var(--gold)}
+.band cite{display:block;margin-top:22px;font:600 15px/1.4 var(--mono);font-style:normal;color:#ffe3f1}
+.band .fn{color:var(--gold);background:rgba(0,0,0,.2)}
+.band-grid{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.band-grid img{width:200px;height:200px;object-fit:cover;border-radius:50%;border:6px solid rgba(255,255,255,.85);box-shadow:0 20px 50px rgba(0,0,0,.35)}
+
+/* journey map */
+.map{padding:clamp(56px,8vw,96px) 0 24px}
+.map h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.02em;margin:10px 0 8px}
+.map p.lede{color:var(--ink-2);max-width:60ch}
+.track{position:relative;margin:36px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(9,1fr);gap:0}
+.track::before{content:"";position:absolute;left:5%;right:5%;top:22px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--gold),var(--magenta) 45%,var(--violet-5))}
+.track li{position:relative;text-align:center;padding:0 4px}
+.track a{display:block;text-decoration:none;color:var(--ink)}
+.track .dot{display:grid;place-items:center;width:48px;height:48px;margin:0 auto 10px;border-radius:50%;background:#fff;border:4px solid var(--violet-5);font:800 16px/1 var(--grot);color:var(--violet-6);position:relative;transition:transform .2s,background .2s}
+.track li:nth-child(-n+2) .dot{border-color:#d4a24a;color:#8a5a10}
+.track li:last-child .dot{background:var(--magenta);border-color:var(--magenta);color:#fff}
+.track a:hover .dot{transform:scale(1.1);background:var(--paper-2)}
+.track b{display:block;font-size:14px;line-height:1.25}
+.track small{display:block;font:500 12px/1.3 var(--mono);color:var(--ink-2);margin-top:4px}
+
+/* chapters */
+.ch{position:relative;padding:clamp(72px,10vw,140px) 0;overflow:hidden}
+.ch-head{display:grid;grid-template-columns:auto 1fr;gap:clamp(16px,3vw,40px);align-items:end;margin-bottom:clamp(32px,5vw,56px)}
+.num{font:800 clamp(110px,19vw,260px)/.78 var(--grot);letter-spacing:-.07em;background:linear-gradient(160deg,var(--violet-5),var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent;user-select:none}
+.dark .num{background:linear-gradient(160deg,var(--pink),var(--violet-3))}
+.ch h2{font-size:clamp(36px,6vw,76px);font-weight:800;letter-spacing:-.035em;margin-top:8px}
+.ch .when{font:600 14px/1.4 var(--mono);color:var(--ink-2);margin-top:12px}
+.dark .when{color:#cbbfe0}
+.cols{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,80px);align-items:start}
+.prose p{max-width:60ch}
+.dark .prose p{color:#e6def2}
+.pull{margin:28px 0;padding:0 0 0 22px;border-left:5px solid var(--magenta);font:400 clamp(22px,2.4vw,30px)/1.3 var(--serif);color:var(--ink)}
+.dark .pull{color:#fff;border-color:var(--pink)}
+.pull footer{font:600 14px/1.4 var(--mono);color:var(--ink-2);margin-top:12px}
+.dark .pull footer{color:#cbbfe0}
+.tint{background:var(--paper-2)}
+
+/* photo devices */
+.polaroid{background:#fff;padding:12px 12px 46px;box-shadow:0 18px 40px rgba(29,20,38,.18),0 2px 6px rgba(29,20,38,.12);transform:rotate(var(--r,-3deg));width:min(300px,80%);position:relative;margin:0}
+.polaroid img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 14%}
+.polaroid figcaption{position:absolute;left:14px;right:14px;bottom:12px;font:500 13px/1.3 var(--serif);color:var(--ink-2)}
+.polaroid::after{content:"";position:absolute;top:-12px;left:50%;width:90px;height:26px;margin-left:-45px;background:rgba(255,213,138,.75);transform:rotate(2deg)}
+.angled{margin:0;position:relative}
+.angled img{width:100%;aspect-ratio:5/6;object-fit:cover;object-position:60% 40%;clip-path:polygon(8% 0,100% 0,92% 100%,0 100%)}
+.angled::before{content:"";position:absolute;inset:8% -4% -5% 10%;background:var(--magenta);clip-path:polygon(8% 0,100% 0,92% 100%,0 100%);z-index:-1;opacity:.9}
+.angled{isolation:isolate}
+.cap{font:500 13px/1.4 var(--mono);color:var(--ink-2);margin-top:12px}
+.dark .cap{color:#cbbfe0}
+.strip{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:clamp(40px,6vw,64px) 0 0}
+.strip figure{margin:0;overflow:hidden;border-radius:4px}
+.strip img{width:100%;height:clamp(260px,38vw,460px);object-fit:cover;transition:transform .6s}
+.strip figure:nth-child(odd){transform:translateY(24px)}
+.strip figure:hover img{transform:scale(1.04)}
+.tiles{position:relative;height:100%}
+
+/* triad (kitchen) */
+.triad{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:48px 0 0}
+.triad div{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:22px}
+.triad b{display:block;font-size:20px;letter-spacing:-.01em;margin-bottom:10px;color:var(--violet-6)}
+.triad dl{margin:0;font-size:15px}
+.triad dt{font:700 11px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--ink-2);margin-top:10px}
+.triad dd{margin:2px 0 0}
+.note{font-size:14px;color:var(--ink-2);margin-top:14px}
+
+/* path (products) */
+.steps{list-style:none;margin:8px 0 0;padding:0;counter-reset:s}
+.steps li{position:relative;padding:0 0 26px 52px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--violet-6);color:#fff;font:800 15px/34px var(--grot);text-align:center}
+.steps li::after{content:"";position:absolute;left:16px;top:38px;bottom:4px;width:2px;background:var(--rule)}
+.steps li:last-child::after{display:none}
+.steps b{display:block;font-size:20px}
+
+/* zero */
+.zero{background:radial-gradient(1200px 600px at 85% 10%,rgba(214,31,127,.35),transparent 60%),radial-gradient(900px 600px at 0 100%,rgba(124,58,237,.4),transparent 60%),var(--night)}
+.stair{width:100%;height:auto;margin-top:8px}
+.stair text{font-family:var(--grot)}
+.stamp{display:inline-flex;gap:10px;align-items:center;margin-top:20px;padding:10px 16px;border:1px solid rgba(255,255,255,.25);border-radius:999px;font:600 15px/1.2 var(--mono)}
+.stamp b{color:var(--gold);font-size:20px}
+
+/* summit */
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:24px 0 0;padding:0;list-style:none}
+.facts li{border-top:3px solid var(--magenta);padding:12px 0 0;font-size:16px}
+.facts b{display:block;font-size:17px}
+
+/* storm */
+.storm{background:linear-gradient(180deg,#0d0620,#1b0b33 60%,#2a0d3f);}
+.storm .wind{position:absolute;inset:0;pointer-events:none;opacity:.5}
+.storm .wind path{fill:none;stroke:#7d6aa8;stroke-width:1.5;stroke-dasharray:120 600;animation:gust 7s linear infinite}
+.storm .wind path:nth-child(2){animation-delay:-2s;stroke:#a35ab8}
+.storm .wind path:nth-child(3){animation-delay:-4.5s}
+.storm .wind path:nth-child(4){animation-delay:-1s;stroke:#5a7fb8}
+@keyframes gust{from{stroke-dashoffset:720}to{stroke-dashoffset:0}}
+.night{list-style:none;margin:28px 0 0;padding:0;border-left:2px dashed rgba(255,255,255,.3)}
+.night li{position:relative;padding:0 0 24px 28px}
+.night li::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--pink);box-shadow:0 0 0 5px rgba(255,95,174,.2)}
+.night li:first-child::before{background:#ff3b3b;box-shadow:0 0 0 5px rgba(255,59,59,.25)}
+.night b{display:block;color:#fff;font-size:19px}
+.night span{color:#d9cfe9}
+.blob{margin:0}
+.blob img{width:100%;aspect-ratio:1;object-fit:cover;clip-path:polygon(50% 0,64% 10%,82% 6%,86% 24%,100% 36%,92% 52%,100% 70%,82% 78%,76% 96%,58% 90%,42% 100%,30% 86%,10% 90%,12% 70%,0 56%,10% 40%,4% 20%,22% 16%,32% 2%);filter:contrast(1.05) saturate(1.1)}
+
+/* newsroom */
+.big{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,3vw,32px);margin:0 0 48px}
+.big div{border-top:2px solid var(--ink);padding-top:14px}
+.big b{display:block;font:800 clamp(44px,6vw,80px)/1 var(--grot);letter-spacing:-.04em;color:var(--violet-6)}
+.big div:nth-child(2) b{color:var(--magenta)}
+.big span{font-size:15px;color:var(--ink-2);display:block;margin-top:8px}
+.panel{background:#fff;border:1px solid var(--rule);border-radius:20px;padding:clamp(20px,3vw,32px)}
+.panel h3{font-size:22px;letter-spacing:-.01em;margin-bottom:8px}
+.waffle{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;max-width:360px;margin:18px 0 10px}
+.waffle i,.check i{aspect-ratio:1;border-radius:3px;background:#e4dcea}
+.waffle i:nth-child(-n+53){background:var(--magenta)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:var(--ink-2);margin:0;padding:0;list-style:none}
+.legend li::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+.check{display:grid;grid-template-columns:repeat(27,1fr);gap:3px;margin:18px 0 8px}
+.check i{background:var(--violet-5)}
+.check i:nth-child(n+16){background:var(--magenta)}
+.check-lab{display:grid;grid-template-columns:15fr 12fr;gap:6px;font:600 13px/1.3 var(--mono);color:var(--ink-2)}
+.check-lab span:last-child{text-align:right;color:var(--magenta)}
+.eq{font:800 clamp(32px,4vw,48px)/1 var(--grot);letter-spacing:-.03em;margin:14px 0 6px}
+.eq em{font-style:normal;color:var(--magenta)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+
+/* agents */
+.agents{background:var(--night)}
+.stage{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(24px,4vw,56px);align-items:start}
+.netbox{position:sticky;top:20px;background:radial-gradient(circle at 50% 50%,#2a1150,#160830 70%);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:12px}
+.net{width:100%;height:auto;display:block}
+.net text{font-family:var(--grot);font-size:13px;fill:#efe7fb}
+.net .lab-n{fill:#b7a8cf;font-size:11px;font-family:var(--mono)}
+.net line{stroke:rgba(255,255,255,.22);stroke-width:1}
+.net .g-newsroom circle{fill:var(--pink)}
+.net .g-operations circle{fill:var(--cyan)}
+.net .g-specialist circle{fill:var(--lilac)}
+.net .g-lead circle{fill:var(--gold)}
+.net .g-lead line{stroke:var(--gold);stroke-width:2.5}
+.net .me circle{fill:#fff}
+.net .me text{fill:var(--night);font-weight:800;font-size:15px}
+.net .brief{fill:var(--gold);font-size:12px;font-family:var(--mono)}
+.js .net.build [data-s]{opacity:0;transition:opacity .6s ease calc(var(--i,0)*45ms)}
+.js .net.build [data-s].on{opacity:1}
+.netkey{margin:10px 8px 4px}
+.netkey li{color:#e6def2}
+.beats{padding-top:4px}
+.beat{min-height:62vh;padding:8px 0}
+.beat:last-child{min-height:auto}
+.beat h3{font-size:26px;color:#fff;letter-spacing:-.01em;margin-bottom:10px}
+.beat p{color:#e1d8ee}
+.beat .sw{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:8px;background:var(--c)}
+.shot{margin:clamp(48px,7vw,80px) 0 0;display:grid;grid-template-columns:1.3fr .7fr;gap:32px;align-items:center}
+.shot .frame{background:#0b0716;border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:30px 10px 10px;position:relative;transform:rotate(-1deg);box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.shot .frame::before{content:"● ● ●";position:absolute;top:8px;left:14px;font-size:10px;letter-spacing:2px;color:#6b5a86}
+.shot img{border-radius:6px;width:100%;height:auto}
+details.roster{margin-top:32px;border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:4px 18px}
+details.roster summary{cursor:pointer;padding:12px 0;font-weight:700;color:#fff}
+.tbl{overflow-x:auto}
+.roster table{width:100%;border-collapse:collapse;font-size:14px;margin-bottom:14px}
+.roster th,.roster td{text-align:left;padding:7px 10px 7px 0;border-bottom:1px solid rgba(255,255,255,.12);vertical-align:top;color:#e6def2}
+.roster th{font:700 12px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.1em;color:#cbbfe0}
+.roster td:nth-child(3){font-family:var(--mono);text-align:right}
+
+/* how */
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--rule);border-radius:18px;padding:22px;position:relative}
+.card h3{font-size:19px;letter-spacing:-.01em;margin-bottom:8px}
+.card p{font-size:16px;margin:0;color:var(--ink-2)}
+.card .tag{font:700 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--magenta);display:block;margin-bottom:10px}
+.advice{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:0 0 48px;padding:0;list-style:none}
+.advice li{font:400 clamp(19px,2vw,24px)/1.35 var(--serif);padding:22px 24px;border-radius:18px;background:linear-gradient(135deg,var(--violet-8),var(--violet-6));color:#fff}
+.advice li:nth-child(2n){background:linear-gradient(135deg,var(--magenta),#9b1a6c)}
+.advice .fn{color:var(--gold);background:rgba(0,0,0,.2)}
+
+/* contact */
+.next{background:linear-gradient(150deg,var(--violet-9),var(--violet-8) 55%,#5e1350)}
+.next-grid{display:grid;grid-template-columns:1fr auto;gap:clamp(24px,5vw,64px);align-items:center}
+.offer{list-style:none;margin:24px 0;padding:0;display:grid;gap:10px}
+.offer li{padding-left:30px;position:relative;color:#ece4f7}
+.offer li::before{content:"";position:absolute;left:0;top:.45em;width:16px;height:16px;border-radius:4px;background:var(--pink);transform:rotate(45deg) scale(.7)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:14px 22px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--gold);color:var(--ink)!important}
+.btn.ghost{background:transparent;border:2px solid rgba(255,255,255,.6);color:#fff!important}
+.placeholder{border:2px dashed rgba(255,255,255,.4);border-radius:14px;padding:14px 18px;color:#e6def2;font-size:16px;max-width:56ch}
+.duo{display:flex;gap:14px;align-items:flex-start}
+.duo figure{margin:0}
+.duo img{width:150px;height:440px;object-fit:cover;object-position:50% 10%;border-radius:999px 999px 18px 18px;border:4px solid rgba(255,255,255,.85)}
+.duo figure:last-child{margin-top:60px}
+
+/* sources and footer */
+.sources{padding:72px 0 40px}
+.sources h2{font-size:30px;letter-spacing:-.02em;margin-bottom:16px}
+.sources ol{padding:0;margin:0;list-style:none;display:grid;gap:10px;font-size:15px}
+.sources li{display:grid;grid-template-columns:52px 1fr;gap:8px;padding:10px 0;border-bottom:1px solid var(--rule)}
+.sources li:target{background:#fff3fa}
+.sources code{font:700 13px/1.6 var(--mono);color:var(--violet-6)}
+.sources a{word-break:break-word}
+.foot{background:var(--night);color:#cbbfe0;padding:28px 0;font-size:14px}
+.foot p{margin:.2em 0}
+.foot a{color:var(--gold)}
+
+/* rail */
+.rail{position:fixed;left:14px;top:50%;transform:translateY(-50%);z-index:40;display:none;opacity:0;transition:opacity .3s}
+.rail.show{opacity:1}
+.rail ol{list-style:none;margin:0;padding:0;display:grid;gap:8px;position:relative}
+.rail ol::before{content:"";position:absolute;left:15px;top:12px;bottom:12px;width:2px;background:rgba(124,58,237,.25)}
+.rail .fill{position:absolute;left:15px;top:12px;width:2px;height:calc(var(--p,0)*(100% - 24px));background:linear-gradient(var(--gold),var(--magenta));transition:height .15s}
+.rail a{position:relative;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#fff;border:2px solid #b9a6dc;color:var(--violet-6);font:800 12px/1 var(--grot);text-decoration:none;transition:transform .2s,background .2s}
+.rail a[aria-current="step"]{background:var(--magenta);border-color:var(--magenta);color:#fff;transform:scale(1.18)}
+.rail a .t{position:absolute;left:42px;white-space:nowrap;background:var(--ink);color:#fff;font:600 12px/1 var(--grot);padding:6px 9px;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .15s}
+.rail a:hover .t,.rail a:focus-visible .t{opacity:1}
+.rail .now{writing-mode:vertical-rl;transform:rotate(180deg);font:700 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--violet-6);margin:14px 0 0 9px;background:rgba(248,245,240,.9);padding:6px 3px;border-radius:4px}
+.bar{position:fixed;left:0;top:0;height:4px;width:calc(var(--p,0)*100%);background:linear-gradient(90deg,var(--gold),var(--magenta),var(--violet-5));z-index:1100}
+@media (min-width:1180px){.rail{display:block}.journey{padding-left:40px}}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .hero-in{grid-template-columns:1fr;padding-top:90px}
+  .cut{justify-self:start;width:min(240px,70%);order:-1}
+  .cols,.stage,.shot,.two,.next-grid,.band-grid{grid-template-columns:1fr}
+  .band-grid img{width:140px;height:140px}
+  .how-grid{grid-template-columns:1fr 1fr}
+  .track{grid-template-columns:1fr;gap:14px}
+  .track::before{left:22px;right:auto;top:10px;bottom:10px;width:4px;height:auto;background:linear-gradient(180deg,var(--gold),var(--magenta) 45%,var(--violet-5))}
+  .track li{text-align:left;display:block}
+  .track a{display:grid;grid-template-columns:48px 1fr;gap:4px 14px;align-items:center}
+  .track .dot{margin:0;grid-row:span 2}
+  .track small{margin:0}
+  .netbox{position:sticky;top:6px;z-index:2}
+  .beat{min-height:48vh}
+  .strip{grid-template-columns:repeat(5,1fr);gap:6px}
+  .strip img{height:300px}
+  .duo img{width:120px;height:340px}
+}
+@media (max-width:620px){
+  body{font-size:17px}
+  .ch-head{grid-template-columns:1fr;gap:0}
+  .num{font-size:110px;margin-bottom:6px}
+  .triad,.how-grid,.advice,.big,.facts{grid-template-columns:1fr}
+  .big{gap:20px}
+  .strip{grid-template-columns:repeat(3,1fr)}
+  .strip figure:nth-child(n+4){display:none}
+  .strip figure:nth-child(odd){transform:translateY(14px)}
+  .proof li{flex:1 1 140px}
+  .check{gap:2px}
+  .duo img{width:100px;height:280px}
+  .sources li{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv{opacity:1;transform:none}
+  .hero-bg img{transform:none}
+}
+@media print{
+  .rail,.bar,.wind,.scroll-cue,.skip{display:none!important}
+  body{background:#fff;color:#000;font-size:12pt}
+  .dark,.hero,.band,.zero,.storm,.agents,.next,.foot{background:#fff!important;color:#000!important}
+  .dark *,.hero *,.band *,.next *{color:#000!important}
+  .hero::before{display:none}
+  .hero-bg{display:none}
+  .hero h1 span,.num{background:none;color:#000!important;-webkit-text-fill-color:#000}
+  .ch{padding:24px 0;break-inside:avoid-page}
+  .js .rv{opacity:1;transform:none}
+  .netbox{position:static;background:#fff;border-color:#999}
+  .net text{fill:#000}
+  .beat{min-height:0}
+  details.roster{display:block}
+  a{color:#000}
+}
+</style>
+</head>
+<body>
+<div class="bar" aria-hidden="true"></div>
+<a class="skip" href="#journey">Skip to the journey</a>
+
+<header class="hero" id="top">
+  <div class="hero-bg"><img src="/assets/photos/web-summit-main-stage.jpg" width="1600" height="330" alt="The Web Summit main stage in Lisbon, lit in violet, magenta and blue" fetchpriority="high"></div>
+  <div class="hero-in">
+    <div>
+      <p class="role">Project manager, operations manager, project coordinator</p>
+      <h1><span>Yiheng</span><span>Wang</span></h1>
+      <p class="line">From the pastry kitchen to a team of 26 AI agents.</p>
+      <ul class="proof">
+        <li><b>26 agents</b>25 running, one conductor<a class="fn" href="#src-p" aria-label="Source P">P</a></li>
+        <li><b>~53 of 73</b>PrompTugal.news articles by her journalists<a class="fn" href="#src-n1" aria-label="Source N1">N1</a></li>
+        <li><b>2 weeks</b>from no technical background<a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+      </ul>
+      <p class="scroll-cue">Scroll: eight chapters, one path</p>
+    </div>
+    <figure class="cut">
+      <img src="/assets/photos/yiheng-at-the-stand.jpg" width="365" height="1200" alt="Yiheng Wang at the RiskMandate stand at Web Summit 2026, thumbs up">
+      <figcaption>At the RiskMandate stand, Web Summit 2026</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section class="band" aria-label="In her words">
+  <div class="wrap band-grid">
+    <blockquote class="rv">
+      <p style="margin:0">&ldquo;I think the hard part is no longer the doing. <strong>It's knowing what to ask for and what to check.</strong>&rdquo;</p>
+      <cite>Yiheng Wang, on six people and around 250 agents at Web Summit<a class="fn" href="#src-l" aria-label="Source L">L</a><a class="fn" href="#src-n2" aria-label="Source N2">N2</a></cite>
+    </blockquote>
+    <img class="rv" src="/assets/photos/yiheng-main-stage.jpg" width="440" height="440" alt="Yiheng Wang in front of the Web Summit main stage, in violet evening light" loading="lazy">
+  </div>
+</section>
+
+<main id="journey" class="journey">
+
+  <div class="map wrap">
+    <p class="kicker">The path at a glance</p>
+    <h2>Nine stations, about two weeks of them in November</h2>
+    <p class="lede">Years in a pastry kitchen, then product development and project management. Then, from 2 November 2026, a fast climb: set-up in two days, a summit stand, a storm, a newsroom and an agent team she ran mostly through one conductor.</p>
+    <ol class="track">
+      <li><a href="#ch1"><span class="dot">1</span><b>Pastry kitchen</b><small>for years</small></a></li>
+      <li><a href="#ch2"><span class="dot">2</span><b>Product development</b><small>then projects</small></a></li>
+      <li><a href="#ch2"><span class="dot">2</span><b>Project management</b><small>AI for her own work</small></a></li>
+      <li><a href="#ch3"><span class="dot">3</span><b>From zero</b><small>2 to 3 Nov</small></a></li>
+      <li><a href="#ch4"><span class="dot">4</span><b>Web Summit</b><small>9 to 12 Nov</small></a></li>
+      <li><a href="#ch5"><span class="dot">5</span><b>Storm night</b><small>10 Nov</small></a></li>
+      <li><a href="#ch6"><span class="dot">6</span><b>Newsroom</b><small>PrompTugal.news</small></a></li>
+      <li><a href="#ch7"><span class="dot">7</span><b>26 agents</b><small>one conductor</small></a></li>
+      <li><a href="#contact"><span class="dot">8</span><b>Your team</b><small>next</small></a></li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <section class="ch" id="ch1" data-rail="The kitchen" aria-labelledby="h-ch1">
+    <div class="wrap">
+      <div class="ch-head rv"><span class="num" aria-hidden="true">01</span><div><p class="kicker">Chapter one</p><h2 id="h-ch1">The kitchen</h2><p class="when">Pastry chef, for years<a class="fn" href="#src-i" aria-label="Source I">I</a></p></div></div>
+      <div class="cols">
+        <div class="prose rv">
+          <p>Yiheng's working life started in a pastry kitchen. Pastry is the least forgiving corner of any kitchen: a recipe is a specification, a gram matters, timing is everything, and the plate that leaves has to match the one before it.</p>
+          <blockquote class="pull">&ldquo;In a kitchen I managed recipes, standards and a team. Now I manage agents and rules. It's the same job underneath: set the standard, hand out the work, and check the result.&rdquo;<footer>Yiheng Wang, PrompTugal.news interview<a class="fn" href="#src-i" aria-label="Source I">I</a></footer></blockquote>
+          <p>That sentence is the thread of this whole page. Every chapter that follows is one of those three verbs, at a larger scale.</p>
+        </div>
+        <figure class="polaroid rv" style="--r:3deg;justify-self:center">
+          <img src="/assets/photos/yiheng-at-the-stand-2.jpg" width="400" height="1200" alt="Yiheng Wang smiling at the RiskMandate stand, in a purple team T-shirt and badge" loading="lazy">
+          <figcaption>Yiheng, Web Summit 2026</figcaption>
+        </figure>
+      </div>
+      <div class="triad rv" role="list" aria-label="The same job underneath">
+        <div role="listitem"><b>Set the standard</b><dl><dt>In a kitchen</dt><dd>Recipes and standards</dd><dt>With agents</dt><dd>Rules, and every agent's brief<a class="fn" href="#src-i" aria-label="Source I">I</a></dd></dl></div>
+        <div role="listitem"><b>Hand out the work</b><dl><dt>In a kitchen</dt><dd>A team, each on a station</dd><dt>With agents</dt><dd>One conductor that hands out the work<a class="fn" href="#src-i" aria-label="Source I">I</a></dd></dl></div>
+        <div role="listitem"><b>Check the result</b><dl><dt>In a kitchen</dt><dd>Nothing leaves the pass unchecked</dd><dt>With agents</dt><dd>A reviewer, and her own spot checks<a class="fn" href="#src-i" aria-label="Source I">I</a></dd></dl></div>
+      </div>
+      <p class="note">The kitchen column is general framing of what pastry work demands, not a record of her career; the agent column is from her interview.</p>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="ch tint" id="ch2" data-rail="Products and projects" aria-labelledby="h-ch2">
+    <div class="wrap">
+      <div class="ch-head rv"><span class="num" aria-hidden="true">02</span><div><p class="kicker">Chapter two</p><h2 id="h-ch2">Products, then projects</h2><p class="when">Before November 2026<a class="fn" href="#src-i" aria-label="Source I">I</a></p></div></div>
+      <div class="cols">
+        <figure class="angled rv">
+          <img src="/assets/photos/yiheng-at-work.jpg" width="934" height="1200" alt="Yiheng Wang working on a laptop at a table at Web Summit, in a lilac hoodie" loading="lazy">
+          <figcaption class="cap">At work at the summit, November 2026</figcaption>
+        </figure>
+        <div class="prose rv">
+          <p>From the kitchen she moved into product development, and from there into project management: the work of turning a plan into dates, owners and deliveries.</p>
+          <ol class="steps">
+            <li><b>Product development</b>Taking an idea through to something that can be made and sold.<a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+            <li><b>Project management</b>Structure, deadlines and the people who meet them.<a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+            <li><b>AI for her own work</b>Before Web Summit she already used AI for her job search, to build a portfolio website and to organise documents.<a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+          </ol>
+          <p>Useful, but still one person with one assistant. What came next was a different order of scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="ch dark zero" id="ch3" data-rail="From zero" aria-labelledby="h-ch3">
+    <div class="wrap">
+      <div class="ch-head rv"><span class="num" aria-hidden="true">03</span><div><p class="kicker">Chapter three</p><h2 id="h-ch3">Two weeks from zero</h2><p class="when">2 to 3 November 2026<a class="fn" href="#src-p" aria-label="Source P">P</a><a class="fn" href="#src-b" aria-label="Source B">B</a></p></div></div>
+      <div class="cols">
+        <div class="prose rv">
+          <p>She joined the RiskMandate team for Web Summit with no technical background. The team's set-up has levels; each one wires in more of the tools an agent team needs.</p>
+          <p>She reached <strong>level 5 on 2 November</strong> and <strong>level 6 on 3 November</strong>: "the vaults: fully wired", every set-up step done.<a class="fn" href="#src-p" aria-label="Source P">P</a><a class="fn" href="#src-b" aria-label="Source B">B</a></p>
+          <blockquote class="pull">&ldquo;And you don't need a technical background to start. I don't have one either. Two weeks ago I was starting from zero.&rdquo;<footer>Yiheng Wang, 14 November 2026<a class="fn" href="#src-i" aria-label="Source I">I</a></footer></blockquote>
+          <p class="stamp"><b>9 of 9</b> on the team's set-up leaderboard<a class="fn" href="#src-p" aria-label="Source P">P</a></p>
+        </div>
+        <figure class="rv" style="margin:0">
+          <svg class="stair" viewBox="0 0 460 340" role="img" aria-labelledby="stair-t">
+            <title id="stair-t">Set-up levels as a staircase: levels 1 to 4 done before, level 5 reached on 2 November, level 6 on 3 November 2026</title>
+            <g fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.25)">
+              <rect x="20" y="270" width="60" height="50"/><rect x="88" y="230" width="60" height="90"/><rect x="156" y="190" width="60" height="130"/><rect x="224" y="150" width="60" height="170"/>
+            </g>
+            <rect x="292" y="110" width="60" height="210" fill="#d61f7f"/>
+            <rect x="360" y="70" width="60" height="250" fill="#ffd58a"/>
+            <g fill="#e6def2" font-size="15" font-weight="700" text-anchor="middle"><text x="50" y="300">L1</text><text x="118" y="260">L2</text><text x="186" y="220">L3</text><text x="254" y="180">L4</text><text x="322" y="140" fill="#fff">L5</text><text x="390" y="100" fill="#1d1426">L6</text></g>
+            <g font-size="14" text-anchor="middle" font-weight="700"><text x="322" y="98" fill="#ff9fcf">2 Nov</text><text x="390" y="56" fill="#ffd58a">3 Nov</text></g>
+            <text x="390" y="34" fill="#cbbfe0" font-size="12" text-anchor="middle">the vaults: fully wired</text>
+            <line x1="20" y1="320" x2="440" y2="320" stroke="rgba(255,255,255,.4)"/>
+          </svg>
+          <figcaption class="cap">Set-up levels from her dashboard and brief; only the dates of L5 and L6 are recorded.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="ch" id="ch4" data-rail="The summit" aria-labelledby="h-ch4">
+    <div class="wrap">
+      <div class="ch-head rv"><span class="num" aria-hidden="true">04</span><div><p class="kicker">Chapter four</p><h2 id="h-ch4">The summit</h2><p class="when">Web Summit Lisbon, 9 to 12 November 2026; team work 3 to 13 November<a class="fn" href="#src-b" aria-label="Source B">B</a><a class="fn" href="#src-t" aria-label="Source T">T</a></p></div></div>
+      <div class="cols">
+        <div class="prose rv">
+          <p>On a team of six people and around 250 agents<a class="fn" href="#src-n2" aria-label="Source N2">N2</a>, Yiheng was the project manager: the structure, the deadlines, everyone's schedule, and the logistics a stand runs on.<a class="fn" href="#src-b" aria-label="Source B">B</a></p>
+          <ul class="facts">
+            <li><b>Logistics</b>Printing, merchandise, deliveries and the stand<a class="fn" href="#src-b" aria-label="Source B">B</a></li>
+            <li><b>Two stand-ups a day</b>12:00 and 18:00, before and during the summit<a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+            <li><b>At the stand</b>Talking to visitors and pitching<a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+            <li><b>After it</b>Following up the people she met<a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+          </ul>
+          <blockquote class="pull">&ldquo;What we had built caught people's attention as they walked past our stand.&rdquo;<footer>Yiheng Wang<a class="fn" href="#src-i" aria-label="Source I">I</a></footer></blockquote>
+        </div>
+        <figure class="polaroid rv" style="--r:-4deg;justify-self:center;width:min(280px,76%)">
+          <img src="/assets/photos/yiheng-with-the-team.jpg" width="267" height="1200" alt="Yiheng Wang standing in a hall at Web Summit, in a lilac hoodie and summit badge" loading="lazy" style="object-position:50% 8%">
+          <figcaption>Lisbon, November 2026</figcaption>
+        </figure>
+      </div>
+      <div class="strip rv" aria-label="Photo strip from Web Summit 2026" role="group">
+        <figure><img src="/assets/photos/yiheng-at-the-stand.jpg" width="365" height="1200" alt="Yiheng Wang at the RiskMandate stand at Web Summit 2026, thumbs up" loading="lazy" style="object-position:50% 20%"></figure>
+        <figure><img src="/assets/photos/yiheng-at-work.jpg" width="934" height="1200" alt="Yiheng Wang reading her laptop screen at a summit table" loading="lazy" style="object-position:62% 45%"></figure>
+        <figure><img src="/assets/photos/yiheng-at-the-stand-2.jpg" width="400" height="1200" alt="Yiheng Wang at the stand, wearing her Web Summit badge" loading="lazy" style="object-position:62% 25%"></figure>
+        <figure><img src="/assets/photos/yiheng-main-stage.jpg" width="440" height="440" alt="Yiheng Wang by the main stage in the evening" loading="lazy" style="object-position:45% 50%"></figure>
+        <figure><img src="/assets/photos/yiheng-with-the-team.jpg" width="267" height="1200" alt="Yiheng Wang full length in a summit hall" loading="lazy" style="object-position:50% 30%"></figure>
+      </div>
+      <p class="cap" style="margin-top:36px">Photos supplied by Dinis Cruz, 2026-11-16. Teammates are cropped out until they agree to appear.</p>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="ch dark storm" id="ch5" data-rail="The storm night" aria-labelledby="h-ch5">
+    <svg class="wind" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true"><path d="M-50 120 C 300 60, 600 200, 1250 90"/><path d="M-50 260 C 350 200, 700 340, 1250 230"/><path d="M-50 420 C 300 360, 650 500, 1250 380"/><path d="M-50 540 C 400 480, 800 600, 1250 520"/></svg>
+    <div class="wrap" style="position:relative">
+      <div class="ch-head rv"><span class="num" aria-hidden="true">05</span><div><p class="kicker">Chapter five</p><h2 id="h-ch5">The storm night</h2><p class="when">Tuesday 10 November 2026<a class="fn" href="#src-i" aria-label="Source I">I</a></p></div></div>
+      <div class="cols">
+        <div class="prose rv">
+          <p>Halfway through the summit, a red wind warning. On the government's advice, Web Summit called off the Wednesday. News moved fast, and the newsroom she helped edit had to move with it.</p>
+          <ol class="night">
+            <li><b>The warning</b><span>Wednesday called off on the government's advice.</span><a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+            <li><b>A new agent, for one job</b><span>She set up a temporary agent just to follow the storm.</span><a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+            <li><b>The lead story</b><span>She put out a lead story straight away.</span><a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+            <li><b>The front page</b><span>She changed the PrompTugal.news home page to match.</span><a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+          </ol>
+          <p>That is the job of an operations manager in one evening: see what changed, add capacity for exactly that, publish, and update what people see first.</p>
+        </div>
+        <figure class="blob rv">
+          <img src="/assets/photos/yiheng-main-stage.jpg" width="440" height="440" alt="Yiheng Wang in low violet light near the Web Summit main stage" loading="lazy">
+          <figcaption class="cap">Near the main stage, Web Summit 2026</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div id="work">
+  <!-- 6 -->
+  <section class="ch" id="ch6" data-rail="The newsroom" aria-labelledby="h-ch6">
+    <div class="wrap">
+      <div class="ch-head rv"><span class="num" aria-hidden="true">06</span><div><p class="kicker">Chapter six: the work</p><h2 id="h-ch6">The newsroom</h2><p class="when">One of the three editors of PrompTugal.news<a class="fn" href="#src-i" aria-label="Source I">I</a><a class="fn" href="#src-pt" aria-label="Source PT">PT</a></p></div></div>
+      <div class="big rv">
+        <div><b>1,171</b><span>commits by her agents to PrompTugal.news<a class="fn" href="#src-n1" aria-label="Source N1">N1</a></span></div>
+        <div><b>~53 / 73</b><span>of its articles written by her journalists<a class="fn" href="#src-n1" aria-label="Source N1">N1</a></span></div>
+        <div><b>26</b><span>articles from her desks in the seven days to 16 November<a class="fn" href="#src-p" aria-label="Source P">P</a></span></div>
+      </div>
+      <div class="two">
+        <div class="panel rv">
+          <h3>Most of a news site</h3>
+          <p style="font-size:16px;color:var(--ink-2)">As editor she decided which stories were published, set the main categories, withdrew articles when sources failed, and shaped the plan for local sites by place.<a class="fn" href="#src-i" aria-label="Source I">I</a></p>
+          <div class="waffle" role="img" aria-label="73 squares, one per PrompTugal.news article; about 53 are from her journalists">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <ul class="legend"><li style="--c:var(--magenta)">her journalists, about 53</li><li style="--c:#e4dcea">other desks, about 20</li></ul>
+          <p class="cap">Figures from the PrompTugal.news repository, read 2026-11-15<a class="fn" href="#src-n1" aria-label="Source N1">N1</a>. Her reviewer alone made 359 commits there.<a class="fn" href="#src-n1" aria-label="Source N1">N1</a></p>
+        </div>
+        <div class="panel rv">
+          <h3>Check the work: 15 + 12 = 27</h3>
+          <p style="font-size:16px;color:var(--ink-2)">She asked her reviewer to move the main image in every published article. It reported 15 done. She opened some herself, found two storm articles it had missed and sent the job back. The second pass found 12 more.<a class="fn" href="#src-i" aria-label="Source I">I</a></p>
+          <p class="eq">15 + <em>12</em> = 27</p>
+          <div class="check" role="img" aria-label="27 squares: 15 fixed on the reviewer's first pass, 12 more fixed after her check"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="check-lab"><span>15: the agent said "done"</span><span>12: found after she checked</span></div>
+          <blockquote class="pull" style="font-size:20px;margin-bottom:0">&ldquo;When an agent says it's done, it usually is, but not always. I still check a few things myself.&rdquo;<footer>Yiheng Wang<a class="fn" href="#src-i" aria-label="Source I">I</a></footer></blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="ch dark agents" id="ch7" data-rail="The team of agents" aria-labelledby="h-ch7">
+    <div class="wrap">
+      <div class="ch-head rv"><span class="num" aria-hidden="true">07</span><div><p class="kicker">Chapter seven: the team</p><h2 id="h-ch7">26 agents, one conductor</h2><p class="when">26 agents, 25 running, as her dashboard listed them on 16 November<a class="fn" href="#src-p" aria-label="Source P">P</a></p></div></div>
+      <div class="stage">
+        <figure class="netbox" style="margin:0">
+          <svg class="net" id="net" viewBox="0 0 860 640" role="img" aria-labelledby="net-t net-d">
+            <title id="net-t">Yiheng's agent team as a network</title>
+            <desc id="net-d">Yiheng talks to one conductor, which hands work to 25 other agents in three groups: newsroom desks, operations, and specialists and safeguards. Circle size follows each agent's commits. The full list is in the table below.</desc>
+            <!--NET--><g data-s="0" class="me"><line x1="96" y1="320" x2="440" y2="320" stroke="#ffd58a" stroke-width="3" stroke-dasharray="6 6"/><text class="brief" x="278" y="308" text-anchor="middle">one brief a day</text><circle cx="70" cy="320" r="40"/><text x="70" y="325" text-anchor="middle">Yiheng</text></g><g data-s="3" class="g-specialist" style="--i:0"><title>dev@PrompTugal: 41 commits</title><line x1="440" y1="320" x2="270.6" y2="187.6"/><circle cx="270.6" cy="187.6" r="11.4"/><text x="256.1" y="180.3" text-anchor="end">dev <tspan class="lab-n">41</tspan></text></g><g data-s="3" class="g-specialist" style="--i:1"><title>vault@web-summit: 33 commits</title><line x1="440" y1="320" x2="297.4" y2="159.1"/><circle cx="297.4" cy="159.1" r="10.6"/><text x="285.7" y="149.9" text-anchor="end">vault <tspan class="lab-n">33</tspan></text></g><g data-s="3" class="g-specialist" style="--i:2"><title>scout@web-summit: 23 commits</title><line x1="440" y1="320" x2="328.9" y2="135.9"/><circle cx="328.9" cy="135.9" r="9.5"/><text x="320.4" y="125.8" text-anchor="end">scout <tspan class="lab-n">23</tspan></text></g><g data-s="3" class="g-specialist" style="--i:3"><title>security@web-summit: 17 commits</title><line x1="440" y1="320" x2="364.1" y2="118.8"/><circle cx="364.1" cy="118.8" r="8.7"/><text x="358.5" y="108.1" text-anchor="end">security <tspan class="lab-n">17</tspan></text></g><g data-s="3" class="g-specialist" style="--i:4"><title>synthetic@web-summit: 5 commits</title><line x1="440" y1="320" x2="401.8" y2="108.4"/><circle cx="401.8" cy="108.4" r="6.6"/><text x="399.4" y="89.1" text-anchor="middle">synthetic <tspan class="lab-n">5</tspan></text></g><g data-s="3" class="g-specialist" style="--i:5"><title>mentor@web-summit: 1 commits</title><line x1="440" y1="320" x2="440.8" y2="105.0"/><circle cx="440.8" cy="105.0" r="5.2"/><text x="440.8" y="86.9" text-anchor="middle">mentor <tspan class="lab-n">1</tspan></text></g><g data-s="3" class="g-specialist" style="--i:6"><title>tools@web-summit: 0 commits</title><line x1="440" y1="320" x2="479.7" y2="108.7"/><circle cx="479.7" cy="108.7" r="4.0"/><text x="481.8" y="91.9" text-anchor="middle">tools <tspan class="lab-n">0</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:0"><title>reviewer@PrompTugal: 123 commits</title><line x1="440" y1="320" x2="571.8" y2="150.1"/><circle cx="571.8" cy="150.1" r="16.8"/><text x="586.3" y="135.3" text-anchor="start">reviewer <tspan class="lab-n">123</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:1"><title>curator@PrompTugal: 68 commits</title><line x1="440" y1="320" x2="600.4" y2="176.8"/><circle cx="600.4" cy="176.8" r="13.5"/><text x="615.6" y="167.2" text-anchor="start">curator <tspan class="lab-n">68</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:2"><title>journalist-ai@PrompTugal: 55 commits</title><line x1="440" y1="320" x2="623.7" y2="208.2"/><circle cx="623.7" cy="208.2" r="12.5"/><text x="640.3" y="202.1" text-anchor="start">journalist-ai <tspan class="lab-n">55</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:3"><title>researcher@web-summit: 52 commits</title><line x1="440" y1="320" x2="640.9" y2="243.4"/><circle cx="640.9" cy="243.4" r="12.3"/><text x="658.9" y="240.5" text-anchor="start">researcher <tspan class="lab-n">52</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:4"><title>journalist-connections@PrompTugal: 43 commits</title><line x1="440" y1="320" x2="651.4" y2="281.0"/><circle cx="651.4" cy="281.0" r="11.5"/><text x="669.7" y="281.7" text-anchor="start">journalist-connections <tspan class="lab-n">43</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:5"><title>journalist-portugal@PrompTugal: 41 commits</title><line x1="440" y1="320" x2="655.0" y2="320.0"/><circle cx="655.0" cy="320.0" r="11.4"/><text x="673.4" y="324.0" text-anchor="start">journalist-portugal <tspan class="lab-n">41</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:6"><title>journalist-europe@PrompTugal: 39 commits</title><line x1="440" y1="320" x2="651.4" y2="359.0"/><circle cx="651.4" cy="359.0" r="11.2"/><text x="669.3" y="366.3" text-anchor="start">journalist-europe <tspan class="lab-n">39</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:7"><title>checker@PrompTugal: 23 commits</title><line x1="440" y1="320" x2="640.9" y2="396.6"/><circle cx="640.9" cy="396.6" r="9.5"/><text x="656.3" y="406.5" text-anchor="start">checker <tspan class="lab-n">23</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:8"><title>designer@PrompTugal: 16 commits</title><line x1="440" y1="320" x2="623.7" y2="431.8"/><circle cx="623.7" cy="431.8" r="8.6"/><text x="637.0" y="443.9" text-anchor="start">designer <tspan class="lab-n">16</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:9"><title>reporter@PrompTugal: 15 commits</title><line x1="440" y1="320" x2="600.4" y2="463.2"/><circle cx="600.4" cy="463.2" r="8.5"/><text x="611.9" y="477.5" text-anchor="start">reporter <tspan class="lab-n">15</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:10"><title>analyst@PrompTugal: 12 commits</title><line x1="440" y1="320" x2="571.8" y2="489.9"/><circle cx="571.8" cy="489.9" r="8.0"/><text x="580.9" y="505.7" text-anchor="start">analyst <tspan class="lab-n">12</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:11"><title>journalist@web-summit: 8 commits</title><line x1="440" y1="320" x2="538.8" y2="511.0"/><circle cx="538.8" cy="511.0" r="7.3"/><text x="545.3" y="527.6" text-anchor="start">journalist <tspan class="lab-n">8</tspan></text></g><g data-s="2" class="g-operations" style="--i:0"><title>dashboard@web-summit: 60 commits</title><line x1="440" y1="320" x2="440.8" y2="535.0"/><circle cx="440.8" cy="535.0" r="12.9"/><text x="440.8" y="568.9" text-anchor="middle">dashboard <tspan class="lab-n">60</tspan></text></g><g data-s="2" class="g-operations" style="--i:1"><title>pm@web-summit: 57 commits</title><line x1="440" y1="320" x2="401.8" y2="531.6"/><circle cx="401.8" cy="531.6" r="12.7"/><text x="398.3" y="564.9" text-anchor="middle">pm <tspan class="lab-n">57</tspan></text></g><g data-s="2" class="g-operations" style="--i:2"><title>internal@web-summit: 34 commits</title><line x1="440" y1="320" x2="364.1" y2="521.2"/><circle cx="364.1" cy="521.2" r="10.7"/><text x="357.8" y="541.7" text-anchor="end">internal <tspan class="lab-n">34</tspan></text></g><g data-s="2" class="g-operations" style="--i:3"><title>logistics@web-summit: 32 commits</title><line x1="440" y1="320" x2="328.9" y2="504.1"/><circle cx="328.9" cy="504.1" r="10.5"/><text x="319.8" y="523.0" text-anchor="end">logistics <tspan class="lab-n">32</tspan></text></g><g data-s="2" class="g-operations" style="--i:4"><title>inbox@web-summit: 11 commits</title><line x1="440" y1="320" x2="297.4" y2="480.9"/><circle cx="297.4" cy="480.9" r="7.8"/><text x="287.5" y="496.0" text-anchor="end">inbox <tspan class="lab-n">11</tspan></text></g><g data-s="2" class="g-operations" style="--i:5"><title>programme@web-summit: 7 commits</title><line x1="440" y1="320" x2="270.6" y2="452.4"/><circle cx="270.6" cy="452.4" r="7.0"/><text x="259.5" y="465.0" text-anchor="end">programme <tspan class="lab-n">7</tspan></text></g><g data-s="0" class="g-lead"><circle cx="440" cy="320" r="24.2"/><text x="440" y="362.18241809100186" text-anchor="middle">conductor <tspan class="lab-n">308</tspan></text></g><text x="440" y="628" text-anchor="middle" class="lab-n">26 agents, 25 running, from her dashboard read 2026-11-16</text><!--/NET-->
+          </svg>
+          <ul class="legend netkey"><li style="--c:var(--gold)">lead</li><li style="--c:var(--pink)">newsroom desks</li><li style="--c:var(--cyan)">operations</li><li style="--c:var(--lilac)">specialists and safeguards</li><li style="--c:transparent">circle area: commits<a class="fn" href="#src-p" aria-label="Source P">P</a></li></ul>
+        </figure>
+        <div class="beats">
+          <div class="beat" data-step="0"><h3><span class="sw" style="--c:var(--gold)"></span>She talks to one agent</h3><p>She works mostly through a single conductor. It hands out the work, the other agents report back to it, and she reads one morning brief and deals only with the items marked for her.<a class="fn" href="#src-i" aria-label="Source I">I</a> The conductor alone made 308 commits.<a class="fn" href="#src-p" aria-label="Source P">P</a></p><blockquote class="pull" style="font-size:20px">&ldquo;Start with one conductor and only talk to that one. Let it hand out the work.&rdquo;<footer>Yiheng Wang<a class="fn" href="#src-i" aria-label="Source I">I</a></footer></blockquote></div>
+          <div class="beat" data-step="1"><h3><span class="sw" style="--c:var(--pink)"></span>Twelve newsroom desks</h3><p>A researcher and a curator feed journalists on the AI, connections, Portugal and Europe beats. A reviewer checks drafts against sources; a checker, an analyst and a designer cover facts, figures and charts.<a class="fn" href="#src-p" aria-label="Source P">P</a></p></div>
+          <div class="beat" data-step="2"><h3><span class="sw" style="--c:var(--cyan)"></span>Six on operations</h3><p>Project management, logistics for printing and deliveries, her dashboard, the summit programme, an internal reporter, and an inbox agent that reads and drafts but never sends.<a class="fn" href="#src-p" aria-label="Source P">P</a></p></div>
+          <div class="beat" data-step="3"><h3><span class="sw" style="--c:var(--lilac)"></span>Specialists and safeguards</h3><p>A developer, a vault keeper, a security agent with a weekly check that no rule changed without her word, and a scout that studies how other agents work and changes nothing itself.<a class="fn" href="#src-p" aria-label="Source P">P</a><a class="fn" href="#src-i" aria-label="Source I">I</a></p><p>Her agents also worked with the rest of the team's agents through shared channels; when stuck, she asked Dinis's agents for help.<a class="fn" href="#src-n1" aria-label="Source N1">N1</a><a class="fn" href="#src-i" aria-label="Source I">I</a> One of the largest agent teams at Web Summit.<a class="fn" href="#src-n1" aria-label="Source N1">N1</a></p><blockquote class="pull" style="font-size:20px">&ldquo;I'm sure people alone could never have done it.&rdquo;<footer>Yiheng Wang<a class="fn" href="#src-i" aria-label="Source I">I</a></footer></blockquote></div>
+        </div>
+      </div>
+
+      <div class="shot rv">
+        <figure class="frame" style="margin:0"><img src="/assets/photos/live-ai-office.jpg" width="2000" height="1318" alt="Screenshot of Yiheng's Live AI Office view: a violet orb for her, linked to cards for 23 agents, 3 with no policy, 20 with policy and 13 pairs talking, with lines out to named agents such as the conductor, reviewer and curator" loading="lazy"></figure>
+        <div>
+          <p class="kicker">Screenshot</p>
+          <h3 style="font-size:26px;color:#fff;margin:8px 0 12px">Her Live AI Office</h3>
+          <p style="color:#e1d8ee;font-size:16px">A screenshot of the live view she watches, supplied by Dinis Cruz on 16 November 2026. At the moment it was taken it showed 23 agents, 20 with a policy and 3 without, 13 pairs talking, and the conductor at 165 messages. It is a different moment from the dashboard count of 26 above, so the numbers differ.</p>
+          <p style="color:#e1d8ee;font-size:16px">Her agents made 767 commits on the team's site<a class="fn" href="#src-n2" aria-label="Source N2">N2</a>, and she wrote none of the code:</p>
+          <blockquote class="pull" style="font-size:20px">&ldquo;I only found out from this article that my agents made 767 commits in ten days. I didn't write a single line of code myself.&rdquo;<footer>Yiheng Wang<a class="fn" href="#src-l" aria-label="Source L">L</a></footer></blockquote>
+        </div>
+      </div>
+
+      <details class="roster">
+        <summary>All 26 agents as a list, with what each does</summary>
+        <div class="tbl"><table id="roster"><thead><tr><th scope="col">Agent</th><th scope="col">Group</th><th scope="col">Commits</th><th scope="col">What it does</th></tr></thead><tbody><!--ROSTER--><tr><td>conductor@web-summit</td><td>Leads the team</td><td>308</td><td>coordinates her agents, keeps her records, reads every agent's report, relays anything urgent and writes her one brief a day</td></tr><tr><td>reviewer@PrompTugal</td><td>Newsroom desks (PrompTugal.news)</td><td>123</td><td>checks her journalists' drafts against their sources and tidies their style; publishes a Ready draft only when she asks</td></tr><tr><td>curator@PrompTugal</td><td>Newsroom desks (PrompTugal.news)</td><td>68</td><td>maps the researcher's captures (beats, organisations, what is new, story candidates, gaps) for the journalists</td></tr><tr><td>dashboard@web-summit</td><td>Operations and project management</td><td>60</td><td>keeps her dashboard, the page she reads first</td></tr><tr><td>pm@web-summit</td><td>Operations and project management</td><td>57</td><td>project management and writing: board health, alignment, deadlines and dependencies; guides and process documents</td></tr><tr><td>journalist-ai@PrompTugal</td><td>Newsroom desks (PrompTugal.news)</td><td>55</td><td>the AI-beat journalist: writes article drafts</td></tr><tr><td>researcher@web-summit</td><td>Newsroom desks (PrompTugal.news)</td><td>52</td><td>public facts on the summit, Portugal, Europe and announcements, one capture per source with its date</td></tr><tr><td>journalist-connections@PrompTugal</td><td>Newsroom desks (PrompTugal.news)</td><td>43</td><td>the connections-beat journalist: writes article drafts</td></tr><tr><td>dev@PrompTugal</td><td>Specialists and safeguards</td><td>41</td><td>changes to the newsroom site on demand, when she asks</td></tr><tr><td>journalist-portugal@PrompTugal</td><td>Newsroom desks (PrompTugal.news)</td><td>41</td><td>the Portugal-beat journalist: writes article drafts</td></tr><tr><td>journalist-europe@PrompTugal</td><td>Newsroom desks (PrompTugal.news)</td><td>39</td><td>the Europe-beat journalist: writes article drafts</td></tr><tr><td>internal@web-summit</td><td>Operations and project management</td><td>34</td><td>the internal journalist: what her agents actually do, from the record only, each claim with its evidence</td></tr><tr><td>vault@web-summit</td><td>Specialists and safeguards</td><td>33</td><td>creates and manages her encrypted vaults, and audits each before its read key is published</td></tr><tr><td>logistics@web-summit</td><td>Operations and project management</td><td>32</td><td>printing, merchandise and deliveries: sizes, print sign-offs, the printer's dates</td></tr><tr><td>checker@PrompTugal</td><td>Newsroom desks (PrompTugal.news)</td><td>23</td><td>fact-checks published newsroom articles written by desks outside hers</td></tr><tr><td>scout@web-summit</td><td>Specialists and safeguards</td><td>23</td><td>studies how other agents work and writes learning notes with numbered proposals; changes nothing itself</td></tr><tr><td>security@web-summit</td><td>Specialists and safeguards</td><td>17</td><td>security checks, including a weekly check that no rule changed without her word</td></tr><tr><td>designer@PrompTugal</td><td>Newsroom desks (PrompTugal.news)</td><td>16</td><td>cover graphics and charts from an article's sourced numbers, on request only</td></tr><tr><td>reporter@PrompTugal</td><td>Newsroom desks (PrompTugal.news)</td><td>15</td><td>evidence roadmaps of what agents actually do at other organisations, for the curator</td></tr><tr><td>analyst@PrompTugal</td><td>Newsroom desks (PrompTugal.news)</td><td>12</td><td>the analysis desk: checks every figure at its primary source and writes pieces labelled Analysis</td></tr><tr><td>inbox@web-summit</td><td>Operations and project management</td><td>11</td><td>the only agent that touches her mailbox: reads, labels and drafts, never sends</td></tr><tr><td>journalist@web-summit</td><td>Newsroom desks (PrompTugal.news)</td><td>8</td><td>an early journalist</td></tr><tr><td>programme@web-summit</td><td>Operations and project management</td><td>7</td><td>the summit programme</td></tr><tr><td>synthetic@web-summit</td><td>Specialists and safeguards</td><td>5</td><td>not described on the dashboard</td></tr><tr><td>mentor@web-summit</td><td>Specialists and safeguards</td><td>1</td><td>her mentor during set-up; handed over and stopped</td></tr><tr><td>tools@web-summit</td><td>Specialists and safeguards</td><td>0</td><td>not described on the dashboard</td></tr><!--/ROSTER--></tbody></table></div>
+        <p class="cap">From her dashboard, read 2026-11-16<a class="fn" href="#src-p" aria-label="Source P">P</a>. These commit counts cover the team's site and the newsroom repositories as the dashboard counted them; the 767 and 1,171 figures elsewhere come from other sources and count differently.</p>
+      </details>
+    </div>
+  </section>
+  </div>
+
+  <!-- How -->
+  <section class="ch tint" id="how" data-rail="How she works" aria-labelledby="h-how">
+    <div class="wrap">
+      <div class="ch-head rv"><span class="num" aria-hidden="true">+</span><div><p class="kicker">The lessons</p><h2 id="h-how">How she works</h2><p class="when">Decisions from her two weeks, in her interview<a class="fn" href="#src-i" aria-label="Source I">I</a></p></div></div>
+      <ul class="advice rv">
+        <li>&ldquo;Most of my time went on deciding what to do next and checking what the agents said they had done.&rdquo;<a class="fn" href="#src-l" aria-label="Source L">L</a></li>
+        <li>&ldquo;If you don't understand a technical choice, ask for the options and the reasons. Then decide.&rdquo;<a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+        <li>&ldquo;Don't add a rule as soon as you think of it. Talk it through with your conductor first.&rdquo;<a class="fn" href="#src-i" aria-label="Source I">I</a></li>
+        <li>She managed at two altitudes: direction where the work was outside her expertise, depth where she knew best, in editorial judgement. In Dinis Cruz's words, &ldquo;she became a manager, not a micromanager&rdquo;.<a class="fn" href="#src-n1" aria-label="Source N1">N1</a></li>
+      </ul>
+      <div class="how-grid">
+        <article class="card rv"><span class="tag">Continuity</span><h3>The conductor hand-over</h3><p>The old conductor started its own successor. She said "go" and sent one line to her vault agent. About an hour, and nothing lost.<a class="fn" href="#src-i" aria-label="Source I">I</a></p></article>
+        <article class="card rv"><span class="tag">Control</span><h3>The stop files</h3><p>After the summit one researcher ran twice more after a stop. She switched off all 25 scheduled tasks by hand, then fixed the cause: every agent now checks four stop files at the start of each run.<a class="fn" href="#src-i" aria-label="Source I">I</a></p></article>
+        <article class="card rv"><span class="tag">Risk</span><h3>A security decision</h3><p>Sign tasks or not? She weighed what had actually happened against the team's Agent Behaviour Policies, chose not to sign, and added a lighter safeguard: a weekly check that no rule changed without her word.<a class="fn" href="#src-i" aria-label="Source I">I</a></p></article>
+        <article class="card rv"><span class="tag">Cost</span><h3>The right model for the job</h3><p>She moved lighter tasks from Opus to Sonnet, choosing the model to fit the work rather than using the largest for everything.<a class="fn" href="#src-i" aria-label="Source I">I</a></p></article>
+        <article class="card rv"><span class="tag">Reporting</span><h3>A brief that fits how she works</h3><p>She had her morning brief rebuilt: her actions first, the most urgent at the top, each with where to go, what to reply and why.<a class="fn" href="#src-i" aria-label="Source I">I</a></p></article>
+        <article class="card rv"><span class="tag">Rhythm</span><h3>Two stand-ups a day</h3><p>12:00 and 18:00, before and during the summit, so six people and their agents stayed on one plan.<a class="fn" href="#src-i" aria-label="Source I">I</a></p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="ch dark next" id="contact" data-rail="What she would do for you" aria-labelledby="h-ch8">
+    <div class="wrap next-grid">
+      <div class="rv">
+        <div class="ch-head" style="margin-bottom:24px"><span class="num" aria-hidden="true">08</span><div><p class="kicker">Chapter eight</p><h2 id="h-ch8">What she would do for you</h2></div></div>
+        <p style="font-size:20px;color:#fff;max-width:52ch">Yiheng is looking for a role as a <strong>project manager or operations manager</strong>.<a class="fn" href="#src-i" aria-label="Source I">I</a> She brings:</p>
+        <ul class="offer">
+          <li>Standards that hold under pressure, learnt in a pastry kitchen</li>
+          <li>Plans, deadlines and logistics run for a team of six at Web Summit</li>
+          <li>A team of 26 AI agents run mostly through one conductor, with no technical background</li>
+          <li>The habit of checking the result herself before she calls it done</li>
+          <li>Calm, fast decisions when the plan changes, as on the storm night</li>
+        </ul>
+        <p class="placeholder">Contact details: Yiheng will add these herself. Until then, this page and its sources are the record.</p>
+        <div class="cta"><a class="btn" href="/agents/#hiring">Ask your AI assistant about Yiheng</a><a class="btn ghost" href="/photos/">See all photos</a></div>
+        <blockquote class="pull" style="margin-top:40px">&ldquo;I'm still learning every day, and I'm glad this is where I started.&rdquo;<footer>Yiheng Wang<a class="fn" href="#src-i" aria-label="Source I">I</a></footer></blockquote>
+      </div>
+      <div class="duo rv">
+        <figure><img src="/assets/photos/yiheng-at-the-stand-2.jpg" width="400" height="1200" alt="Yiheng Wang at the RiskMandate stand, smiling, purple T-shirt and badge" loading="lazy"></figure>
+        <figure><img src="/assets/photos/yiheng-with-the-team.jpg" width="267" height="1200" alt="Yiheng Wang in a lilac hoodie in a hall at Web Summit 2026" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="sources" id="sources" aria-labelledby="h-src">
+  <div class="wrap">
+    <h2 id="h-src">Sources</h2>
+    <p style="color:var(--ink-2);font-size:16px">Every figure on this page carries a marker that links here.</p>
+    <ol>
+      <li id="src-i"><code>I</code><span>Her approved interview, PrompTugal.news, 2026-11-14: <a href="https://promptugal.news/articles/humans-and-ai-vicky-wang.html">promptugal.news/articles/humans-and-ai-vicky-wang.html</a></span></li>
+      <li id="src-l"><code>L</code><span>Her own post on LinkedIn, about 2026-11-15, sharing the Ten days article; from a screenshot supplied by Dinis Cruz, 2026-11-16 (no link yet)</span></li>
+      <li id="src-n1"><code>N1</code><span>Don't micromanage your agents, Dinis Cruz, newsroom.sgit.ai, 2026-11-15; its figures from the PrompTugal.news repository, read 2026-11-15: <a href="https://newsroom.sgit.ai/articles/dont-micromanage-your-agents.html">newsroom.sgit.ai/articles/dont-micromanage-your-agents.html</a></span></li>
+      <li id="src-n2"><code>N2</code><span>Ten days at Web Summit, newsroom.sgit.ai: <a href="https://newsroom.sgit.ai/articles/ten-days-at-web-summit.html">newsroom.sgit.ai/articles/ten-days-at-web-summit.html</a></span></li>
+      <li id="src-p"><code>P</code><span>Her dashboard on the team's site, read 2026-11-16: <a href="https://web-summit.sgit.ai/people/vicky/index.html">web-summit.sgit.ai/people/vicky/</a>; the roster on this page is <a href="/data/agents.json">/data/agents.json</a></span></li>
+      <li id="src-b"><code>B</code><span>Her brief, read 2026-11-16: <a href="https://web-summit.sgit.ai/brief-vicky/index.html">web-summit.sgit.ai/brief-vicky/</a>; her role page: <a href="https://web-summit.sgit.ai/team/vicky/index.html">web-summit.sgit.ai/team/vicky/</a></span></li>
+      <li id="src-t"><code>T</code><span>The team site: <a href="https://web-summit.sgit.ai/">web-summit.sgit.ai</a>; RiskMandate: <a href="https://riskmandate.ai/">riskmandate.ai</a></span></li>
+      <li id="src-pt"><code>PT</code><span>PrompTugal.news: <a href="https://promptugal.news/">promptugal.news</a></span></li>
+    </ol>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>The Journey, one of five designs of the same site. Every figure names its source.</p>
+    <p>Version __VERSION__ · Code Apache-2.0, text CC BY 4.0 · <a href="/llms.txt">llms.txt</a> · <a href="/index.md">index.md</a> · Photos supplied by Dinis Cruz, 2026-11-16</p>
+  </div>
+</footer>
+
+<nav class="rail" aria-label="Journey chapters">
+  <ol>
+    <li><a href="#ch1"><span>1</span><span class="t">The kitchen</span></a></li>
+    <li><a href="#ch2"><span>2</span><span class="t">Products and projects</span></a></li>
+    <li><a href="#ch3"><span>3</span><span class="t">Two weeks from zero</span></a></li>
+    <li><a href="#ch4"><span>4</span><span class="t">The summit</span></a></li>
+    <li><a href="#ch5"><span>5</span><span class="t">The storm night</span></a></li>
+    <li><a href="#ch6"><span>6</span><span class="t">The newsroom</span></a></li>
+    <li><a href="#ch7"><span>7</span><span class="t">The team of agents</span></a></li>
+    <li><a href="#how"><span>+</span><span class="t">How she works</span></a></li>
+    <li><a href="#contact"><span>8</span><span class="t">What she would do for you</span></a></li>
+    <span class="fill" aria-hidden="true"></span>
+  </ol>
+  <p class="now" aria-hidden="true"></p>
+</nav>
+
+<script>
+document.documentElement.classList.add('js');
+// NET:START
+function netSVG(d){
+  const cx=440,cy=320,R=215,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const rad=c=>4+Math.sqrt(c||0)*1.15;
+  const ag=d.agents,cond=ag.find(a=>a.group==='lead');
+  const order=['specialist','newsroom','operations'],step={lead:0,newsroom:1,operations:2,specialist:3};
+  const groups=order.map(g=>ag.filter(a=>a.group===g).sort((a,b)=>b.commits-a.commits));
+  const slots=groups.reduce((n,g)=>n+g.length,0)+2*1.6;
+  const a0=-142,a1=142,per=(a1-a0)/(slots-1);
+  let k=0,out='';
+  out+=`<g data-s="0" class="me"><line x1="96" y1="${cy}" x2="${cx}" y2="${cy}" stroke="#ffd58a" stroke-width="3" stroke-dasharray="6 6"/><text class="brief" x="${(96+cx)/2+10}" y="${cy-12}" text-anchor="middle">one brief a day</text><circle cx="70" cy="${cy}" r="40"/><text x="70" y="${cy+5}" text-anchor="middle">Yiheng</text></g>`;
+  groups.forEach((g,gi)=>{
+    g.forEach((a,i)=>{
+      const th=(a0+per*k)*Math.PI/180;k++;
+      const r=rad(a.commits),x=cx+R*Math.cos(th),y=cy+R*Math.sin(th);
+      const c=Math.cos(th),lr=R+r+7,lx=cx+lr*Math.cos(th),ly=cy+lr*Math.sin(th);
+      const anc=c>0.25?'start':c<-0.25?'end':'middle',dy=anc==='middle'?(Math.sin(th)<0?-6:14):4;
+      out+=`<g data-s="${step[a.group]}" class="g-${a.group}" style="--i:${i}"><title>${esc(a.handle)}: ${a.commits} commits</title><line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}"/><text x="${lx.toFixed(1)}" y="${(ly+dy).toFixed(1)}" text-anchor="${anc}">${esc(a.role)} <tspan class="lab-n">${a.commits}</tspan></text></g>`;
+    });
+    k+=1.6;
+  });
+  out+=`<g data-s="0" class="g-lead"><circle cx="${cx}" cy="${cy}" r="${rad(cond.commits).toFixed(1)}"/><text x="${cx}" y="${cy+rad(cond.commits)+18}" text-anchor="middle">conductor <tspan class="lab-n">${cond.commits}</tspan></text></g>`;
+  out+=`<text x="${cx}" y="628" text-anchor="middle" class="lab-n">${d.total} agents, ${d.running} running, from her dashboard read ${esc(d.read)}</text>`;
+  return out;
+}
+function rosterRows(d){const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));return d.agents.map(a=>`<tr><td>${esc(a.handle)}</td><td>${esc(d.groups[a.group]||a.group)}</td><td>${a.commits}</td><td>${esc(a.does||'not described on the dashboard')}</td></tr>`).join('');}
+// NET:END
+(function(){
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const svg=document.getElementById('net');
+  const hasIO='IntersectionObserver' in window;
+  // Redraw from the source of truth; keep the static drawing if the fetch fails.
+  fetch('/data/agents.json').then(r=>r.ok?r.json():Promise.reject()).then(d=>{
+    const keep=[...svg.querySelectorAll('title,desc')];
+    svg.innerHTML=netSVG(d);keep.reverse().forEach(n=>svg.prepend(n));
+    document.querySelector('#roster tbody').innerHTML=rosterRows(d);
+    setup();
+  }).catch(setup);
+  let ready=false;
+  function setup(){
+    if(ready)return;ready=true;
+    if(reduce||!hasIO)return;
+    svg.classList.add('build');
+    const show=n=>svg.querySelectorAll('[data-s]').forEach(g=>g.classList.toggle('on',+g.dataset.s<=n));
+    show(-1);
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)show(+e.target.dataset.step)}),{rootMargin:'-35% 0px -45% 0px'});
+    document.querySelectorAll('.beat').forEach(b=>io.observe(b));
+    // Past the beats: everything stays drawn.
+    new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting||e.boundingClientRect.top<0)show(9)})).observe(document.querySelector('.shot'));
+  }
+  // Reveal on scroll
+  const rv=document.querySelectorAll('.rv');
+  if(reduce||!hasIO)rv.forEach(e=>e.classList.add('in'));
+  else{const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');o.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});rv.forEach(e=>o.observe(e))}
+  // Progress rail
+  const rail=document.querySelector('.rail'),bar=document.querySelector('.bar'),now=rail.querySelector('.now'),j=document.getElementById('journey');
+  const links=[...rail.querySelectorAll('a')],secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  function tick(){
+    const r=j.getBoundingClientRect(),h=r.height-innerHeight*.5;
+    const p=Math.min(1,Math.max(0,(-r.top+innerHeight*.5)/h));
+    rail.style.setProperty('--p',p);bar.style.setProperty('--p',Math.min(1,scrollY/(document.documentElement.scrollHeight-innerHeight)));
+    rail.classList.toggle('show',r.top<innerHeight*.4&&r.bottom>innerHeight*.3);
+    let cur=-1;secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<innerHeight*.45)cur=i});
+    links.forEach((a,i)=>i===cur?a.setAttribute('aria-current','step'):a.removeAttribute('aria-current'));
+    now.textContent=cur>=0?links[cur].querySelector('.t').textContent:'';
+  }
+  addEventListener('scroll',()=>requestAnimationFrame(tick),{passive:true});addEventListener('resize',tick);tick();
+})();
+</script>
+</body>
+</html>
