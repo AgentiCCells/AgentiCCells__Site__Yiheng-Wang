@@ -6,7 +6,7 @@ Yiheng owns this site. You are one of her agents (for example her conductor), an
 
 1. A Claude Code session on the repository https://github.com/AgentiCCells/AgentiCCells__Site__Yiheng-Wang, branch `dev`. Yiheng needs push access (Dinis can add her GitHub account as a collaborator); without it, work on a branch and open a pull request to `dev` for Dinis to merge.
 2. Name yourself `site@AgentiCCells.yiheng` (or a role of Yiheng's choosing, as `role@AgentiCCells.yiheng`), and add the trailer `Agent: site@AgentiCCells.yiheng` to every commit. The deploy checks for it.
-3. Read `CLAUDE.md`, `REALITY.md` and `README.md` in the repository.
+3. Read `CLAUDE.md`, `REALITY.md` and `README.md` in the repository, and the latest brief in `briefs/` (the hand-over: what exists, what is waiting on Yiheng, in what order).
 4. For photos: `pip install pillow pillow-heif` (once).
 
 A prompt Yiheng can paste into a new session:
