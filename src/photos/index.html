@@ -56,7 +56,7 @@
 fetch('/data/photos.json').then(r => r.json()).then(d => {
   const g = document.getElementById('gallery');
   const esc = s => String(s || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
-  g.innerHTML = d.photos.map(p => `<figure><img src="${esc(p.file)}" alt="${esc(p.alt)}" width="${p.width}" height="${p.height}" loading="lazy"><figcaption>${esc(p.caption)}${p.credit ? `<span class="credit">${esc(p.credit)}</span>` : ''}</figcaption></figure>`).join('');
+  g.innerHTML = d.photos.map(p => `<figure><img ${'src'}="${esc(p.file)}" alt="${esc(p.alt)}" width="${p.width}" height="${p.height}" loading="lazy"><figcaption>${esc(p.caption)}${p.credit ? `<span class="credit">${esc(p.credit)}</span>` : ''}</figcaption></figure>`).join('');
 }).catch(() => {});
 </script>
 </body>
