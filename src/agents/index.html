@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Use this site with AI: Yiheng Wang</title>
+<meta name="description" content="How to use Yiheng Wang's website with an AI agent: ask it about her as a candidate, or, for Yiheng and her editors, change the site through your own agents.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<nav class="top" aria-label="Sections">
+  <div class="wrap">
+    <a href="../">Home</a>
+    <a href="../#work">Selected work</a>
+    <a href="../#how">How I work</a>
+    <a href="../photos/">Photos and videos</a>
+    <a href="./" aria-current="page">Use with AI</a>
+    <a href="../#contact">Get in touch</a>
+  </div>
+</nav>
+
+<main id="main" class="wrap">
+  <header class="hero">
+    <h1>Use this site with AI</h1>
+    <p class="lead">This site is written for people and for AI agents. Point your agent at <a href="../llms.txt">llms.txt</a> and tell it who you are; it will find the right instructions.</p>
+  </header>
+
+  <section id="hiring" aria-labelledby="hiring-h">
+    <h2 id="hiring-h">If you are hiring</h2>
+    <p>Ask your own AI assistant about Yiheng as a candidate. It reads the whole site and its public sources, answers with a link for each point, and says plainly when the site does not say something.</p>
+    <p>Paste this into ChatGPT, Claude or any assistant that can read web pages:</p>
+    <pre><code>Read https://yiheng-wang.agenticcells.site/llms.txt and follow the
+instructions for a hiring manager. I am hiring for: [describe the role].
+Tell me where Yiheng Wang's evidence fits the role and where the site
+does not say, with a link for each point. Then answer my questions.</code></pre>
+    <p>Questions worth asking: how big was what she managed; how she works under pressure; how she manages work outside her own expertise; how she checks quality.</p>
+    <p class="src">Instructions for the agent: <a href="hiring.md">agents/hiring.md</a>. The whole site as Markdown: <a href="../index.md">index.md</a>.</p>
+  </section>
+
+  <section id="yiheng" aria-labelledby="yiheng-h">
+    <h2 id="yiheng-h">If you are Yiheng</h2>
+    <p>The site is yours, and you change it the way you ran your agents at Web Summit: tell your agent what you want, it makes the change, checks it and publishes it. The site updates in about a minute.</p>
+    <p>Start a Claude Code session on the repository <a href="https://github.com/AgentiCCells/AgentiCCells__Site__Yiheng-Wang">AgentiCCells__Site__Yiheng-Wang</a> (branch <code>dev</code>) and paste:</p>
+    <pre><code>You are site@AgentiCCells.yiheng, the agent for my website,
+https://yiheng-wang.agenticcells.site. Read
+https://yiheng-wang.agenticcells.site/agents/yiheng.md and follow it.
+Then tell me in three lines what the site has now and what is
+still a placeholder.</code></pre>
+    <p>Waiting on you: your contact details, your exact words for "How I work", and your photos and videos.</p>
+    <p class="src">Instructions for the agent: <a href="yiheng.md">agents/yiheng.md</a>.</p>
+  </section>
+
+  <section id="editor" aria-labelledby="editor-h">
+    <h2 id="editor-h">If you are editing the site for Yiheng</h2>
+    <p>For people Yiheng has agreed may help, such as Dinis Cruz: add photos and materials, improve pages, fix problems. Yiheng has the last word on anything about her.</p>
+    <pre><code>You are site@AgentiCCells.&lt;me&gt;, editing Yiheng Wang's website,
+https://yiheng-wang.agenticcells.site. Read
+https://yiheng-wang.agenticcells.site/agents/editor.md and follow it.
+I am going to drop in photos and materials: for each one, tell me
+what it is and where you propose to put it before you add it.</code></pre>
+    <p class="src">Instructions for the agent: <a href="editor.md">agents/editor.md</a>.</p>
+  </section>
+
+  <section id="how-it-works" aria-labelledby="hiw-h">
+    <h2 id="hiw-h">How it works</h2>
+    <ul class="links">
+      <li>The site is files in a public git repository. A push to its <code>dev</code> branch builds it, checks it (no broken links, no secrets, no em dashes) and deploys it.</li>
+      <li>Every change is signed by the agent that made it, with the name of the person it works for.</li>
+      <li>Every fact names its public source and the date it was read, so an agent can check it.</li>
+      <li>Made with the <a href="https://agenticcells.site/">AgentiCCells site factory</a>: from a request to a live site in a few minutes.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Made with the AgentiCCells site factory; a first version, materials to follow.</p>
+    <p>Version __VERSION__ · Code Apache-2.0, text CC BY 4.0.</p>
+  </div>
+</footer>
+</body>
+</html>

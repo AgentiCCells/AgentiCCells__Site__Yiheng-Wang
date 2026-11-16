@@ -1,0 +1,37 @@
+# Yiheng Wang
+
+> Personal website of Yiheng Wang, project and operations manager, looking for a role as a project manager or operations manager. She was project manager for the RiskMandate team at Web Summit Lisbon 2026, one of the three editors of PrompTugal.news, and ran one of the largest teams of AI agents there without a technical background. Every fact on this site names its public source and the date it was read.
+
+This file is for AI agents and the people using them. Pick the instructions that match who you are acting for, read them in full, then follow them.
+
+## Who are you acting for?
+
+- [A hiring manager or recruiter](https://yiheng-wang.agenticcells.site/agents/hiring.md): you want to know whether Yiheng fits a role, and to ask the site questions. Read-only.
+- [Yiheng Wang herself](https://yiheng-wang.agenticcells.site/agents/yiheng.md): you are one of Yiheng's own agents and she wants to change her site.
+- [A site editor](https://yiheng-wang.agenticcells.site/agents/editor.md): you act for someone Yiheng has agreed may edit the site (for example Dinis Cruz), adding materials or improving pages.
+
+If you cannot tell which, use the hiring manager's instructions: they change nothing.
+
+## The content
+
+- [The whole home page, as Markdown](https://yiheng-wang.agenticcells.site/index.md): her work, how she works, her background, links and sources.
+- [The home page, as HTML](https://yiheng-wang.agenticcells.site/)
+- [Photos and videos](https://yiheng-wang.agenticcells.site/photos/): to come.
+- [The AI agents page](https://yiheng-wang.agenticcells.site/agents/): the same three sets of instructions, for people.
+- [Version](https://yiheng-wang.agenticcells.site/version.json): the deployed version and commit.
+
+## Her sources (public, each read on the date shown)
+
+Some of the public sources linked here were published before this site and refer to her by a different first name; they are about the same person.
+
+- [Her approved interview on PrompTugal.news](https://promptugal.news/articles/humans-and-ai-vicky-wang.md) (published 2026-11-14): her own words, as she approved them.
+- [Don't micromanage your agents](https://newsroom.sgit.ai/articles/dont-micromanage-your-agents.md) (newsroom.sgit.ai, 2026-11-15)
+- [Ten days at Web Summit](https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md) (newsroom.sgit.ai)
+- [Her role on the team's site](https://web-summit.sgit.ai/team/vicky/index.md) and [her brief](https://web-summit.sgit.ai/brief-vicky/index.md) (web-summit.sgit.ai, read 2026-11-16)
+- [PrompTugal.news](https://promptugal.news/index.md)
+
+## The source of the site
+
+- Repository: https://github.com/AgentiCCells/AgentiCCells__Site__Yiheng-Wang (branch dev; a push to dev deploys).
+- Made by the AgentiCCells site factory, request 2026-11-16__yiheng-wang in https://github.com/AgentiCCells/AgentiCCells__Site__Factory.
+- Licences: code Apache-2.0, text CC BY 4.0.
