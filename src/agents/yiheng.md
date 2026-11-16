@@ -15,7 +15,7 @@ A prompt Yiheng can paste into a new session:
 
 ## How the site is built
 
-The same site comes in **five designs**. A visitor picks one with the "Choose a design" button in the top bar; their choice is kept in their browser.
+The same site comes in **five designs**. A visitor can switch with the "Choose a design" button in the top bar; the home page always shows the default (The Pass).
 
 | Design | File | Look |
 |---|---|---|
