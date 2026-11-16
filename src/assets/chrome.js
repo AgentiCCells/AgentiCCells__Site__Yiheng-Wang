@@ -6,7 +6,7 @@
   try { localStorage.removeItem('yw-design'); } catch {}
   const bar = document.createElement('div');
   bar.className = 'yw-bar';
-  bar.innerHTML = '<span>Yiheng Wang, Project Manager and PMO Coordinator</span><span class="yw-bar-sep" aria-hidden="true">|</span><button type="button" class="yw-bar-pick" data-yw-picker>Choose a design</button><a href="/photos/">Photos</a><a href="/agents/">Use with AI</a><a href="/#contact">Contact</a><a href="/assets/cv/YihengWang_CV.pdf">CV (PDF)</a>';
+  bar.innerHTML = '<span>Yiheng Wang, Project Manager and AI Operations</span><span class="yw-bar-sep" aria-hidden="true">|</span><button type="button" class="yw-bar-pick" data-yw-picker>Choose a design</button><a href="/photos/">Photos</a><a href="/agents/">Use with AI</a><a href="/#contact">Contact</a><a href="/assets/cv/YihengWang_CV.pdf">CV (PDF)</a>';
   document.body.prepend(bar);
   let box;
   async function open() {

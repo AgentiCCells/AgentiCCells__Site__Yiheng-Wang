@@ -1,4 +1,4 @@
-# Yiheng Wang: Project Manager and PMO Coordinator
+# Yiheng Wang: Project Manager and AI Operations
 
 *Source: https://yiheng-wang.agenticcells.site/ · version __VERSION__ · this is the whole site as Markdown, for AI agents, and the master copy of its facts: the five designs of the home page show the same facts; The Pass (https://yiheng-wang.agenticcells.site/) is the default. Instructions for agents: https://yiheng-wang.agenticcells.site/llms.txt*
 
@@ -8,7 +8,7 @@
 >
 > Yiheng Wang, on LinkedIn, about 15 November 2026 (screenshot supplied by Dinis Cruz, 2026-11-16)
 
-Yiheng is looking for a role as a **Project Manager, Project Coordinator, PMO Coordinator or Junior Project Manager**, in Lisbon (on-site or hybrid) or remote. She is available now and authorised to work in Portugal [CV].
+Yiheng is looking for a role as a **Project Manager, Project Coordinator, PMO Coordinator or Junior Project Manager, or in AI operations**, working with AI agents [CV][Y]. She is most interested in B2B, consulting and tech, ideally a larger company bringing in AI agents [Y]. Lisbon (on-site or hybrid) or remote. She is available now and authorised to work in Portugal [CV].
 
 **Contact:** LinkedIn https://www.linkedin.com/in/yihengwang9 · email yihengw2994@gmail.com · CV (PDF): https://yiheng-wang.agenticcells.site/assets/cv/YihengWang_CV.pdf
 
@@ -18,11 +18,12 @@ Yiheng is looking for a role as a **Project Manager, Project Coordinator, PMO Co
 - **Order errors from 30% to under 5%** in three months, as sole coordinator between clients in China and a US head office, Ninth Heaven Technology, 2022 to 2023 [CV].
 - **98% on-time delivery** across 200+ units a day, running daily stand-ups for a production team of four, Un P'tit Truc, Lisbon, 2025 [CV].
 
-**Certifications:** PSM I (Scrum.org, Dec 2025), Google Project Management Certificate (Jun 2026), Certified Agile Facilitator (Scrum Alliance, Aug 2026) [CV]. **Languages:** Mandarin (native), English (fluent), Portuguese (conversational) [CV].
+**Certifications:** PSM I (Scrum.org, Dec 2025), Google Project Management Certificate (Jun 2026), Certified Agile Facilitator (Scrum Alliance, Aug 2026) [CV]. **Languages:** Mandarin (native), English (fluent), Portuguese (conversational) [CV]. She has worked in Mandarin and English together, between clients in China and a US head office [CV][Y].
 
 - **I run teams to a standard.** In a kitchen, at an event stand, and in a newsroom of AI agents.
 - **I deliver under pressure.** Four days of Web Summit Lisbon 2026, and a storm night on a live news site.
 - **I check the result.** When an agent said 15 articles were fixed, she checked, found 12 more, and 27 were fixed in all.
+- **If you have a problem, I'm the one you come to for solutions.**
 
 ## Key figures
 
@@ -84,6 +85,8 @@ Her decisions, from her approved interview [I]:
 
 Her advice to a colleague starting with agents tomorrow [I]: "Start with one conductor and only talk to that one. Let it hand out the work." "If you don't understand a technical choice, ask for the options and the reasons. Then decide." "Don't add a rule as soon as you think of it. Talk it through with your conductor first." "And you don't need a technical background to start. I don't have one either. Two weeks ago I was starting from zero."
 
+How she starts in a new job [Y]: "First I work out what the job actually needs me to do, where I sit in the company, and who I work with. For a project, I get as much material as I can: the background, the result they want, and what counts as done. Every day there's a morning brief and a short stand-up about blockers and problems. Every meeting must end with action items; otherwise it probably didn't need to happen."
+
 ## The journey
 
 1. **2015 to 2017:** Advanced Diploma of Hospitality Management, Le Cordon Bleu, Sydney [CV].
@@ -96,10 +99,11 @@ Her advice to a colleague starting with agents tomorrow [I]: "Start with one con
 8. **2 and 3 November 2026:** fully set up (level L6, all steps done) on the team's setup leaderboard [P][B].
 9. **3 to 13 November 2026:** Web Summit with the RiskMandate team; her agents write most of PrompTugal.news [N1][N2].
 10. **14 November 2026:** her interview published on PrompTugal.news [I].
-11. **Now:** looking for a Project Manager, Project Coordinator or PMO Coordinator role. "I'm still learning every day, and I'm glad this is where I started." [I]
+11. **Now:** looking for a Project Manager, Project Coordinator or PMO Coordinator role, or a role in AI operations. "I'm still learning every day, and I'm glad this is where I started." [I]
 
 ## Sources
 
+- [Y] Yiheng, in her own words, 2026-11-16, from her interview notes.
 - [CV] Her CV, supplied by Yiheng, 2026-11-16: https://yiheng-wang.agenticcells.site/assets/cv/YihengWang_CV.pdf
 - [LI] Her LinkedIn profile, supplied by Yiheng, 2026-11-16: https://www.linkedin.com/in/yihengwang9
 - [I] Her approved interview, PrompTugal.news, 2026-11-14: https://promptugal.news/articles/humans-and-ai-vicky-wang.md
