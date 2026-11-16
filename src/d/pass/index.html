@@ -172,7 +172,7 @@ figcaption{font-size:14.5px;line-height:1.5;color:var(--muted);margin-top:10px}
 .prep .when{font:700 13px/1.6 var(--cond);font-stretch:condensed;letter-spacing:.1em;text-transform:uppercase;color:var(--rasp)}
 .prep .tick{width:18px;height:18px;border:1.5px solid var(--ink);margin-top:3px;position:relative}
 .prep .tick::after{content:"";position:absolute;left:4px;top:0;width:6px;height:11px;border:solid var(--rasp);border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
-.mep-side img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:2px}
+.mep-side img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:2px}
 .tray{margin-top:28px}
 .tray svg{width:100%;height:auto}
 .tray .t-bg{fill:url(#steelG2);stroke:var(--steel-3)}
@@ -202,12 +202,13 @@ figcaption{font-size:14.5px;line-height:1.5;color:var(--muted);margin-top:10px}
 .bar.after{background:transparent;border:1px dashed var(--rule-2)}
 .svc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr) minmax(0,.8fr);gap:clamp(20px,3vw,40px);margin-top:clamp(40px,5vw,64px);align-items:start}
 .menu-change{position:relative;background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow);padding:24px 24px 26px}
+.menu-change>.label{padding-right:96px}
 .menu-change .old{font:400 22px/1.3 var(--serif);text-decoration:line-through;text-decoration-color:var(--rasp);text-decoration-thickness:2px;color:var(--muted);margin:10px 0 4px}
 .menu-change .new{font:400 23px/1.3 var(--serif);margin:14px 0 8px}
 .menu-change ul{margin:10px 0 0;padding-left:1.1em;font-size:16px}
 .menu-change ul li{margin:4px 0}
-.stamp{position:absolute;bottom:18px;right:16px;transform:rotate(8deg);border:2px solid var(--rasp);color:var(--rasp);font:700 11px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;padding:6px 8px}
-.svc-photo img{width:100%;aspect-ratio:2/3;object-fit:cover;object-position:50% 12%}
+.stamp{position:absolute;top:18px;right:16px;transform:rotate(8deg);border:2px solid var(--rasp);color:var(--rasp);font:700 11px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;padding:6px 8px}
+.svc-photo img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 12%}
 .facts{list-style:none;margin:0;padding:0}
 .facts li{border-bottom:1px solid var(--rule);padding:14px 0}
 .facts .n{display:block;font:400 34px/1 var(--serif);color:var(--rasp)}
@@ -721,8 +722,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
     let H, me, cond, counter;
     if (wide) {
       me = [90, 150]; cond = [250, 150];
-      counter = [360, 86, 620, 144];
-      pos.reviewer = [540, 145]; pos.checker = [740, 145];
+      counter = [360, 100, 620, 134];
+      pos.reviewer = [540, 152]; pos.checker = [740, 152];
       zones.push(['pass', 0, 64, 1000, 182, 'At the pass', 'head of the pass, the one who calls, and the checks']);
       zones.push(['newsroom', 0, 262, 1000, 168, 'The stations', 'newsroom desks']);
       grid(st, 0, 1000, 345, st.length, 0, pos);

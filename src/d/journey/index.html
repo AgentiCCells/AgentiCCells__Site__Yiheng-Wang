@@ -25,7 +25,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 var(--grot);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--violet-6)}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:3px}
 h1,h2,h3{font-family:var(--grot);line-height:1.08;margin:0}
@@ -48,7 +48,7 @@ p{margin:0 0 1em}
 @keyframes drift{to{transform:scale(1.18) translateX(-3%)}}
 .hero-in{width:var(--wrap);margin:0 auto;padding:120px 0 56px;display:grid;grid-template-columns:1.5fr 1fr;gap:32px;align-items:end}
 .hero h1{font-size:clamp(56px,10vw,150px);font-weight:800;letter-spacing:-.04em;line-height:.9}
-.hero h1 span{display:block;background:linear-gradient(90deg,#fff 0%,#ffc2e2 60%,var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 span{display:block;padding-bottom:.1em;margin-bottom:-.1em;background:linear-gradient(90deg,#fff 0%,#ffc2e2 60%,var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero .role{font:600 clamp(15px,1.6vw,19px)/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin:0 0 18px}
 .hero .line{font:400 clamp(24px,3vw,38px)/1.2 var(--serif);margin:24px 0 28px;max-width:20ch}
 .proof{display:flex;flex-wrap:wrap;gap:12px;margin:0;padding:0;list-style:none}
@@ -86,10 +86,10 @@ p{margin:0 0 1em}
 .track small{display:block;font:500 12px/1.3 var(--mono);color:var(--ink-2);margin-top:4px}
 
 /* chapters */
-.ch{position:relative;padding:clamp(72px,10vw,140px) 0;overflow:hidden}
+.ch{position:relative;padding:clamp(72px,10vw,140px) 0;overflow:hidden;overflow:clip}
 .ch-head{display:grid;grid-template-columns:auto 1fr;gap:clamp(16px,3vw,40px);align-items:end;margin-bottom:clamp(32px,5vw,56px)}
 .num{font:800 clamp(110px,19vw,260px)/.78 var(--grot);letter-spacing:-.07em;background:linear-gradient(160deg,var(--violet-5),var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent;user-select:none}
-.dark .num{background:linear-gradient(160deg,var(--pink),var(--violet-3))}
+.dark .num{background-image:linear-gradient(160deg,var(--pink),var(--violet-3))}
 .ch h2{font-size:clamp(36px,6vw,76px);font-weight:800;letter-spacing:-.035em;margin-top:8px}
 .ch .when{font:600 14px/1.4 var(--mono);color:var(--ink-2);margin-top:12px}
 .dark .when{color:#cbbfe0}
@@ -108,6 +108,7 @@ p{margin:0 0 1em}
 .polaroid figcaption{position:absolute;left:14px;right:14px;bottom:12px;font:500 13px/1.3 var(--serif);color:var(--ink-2)}
 .polaroid::after{content:"";position:absolute;top:-12px;left:50%;width:90px;height:26px;margin-left:-45px;background:rgba(255,213,138,.75);transform:rotate(2deg)}
 .angled{margin:0;position:relative}
+.angled figcaption{position:relative;z-index:1;background:var(--paper-2);display:inline-block;padding:2px 6px}
 .angled img{width:100%;aspect-ratio:5/6;object-fit:cover;object-position:60% 40%;clip-path:polygon(8% 0,100% 0,92% 100%,0 100%)}
 .angled::before{content:"";position:absolute;inset:8% -4% -5% 10%;background:var(--magenta);clip-path:polygon(8% 0,100% 0,92% 100%,0 100%);z-index:-1;opacity:.9}
 .angled{isolation:isolate}
@@ -203,7 +204,7 @@ p{margin:0 0 1em}
 .net .g-lead line{stroke:var(--gold);stroke-width:2.5}
 .net .me circle{fill:#fff}
 .net .me text{fill:var(--night);font-weight:800;font-size:15px}
-.net .brief{fill:var(--gold);font-size:12px;font-family:var(--mono)}
+.net .me .brief{fill:var(--gold);font-size:12px;font-family:var(--mono)}
 .js .net.build [data-s]{opacity:0;transition:opacity .6s ease calc(var(--i,0)*45ms)}
 .js .net.build [data-s].on{opacity:1}
 .netkey{margin:10px 8px 4px}
@@ -267,16 +268,17 @@ details.roster summary{cursor:pointer;padding:12px 0;font-weight:700;color:#fff}
 /* rail */
 .rail{position:fixed;left:14px;top:50%;transform:translateY(-50%);z-index:40;display:none;opacity:0;transition:opacity .3s}
 .rail.show{opacity:1}
-.rail ol{list-style:none;margin:0;padding:0;display:grid;gap:8px;position:relative}
-.rail ol::before{content:"";position:absolute;left:15px;top:12px;bottom:12px;width:2px;background:rgba(124,58,237,.25)}
+.rail-track{position:relative}
+.rail ol{list-style:none;margin:0;padding:0;display:grid;gap:8px;position:relative;z-index:1}
+.rail-track::before{content:"";position:absolute;left:15px;top:12px;bottom:12px;width:2px;background:rgba(124,58,237,.25)}
 .rail .fill{position:absolute;left:15px;top:12px;width:2px;height:calc(var(--p,0)*(100% - 24px));background:linear-gradient(var(--gold),var(--magenta));transition:height .15s}
-.rail a{position:relative;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#fff;border:2px solid #b9a6dc;color:var(--violet-6);font:800 12px/1 var(--grot);text-decoration:none;transition:transform .2s,background .2s}
+.rail a{position:relative;z-index:1;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#fff;border:2px solid #b9a6dc;color:var(--violet-6);font:800 12px/1 var(--grot);text-decoration:none;transition:transform .2s,background .2s}
 .rail a[aria-current="step"]{background:var(--magenta);border-color:var(--magenta);color:#fff;transform:scale(1.18)}
 .rail a .t{position:absolute;left:42px;white-space:nowrap;background:var(--ink);color:#fff;font:600 12px/1 var(--grot);padding:6px 9px;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .15s}
 .rail a:hover .t,.rail a:focus-visible .t{opacity:1}
 .rail .now{writing-mode:vertical-rl;transform:rotate(180deg);font:700 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--violet-6);margin:14px 0 0 9px;background:rgba(248,245,240,.9);padding:6px 3px;border-radius:4px}
 .bar{position:fixed;left:0;top:0;height:4px;width:calc(var(--p,0)*100%);background:linear-gradient(90deg,var(--gold),var(--magenta),var(--violet-5));z-index:1100}
-@media (min-width:1180px){.rail{display:block}.journey{padding-left:40px}}
+@media (min-width:1180px){.rail{display:block}}
 
 /* reveal */
 .js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
@@ -561,7 +563,7 @@ details.roster summary{cursor:pointer;padding:12px 0;font-weight:700;color:#fff}
       <div class="ch-head rv"><span class="num" aria-hidden="true">07</span><div><p class="kicker">Chapter seven: the team</p><h2 id="h-ch7">26 agents, one conductor</h2><p class="when">26 agents, 25 running, as her dashboard listed them on 16 November<a class="fn" href="#src-p" aria-label="Source P">P</a></p></div></div>
       <div class="stage">
         <figure class="netbox" style="margin:0">
-          <svg class="net" id="net" viewBox="0 0 860 640" role="img" aria-labelledby="net-t net-d">
+          <svg class="net" id="net" viewBox="0 0 860 740" role="img" aria-labelledby="net-t net-d">
             <title id="net-t">Yiheng's agent team as a network</title>
             <desc id="net-d">Yiheng talks to one conductor, which hands work to 25 other agents in three groups: newsroom desks, operations, and specialists and safeguards. Circle size follows each agent's commits. The full list is in the table below.</desc>
             <!--NET--><g data-s="0" class="me"><line x1="96" y1="320" x2="440" y2="320" stroke="#ffd58a" stroke-width="3" stroke-dasharray="6 6"/><text class="brief" x="278" y="308" text-anchor="middle">one brief a day</text><circle cx="70" cy="320" r="40"/><text x="70" y="325" text-anchor="middle">Yiheng</text></g><g data-s="3" class="g-specialist" style="--i:0"><title>dev@PrompTugal: 41 commits</title><line x1="440" y1="320" x2="270.6" y2="187.6"/><circle cx="270.6" cy="187.6" r="11.4"/><text x="256.1" y="180.3" text-anchor="end">dev <tspan class="lab-n">41</tspan></text></g><g data-s="3" class="g-specialist" style="--i:1"><title>vault@web-summit: 33 commits</title><line x1="440" y1="320" x2="297.4" y2="159.1"/><circle cx="297.4" cy="159.1" r="10.6"/><text x="285.7" y="149.9" text-anchor="end">vault <tspan class="lab-n">33</tspan></text></g><g data-s="3" class="g-specialist" style="--i:2"><title>scout@web-summit: 23 commits</title><line x1="440" y1="320" x2="328.9" y2="135.9"/><circle cx="328.9" cy="135.9" r="9.5"/><text x="320.4" y="125.8" text-anchor="end">scout <tspan class="lab-n">23</tspan></text></g><g data-s="3" class="g-specialist" style="--i:3"><title>security@web-summit: 17 commits</title><line x1="440" y1="320" x2="364.1" y2="118.8"/><circle cx="364.1" cy="118.8" r="8.7"/><text x="358.5" y="108.1" text-anchor="end">security <tspan class="lab-n">17</tspan></text></g><g data-s="3" class="g-specialist" style="--i:4"><title>synthetic@web-summit: 5 commits</title><line x1="440" y1="320" x2="401.8" y2="108.4"/><circle cx="401.8" cy="108.4" r="6.6"/><text x="399.4" y="89.1" text-anchor="middle">synthetic <tspan class="lab-n">5</tspan></text></g><g data-s="3" class="g-specialist" style="--i:5"><title>mentor@web-summit: 1 commits</title><line x1="440" y1="320" x2="440.8" y2="105.0"/><circle cx="440.8" cy="105.0" r="5.2"/><text x="440.8" y="86.9" text-anchor="middle">mentor <tspan class="lab-n">1</tspan></text></g><g data-s="3" class="g-specialist" style="--i:6"><title>tools@web-summit: 0 commits</title><line x1="440" y1="320" x2="479.7" y2="108.7"/><circle cx="479.7" cy="108.7" r="4.0"/><text x="481.8" y="91.9" text-anchor="middle">tools <tspan class="lab-n">0</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:0"><title>reviewer@PrompTugal: 123 commits</title><line x1="440" y1="320" x2="571.8" y2="150.1"/><circle cx="571.8" cy="150.1" r="16.8"/><text x="586.3" y="135.3" text-anchor="start">reviewer <tspan class="lab-n">123</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:1"><title>curator@PrompTugal: 68 commits</title><line x1="440" y1="320" x2="600.4" y2="176.8"/><circle cx="600.4" cy="176.8" r="13.5"/><text x="615.6" y="167.2" text-anchor="start">curator <tspan class="lab-n">68</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:2"><title>journalist-ai@PrompTugal: 55 commits</title><line x1="440" y1="320" x2="623.7" y2="208.2"/><circle cx="623.7" cy="208.2" r="12.5"/><text x="640.3" y="202.1" text-anchor="start">journalist-ai <tspan class="lab-n">55</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:3"><title>researcher@web-summit: 52 commits</title><line x1="440" y1="320" x2="640.9" y2="243.4"/><circle cx="640.9" cy="243.4" r="12.3"/><text x="658.9" y="240.5" text-anchor="start">researcher <tspan class="lab-n">52</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:4"><title>journalist-connections@PrompTugal: 43 commits</title><line x1="440" y1="320" x2="651.4" y2="281.0"/><circle cx="651.4" cy="281.0" r="11.5"/><text x="669.7" y="281.7" text-anchor="start">journalist-connections <tspan class="lab-n">43</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:5"><title>journalist-portugal@PrompTugal: 41 commits</title><line x1="440" y1="320" x2="655.0" y2="320.0"/><circle cx="655.0" cy="320.0" r="11.4"/><text x="673.4" y="324.0" text-anchor="start">journalist-portugal <tspan class="lab-n">41</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:6"><title>journalist-europe@PrompTugal: 39 commits</title><line x1="440" y1="320" x2="651.4" y2="359.0"/><circle cx="651.4" cy="359.0" r="11.2"/><text x="669.3" y="366.3" text-anchor="start">journalist-europe <tspan class="lab-n">39</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:7"><title>checker@PrompTugal: 23 commits</title><line x1="440" y1="320" x2="640.9" y2="396.6"/><circle cx="640.9" cy="396.6" r="9.5"/><text x="656.3" y="406.5" text-anchor="start">checker <tspan class="lab-n">23</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:8"><title>designer@PrompTugal: 16 commits</title><line x1="440" y1="320" x2="623.7" y2="431.8"/><circle cx="623.7" cy="431.8" r="8.6"/><text x="637.0" y="443.9" text-anchor="start">designer <tspan class="lab-n">16</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:9"><title>reporter@PrompTugal: 15 commits</title><line x1="440" y1="320" x2="600.4" y2="463.2"/><circle cx="600.4" cy="463.2" r="8.5"/><text x="611.9" y="477.5" text-anchor="start">reporter <tspan class="lab-n">15</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:10"><title>analyst@PrompTugal: 12 commits</title><line x1="440" y1="320" x2="571.8" y2="489.9"/><circle cx="571.8" cy="489.9" r="8.0"/><text x="580.9" y="505.7" text-anchor="start">analyst <tspan class="lab-n">12</tspan></text></g><g data-s="1" class="g-newsroom" style="--i:11"><title>journalist@web-summit: 8 commits</title><line x1="440" y1="320" x2="538.8" y2="511.0"/><circle cx="538.8" cy="511.0" r="7.3"/><text x="545.3" y="527.6" text-anchor="start">journalist <tspan class="lab-n">8</tspan></text></g><g data-s="2" class="g-operations" style="--i:0"><title>dashboard@web-summit: 60 commits</title><line x1="440" y1="320" x2="440.8" y2="535.0"/><circle cx="440.8" cy="535.0" r="12.9"/><text x="440.8" y="568.9" text-anchor="middle">dashboard <tspan class="lab-n">60</tspan></text></g><g data-s="2" class="g-operations" style="--i:1"><title>pm@web-summit: 57 commits</title><line x1="440" y1="320" x2="401.8" y2="531.6"/><circle cx="401.8" cy="531.6" r="12.7"/><text x="398.3" y="564.9" text-anchor="middle">pm <tspan class="lab-n">57</tspan></text></g><g data-s="2" class="g-operations" style="--i:2"><title>internal@web-summit: 34 commits</title><line x1="440" y1="320" x2="364.1" y2="521.2"/><circle cx="364.1" cy="521.2" r="10.7"/><text x="357.8" y="541.7" text-anchor="end">internal <tspan class="lab-n">34</tspan></text></g><g data-s="2" class="g-operations" style="--i:3"><title>logistics@web-summit: 32 commits</title><line x1="440" y1="320" x2="328.9" y2="504.1"/><circle cx="328.9" cy="504.1" r="10.5"/><text x="319.8" y="523.0" text-anchor="end">logistics <tspan class="lab-n">32</tspan></text></g><g data-s="2" class="g-operations" style="--i:4"><title>inbox@web-summit: 11 commits</title><line x1="440" y1="320" x2="297.4" y2="480.9"/><circle cx="297.4" cy="480.9" r="7.8"/><text x="287.5" y="496.0" text-anchor="end">inbox <tspan class="lab-n">11</tspan></text></g><g data-s="2" class="g-operations" style="--i:5"><title>programme@web-summit: 7 commits</title><line x1="440" y1="320" x2="270.6" y2="452.4"/><circle cx="270.6" cy="452.4" r="7.0"/><text x="259.5" y="465.0" text-anchor="end">programme <tspan class="lab-n">7</tspan></text></g><g data-s="0" class="g-lead"><circle cx="440" cy="320" r="24.2"/><text x="440" y="362.18241809100186" text-anchor="middle">conductor <tspan class="lab-n">308</tspan></text></g><text x="440" y="628" text-anchor="middle" class="lab-n">26 agents, 25 running, from her dashboard read 2026-11-16</text><!--/NET-->
@@ -667,6 +669,7 @@ details.roster summary{cursor:pointer;padding:12px 0;font-weight:700;color:#fff}
 </footer>
 
 <nav class="rail" aria-label="Journey chapters">
+  <div class="rail-track"><span class="fill" aria-hidden="true"></span>
   <ol>
     <li><a href="#ch1"><span>1</span><span class="t">The kitchen</span></a></li>
     <li><a href="#ch2"><span>2</span><span class="t">Products and projects</span></a></li>
@@ -677,8 +680,7 @@ details.roster summary{cursor:pointer;padding:12px 0;font-weight:700;color:#fff}
     <li><a href="#ch7"><span>7</span><span class="t">The team of agents</span></a></li>
     <li><a href="#how"><span>+</span><span class="t">How she works</span></a></li>
     <li><a href="#contact"><span>8</span><span class="t">What she would do for you</span></a></li>
-    <span class="fill" aria-hidden="true"></span>
-  </ol>
+  </ol></div>
   <p class="now" aria-hidden="true"></p>
 </nav>
 
@@ -686,7 +688,7 @@ details.roster summary{cursor:pointer;padding:12px 0;font-weight:700;color:#fff}
 document.documentElement.classList.add('js');
 // NET:START
 function netSVG(d){
-  const cx=440,cy=320,R=215,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const cx=450,cy=370,R=175,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const rad=c=>4+Math.sqrt(c||0)*1.15;
   const ag=d.agents,cond=ag.find(a=>a.group==='lead');
   const order=['specialist','newsroom','operations'],step={lead:0,newsroom:1,operations:2,specialist:3};
@@ -699,14 +701,14 @@ function netSVG(d){
     g.forEach((a,i)=>{
       const th=(a0+per*k)*Math.PI/180;k++;
       const r=rad(a.commits),x=cx+R*Math.cos(th),y=cy+R*Math.sin(th);
-      const c=Math.cos(th),lr=R+r+7,lx=cx+lr*Math.cos(th),ly=cy+lr*Math.sin(th);
-      const anc=c>0.25?'start':c<-0.25?'end':'middle',dy=anc==='middle'?(Math.sin(th)<0?-6:14):4;
-      out+=`<g data-s="${step[a.group]}" class="g-${a.group}" style="--i:${i}"><title>${esc(a.handle)}: ${a.commits} commits</title><line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}"/><text x="${lx.toFixed(1)}" y="${(ly+dy).toFixed(1)}" text-anchor="${anc}">${esc(a.role)} <tspan class="lab-n">${a.commits}</tspan></text></g>`;
+      const c=Math.cos(th),lr=R+r+6,lx=cx+lr*Math.cos(th),ly=cy+lr*Math.sin(th);
+      const deg=th*180/Math.PI,left=c<0,rot=left?deg+180:deg,anc=left?'end':'start';
+      out+=`<g data-s="${step[a.group]}" class="g-${a.group}" style="--i:${i}"><title>${esc(a.handle)}: ${a.commits} commits</title><line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}"/><text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" dy="4" text-anchor="${anc}" transform="rotate(${rot.toFixed(1)} ${lx.toFixed(1)} ${ly.toFixed(1)})">${esc(a.role)} <tspan class="lab-n">${a.commits}</tspan></text></g>`;
     });
     k+=1.6;
   });
   out+=`<g data-s="0" class="g-lead"><circle cx="${cx}" cy="${cy}" r="${rad(cond.commits).toFixed(1)}"/><text x="${cx}" y="${cy+rad(cond.commits)+18}" text-anchor="middle">conductor <tspan class="lab-n">${cond.commits}</tspan></text></g>`;
-  out+=`<text x="${cx}" y="628" text-anchor="middle" class="lab-n">${d.total} agents, ${d.running} running, from her dashboard read ${esc(d.read)}</text>`;
+  out+=`<text x="${cx}" y="730" text-anchor="middle" class="lab-n">${d.total} agents, ${d.running} running, from her dashboard read ${esc(d.read)}</text>`;
   return out;
 }
 function rosterRows(d){const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));return d.agents.map(a=>`<tr><td>${esc(a.handle)}</td><td>${esc(d.groups[a.group]||a.group)}</td><td>${a.commits}</td><td>${esc(a.does||'not described on the dashboard')}</td></tr>`).join('');}
