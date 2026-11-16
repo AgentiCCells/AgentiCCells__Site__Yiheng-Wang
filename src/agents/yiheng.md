@@ -19,9 +19,9 @@ The same site comes in **five designs**. A visitor picks one with the "Choose a 
 
 | Design | File | Look |
 |---|---|---|
-| The Brief (the default, at `/`) | `src/index.html` | one clear page for recruiters; prints |
+| The Pass (the default, at `/`) | `src/index.html` | the pastry kitchen as the frame |
 | Mission Control | `src/d/control/index.html` | dark, her agents as a live network |
-| The Pass | `src/d/pass/index.html` | the pastry kitchen as the frame |
+| The Brief | `src/d/brief/index.html` | one clear page for recruiters; prints |
 | The Profile | `src/d/profile/index.html` | warm, editorial |
 | The Journey | `src/d/journey/index.html` | photo-led story of her path |
 
