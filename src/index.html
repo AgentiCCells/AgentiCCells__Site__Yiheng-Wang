@@ -46,7 +46,7 @@ p{margin:0 0 .7em}
 .hdr .g12{align-items:start;row-gap:24px}
 .who{grid-column:1/span 8;display:flex;gap:clamp(16px,2.4vw,28px);align-items:center}
 .face{flex:0 0 auto;width:clamp(88px,10vw,124px);aspect-ratio:1;border-radius:50%;overflow:hidden;position:relative;background:var(--rule-2);box-shadow:0 0 0 3px var(--paper),0 0 0 5px var(--acc)}
-.face img{position:absolute;width:200%;height:auto;left:-80%;top:-78%;max-width:none}
+.face img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
 .eyebrow{font:700 12px/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin:0 0 .5rem}
 h1{font-size:clamp(40px,6.4vw,76px);line-height:.95;letter-spacing:-.035em}
 .roles{display:flex;flex-wrap:wrap;gap:6px 8px;margin:14px 0 0;padding:0;list-style:none}
@@ -340,7 +340,7 @@ footer p{margin:0}
 <header class="hdr" id="top">
   <div class="wrap g12">
     <div class="who">
-      <div class="face"><img src="/assets/photos/yiheng-at-the-stand-2.jpg" width="400" height="1200" alt="Yiheng Wang at the RiskMandate stand at Web Summit 2026"></div>
+      <div class="face"><img src="/assets/photos/yiheng-headshot.jpg" width="609" height="609" alt="Yiheng Wang, head and shoulders, at Web Summit 2026"></div>
       <div>
         <p class="eyebrow">Lisbon &middot; available now &middot; authorised to work in Portugal</p>
         <h1>Yiheng Wang</h1>

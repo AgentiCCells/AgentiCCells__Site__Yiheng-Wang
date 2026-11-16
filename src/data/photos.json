@@ -2,26 +2,39 @@
  "about": "The photos on this site. scripts/add-photo.py adds to this list; the photos page reads it.",
  "photos": [
   {
-   "file": "/assets/photos/yiheng-at-the-stand.jpg",
-   "alt": "Yiheng Wang at the RiskMandate stand at Web Summit 2026, giving a thumbs up",
-   "caption": "At the RiskMandate stand, Web Summit Lisbon 2026",
-   "credit": "Supplied by Dinis Cruz, 2026-11-16; teammates cropped out",
+   "file": "/assets/photos/yiheng-headshot.jpg",
+   "alt": "Yiheng Wang, head and shoulders, at Web Summit 2026",
+   "caption": "Headshot, Web Summit Lisbon 2026",
+   "credit": "Supplied by Yiheng, 2026-11-16; cropped to Yiheng",
    "date": "2026-11",
-   "width": 245,
-   "height": 1200,
+   "width": 609,
+   "height": 609,
    "tags": [
     "summit"
    ],
    "added": "2026-11-16"
   },
   {
-   "file": "/assets/photos/yiheng-at-the-stand-2.jpg",
-   "alt": "Yiheng Wang smiling at the RiskMandate stand, wearing the team T-shirt and her badge",
-   "caption": "The team T-shirt, on the stand",
-   "credit": "Supplied by Dinis Cruz, 2026-11-16; teammates cropped out",
+   "file": "/assets/photos/yiheng-at-the-stand.jpg",
+   "alt": "Yiheng Wang at the RiskMandate stand at Web Summit 2026, giving a thumbs up",
+   "caption": "At the RiskMandate stand, Web Summit Lisbon 2026",
+   "credit": "Supplied by Yiheng, 2026-11-16; cropped to Yiheng",
    "date": "2026-11",
-   "width": 400,
-   "height": 1200,
+   "width": 348,
+   "height": 1600,
+   "tags": [
+    "summit"
+   ],
+   "added": "2026-11-16"
+  },
+  {
+   "file": "/assets/photos/yiheng-in-the-arena.jpg",
+   "alt": "Yiheng Wang in the arena at Web Summit 2026, in a grey hoodie and her summit badge",
+   "caption": "In the arena, Web Summit Lisbon 2026",
+   "credit": "Supplied by Yiheng, 2026-11-16; cropped to Yiheng, one face in the background blurred",
+   "date": "2026-11",
+   "width": 729,
+   "height": 1600,
    "tags": [
     "summit"
    ],
@@ -31,10 +44,10 @@
    "file": "/assets/photos/yiheng-at-work.jpg",
    "alt": "Yiheng Wang working on her laptop at a table at Web Summit",
    "caption": "Working with her agents between meetings",
-   "credit": "Supplied by Dinis Cruz, 2026-11-16; teammates cropped out",
+   "credit": "Supplied by Yiheng, 2026-11-16; cropped to Yiheng",
    "date": "2026-11",
-   "width": 934,
-   "height": 1200,
+   "width": 931,
+   "height": 1600,
    "tags": [
     "summit",
     "work"
@@ -44,11 +57,11 @@
   {
    "file": "/assets/photos/yiheng-with-the-team.jpg",
    "alt": "Yiheng Wang standing in a hall at Web Summit, in a lilac hoodie",
-   "caption": "With the team at the summit",
-   "credit": "Supplied by Dinis Cruz, 2026-11-16; teammates cropped out",
+   "caption": "In the arena corridor, Web Summit Lisbon 2026",
+   "credit": "Supplied by Yiheng, 2026-11-16; cropped to Yiheng; faces in the background blurred",
    "date": "2026-11",
-   "width": 267,
-   "height": 1200,
+   "width": 574,
+   "height": 1600,
    "tags": [
     "summit"
    ],
@@ -69,12 +82,12 @@
   },
   {
    "file": "/assets/photos/web-summit-main-stage.jpg",
-   "alt": "The Web Summit main stage in Lisbon, lit in red and blue",
+   "alt": "The Web Summit main stage in Lisbon, its logo lit in white between violet and red screens",
    "caption": "The main stage, Web Summit Lisbon 2026",
-   "credit": "Supplied by Dinis Cruz, 2026-11-16",
+   "credit": "Supplied by Yiheng, 2026-11-16",
    "date": "2026-11",
    "width": 1600,
-   "height": 330,
+   "height": 331,
    "tags": [
     "summit"
    ],
