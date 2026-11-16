@@ -100,7 +100,7 @@ h1{font-size:clamp(40px,6.4vw,76px);line-height:.95;letter-spacing:-.035em}
 .matrix thead th{font:700 11.5px/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);border-bottom:2px solid var(--ink);padding-top:0}
 .matrix tbody th{font-size:15px;width:24%;padding-right:16px}
 .matrix tbody th span{display:block;font:500 12px/1.3 var(--sans);color:var(--ink-3);margin-top:4px}
-.matrix td.ind{width:21%;padding-right:0}
+.matrix td.ind{width:21%;padding-right:16px}
 .matrix td.src{width:9%;font:500 12px/1.5 var(--mono);white-space:nowrap}
 .matrix td.src a{text-decoration:none}
 .matrix ul{margin:0;padding:0 0 0 1em}
@@ -234,14 +234,29 @@ footer p{margin:0}
   .lede blockquote{font-size:11.5pt;line-height:1.2}
   .lede blockquote::before{height:2.5pt;width:24pt;margin-bottom:1.5mm}
   .lede figcaption{font-size:6.8pt;margin:1.5mm 0 0;padding-left:2mm;border-left-width:1.5pt}
-  .sec{padding:2mm 0;border-bottom:0}
+  .sec{padding:1.6mm 0;border-bottom:0}
+  .matrix thead th{padding-top:1mm}
   #how,#journey,#questions,#contact,#sources,#minute{break-inside:avoid}
   .lab{break-after:avoid}
   .matrix tbody th span{display:none}
   .prin{grid-template-columns:repeat(6,1fr);column-gap:3mm}
   .prin p{display:none}
   .prin li:last-child p{display:block}
-  .srcs{columns:4!important}
+  .srcs{columns:3!important}
+  .srcs li{grid-template-columns:6mm 1fr}
+  #contact .lab{display:none}
+  .cbox{grid-template-columns:1fr 1fr;gap:3mm}
+  .card{border:0;border-left:2pt solid var(--acc);padding:0 0 0 2.5mm!important;display:flex;gap:2mm;align-items:baseline}
+  .card h3{white-space:nowrap;margin:0}
+  .card p{margin:0}
+  .placeholder{border:0!important;padding:0!important;font-family:var(--sans)}
+  .note{margin-top:.5mm}
+  .qs span{display:inline;margin-left:1.5mm}
+  .qs strong{display:inline}
+  .prin h3{font-size:7.8pt}
+  .cbox{align-items:start}
+  main,header.hdr,footer{zoom:.95}
+  .path li{padding-top:12pt}
   .sec>.wrap>.g12{row-gap:1.5mm}
   .lab{grid-column:1/-1;display:flex;align-items:baseline;gap:2mm}.body,.cbox{grid-column:1/-1}
   .lab .no{font-size:7pt;margin:0}
@@ -309,7 +324,7 @@ footer p{margin:0}
   .srcs{font-size:6.8pt;columns:3;column-gap:4mm}
   .srcs li{padding:.8mm 0}
   .srcs a::after{content:none}
-  footer{padding:2mm 0 0;font-size:6.5pt}
+  footer{padding:1mm 0 0;font-size:6.5pt;break-before:avoid}
   h2,h3{break-after:avoid}
 }
 @media print and (prefers-color-scheme:dark){:root{--paper:#fff;--ink:#000}}
@@ -427,7 +442,7 @@ footer p{margin:0}
           <li>Ran 26 agents, one of the largest agent teams at Web Summit<a class="ref" href="#s-N1">N1</a>; 767 commits by her agents on the team&rsquo;s site<a class="ref" href="#s-N2">N2</a></li>
           <li>Reached the last setup level, L6, on 3 Nov: 9 of 9 on the team&rsquo;s setup leaderboard<a class="ref" href="#s-P">P</a><a class="ref" href="#s-B">B</a></li>
           <li>At the stand 9 to 12 Nov: talked to visitors and pitched<a class="ref" href="#s-I">I</a></li></ul></div></li>
-        <li class="job"><div class="when"><b>Nov 2026</b>alongside the summit</div><div class="what">
+        <li class="job"><div class="when"><b>Nov 2026</b>from the summit on</div><div class="what">
           <h3>Editor, PrompTugal.news</h3><p class="org">One of three editors of a news site written mostly by AI agents<a class="ref" href="#s-I">I</a></p>
           <ul><li>Decided which stories are published, set the main categories, withdrew articles when sources failed<a class="ref" href="#s-I">I</a></li>
           <li>Storm night, Tue 10 Nov: when Web Summit called off Wednesday on the government&rsquo;s advice, she set up a temporary agent to follow the storm, put out a lead story straight away and changed the home page to match<a class="ref" href="#s-I">I</a></li>
