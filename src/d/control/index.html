@@ -29,9 +29,7 @@ img{max-width:100%;height:auto;display:block}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
 .skip{position:absolute;left:-999px;top:0;background:var(--gold);color:#111;padding:.5rem 1rem;z-index:10}
 .skip:focus{left:16px;top:56px}
-.mono,.chip,.kicker,.src{font-family:var(--mono)}
-.kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin:0 0 .6rem;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
-.kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
+.mono,.chip,.src{font-family:var(--mono)}
 .chip{display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line2);background:#0b1814;border-radius:6px;padding:.12rem .45rem;white-space:nowrap}
 .src{font-size:.68em;letter-spacing:.04em;vertical-align:.35em;text-decoration:none;color:var(--gold);margin-left:.15em}
 .src:hover{text-decoration:underline}
@@ -84,7 +82,6 @@ p{margin:0 0 1rem}
 .orb .core{position:absolute;inset:58px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#fff 0,#e3d6ff 10%,#a684ff 34%,#6a3fe0 64%,#2d1673 100%);box-shadow:0 0 30px rgba(170,130,255,.65),0 0 80px rgba(120,80,240,.35);animation:breathe 4.5s ease-in-out infinite}
 .orb::before{content:"";position:absolute;inset:-70px;border-radius:50%;border:1px solid rgba(95,211,184,.12);box-shadow:inset 0 0 60px rgba(95,211,184,.05)}
 @keyframes breathe{50%{box-shadow:0 0 42px rgba(170,130,255,.85),0 0 110px rgba(120,80,240,.45)}}
-.me .chips{display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap}
 .stats{display:grid;gap:14px;margin:0;padding:0;list-style:none}
 .stat{position:relative;background:linear-gradient(180deg,#10241f,#0b1a16);border:1px solid var(--line2);border-radius:12px;padding:14px 16px 12px 20px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 .stat::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:3px;border-radius:2px;background:var(--teal)}
@@ -120,9 +117,7 @@ p{margin:0 0 1rem}
 /* sections as panels */
 section.panel{margin:64px auto 0}
 .panel-box{border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(13,31,26,.85),rgba(8,20,17,.85));padding:clamp(20px,3.4vw,44px);position:relative}
-.panel-box::before{content:attr(data-tag);position:absolute;top:-10px;right:24px;font:11px/1 var(--mono);letter-spacing:.14em;color:var(--teal);background:var(--bg);padding:4px 8px;border:1px solid var(--line);border-radius:6px}
 .sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px 24px;margin-bottom:26px}
-.sec-head p{color:var(--ink2);max-width:36em;margin:.6rem 0 0}
 
 /* operator */
 .op{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
@@ -136,8 +131,6 @@ section.panel{margin:64px auto 0}
 .cam img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.08) brightness(1.05)}
 .cam::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,#8a6cff 0,#1d6b5a 100%);mix-blend-mode:color;opacity:.8;z-index:1;pointer-events:none}
 .cam::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px),radial-gradient(circle at 50% 40%,transparent 55%,rgba(0,0,0,.45))}
-.cam .tag{position:absolute;z-index:3;left:8px;top:8px;font:10.5px/1 var(--mono);letter-spacing:.12em;color:#fff;background:rgba(6,17,14,.75);padding:4px 6px;border-radius:4px}
-.cam .tag::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--red);margin-right:5px;vertical-align:1px}
 .cam.a{aspect-ratio:934/1200;width:84%;margin-left:auto}
 .cam.a img{object-position:50% 20%}
 .cam.b{aspect-ratio:1/1;position:absolute;left:0;bottom:30px;width:44%;border:3px solid var(--bg);box-shadow:0 18px 40px rgba(0,0,0,.5)}
@@ -170,8 +163,6 @@ section.panel{margin:64px auto 0}
 .rules li::before{content:"R-" counter(r,decimal-leading-zero);display:block;font:600 12px/1 var(--mono);letter-spacing:.12em;color:var(--gold);margin-bottom:.6rem}
 .rules p{margin:0;color:var(--ink2);font-size:16px;line-height:1.5}
 .rules p strong{color:var(--ink);font-weight:600}
-.rules li.big{grid-column:1/-1;background:linear-gradient(90deg,rgba(227,189,114,.08),#0a1814)}
-.rules li.big p{font-size:clamp(19px,2vw,24px);line-height:1.35;color:var(--ink)}
 
 /* journey */
 .path{list-style:none;margin:0 0 32px;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
@@ -198,7 +189,6 @@ section.panel{margin:64px auto 0}
 .shot{margin:0}
 .shot .frame{border:1px solid var(--line2);border-radius:14px;overflow:hidden;background:#06110e;box-shadow:0 30px 60px rgba(0,0,0,.45)}
 .shot figcaption{font-size:15px;color:var(--ink2);margin-top:12px;line-height:1.5}
-.shot figcaption .chip{margin-right:.4rem}
 
 /* sources and contact */
 .sources{list-style:none;margin:0;padding:0;display:grid;gap:8px}
@@ -253,7 +243,6 @@ footer.site{margin:64px auto 0;padding:24px var(--gut) 40px;max-width:var(--max)
   .ag{grid-template-columns:auto 1fr auto;padding:6px 6px}
   .ag .pips{display:none}
   .g-axis .g-track span:nth-child(even){visibility:hidden}
-  .panel-box::before{right:12px}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -277,7 +266,7 @@ footer.site{margin:64px auto 0;padding:24px var(--gut) 40px;max-width:var(--max)
   <div class="strip" role="presentation">
     <span class="live">Mission control</span>
     <span>Operator <b>Yiheng Wang</b></span>
-    <span>Status <b>open to a PM or operations role</b></span>
+    <span>Status <b>open to work</b></span>
     <nav aria-label="On this page">
       <a href="#operator">Operator</a><a href="#how">Incidents</a><a href="#rules">Rules</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
     </nav>
@@ -288,10 +277,9 @@ footer.site{margin:64px auto 0;padding:24px var(--gut) 40px;max-width:var(--max)
 <section class="hero wrap" id="work" aria-labelledby="hero-h">
   <div class="hero-head">
     <div>
-      <p class="kicker">Web Summit 2026 and PrompTugal.news</p>
       <h1 id="hero-h">Yiheng Wang ran a team of <span>26 AI agents</span>.</h1>
       <p class="role">Project manager · project coordinator · PMO coordinator</p>
-      <p class="lede">No technical background, learnt it in two weeks.<a class="src" href="#s-i">[I]</a> Her agents made <strong>1,171 commits</strong> to PrompTugal.news and her journalists wrote <strong>about 53 of its 73 articles</strong>.<a class="src" href="#s-n1">[N1]</a> She is looking for a project manager or PMO coordinator role.</p>
+      <p class="lede">No technical background, learnt it in two weeks.<a class="src" href="#s-i">[I]</a></p>
     </div>
     <blockquote class="pull">
       <p>“I think the hard part is no longer the doing. It's knowing what to ask for and what to check.”</p>
@@ -303,9 +291,8 @@ footer.site{margin:64px auto 0;padding:24px var(--gut) 40px;max-width:var(--max)
     <svg class="links" id="links" aria-hidden="true" focusable="false"></svg>
     <div class="net-grid">
       <div class="me">
-        <p class="name">Yiheng Wang<span><em id="me-n">26</em> agents</span></p>
+        <p class="name">Yiheng Wang</p>
         <div class="orb" aria-hidden="true"><svg id="halo" viewBox="0 0 200 200"></svg><div class="core"></div></div>
-        <div class="chips"><span class="chip">Operator</span><span class="chip">1 conductor</span></div>
       </div>
       <div>
         <ul class="stats" aria-label="Her team in four figures">
@@ -329,45 +316,37 @@ footer.site{margin:64px auto 0;padding:24px var(--gut) 40px;max-width:var(--max)
         <button type="button" class="toggle" id="toggle" aria-expanded="false" aria-controls="agents" hidden>Show all 26</button>
       </div>
     </div>
-    <p class="net-note">Hover, focus or tap an agent to read what it does. Commits per agent: her dashboard, read 2026-11-16, 1,124 in all <a class="src" href="#s-p">[P]</a>; counted differently from the 1,171 commits to PrompTugal.news <a class="src" href="#s-n1">[N1]</a> and the 767 on the team's site <a class="src" href="#s-n2">[N2]</a>. Data: <a href="/data/agents.json">/data/agents.json</a>.</p>
+    <p class="net-note">Commits per agent: her dashboard, read 2026-11-16, 1,124 in all <a class="src" href="#s-p">[P]</a>; counted differently from the PrompTugal.news total above and the 767 on the team's site <a class="src" href="#s-n2">[N2]</a>. Data: <a href="/data/agents.json">/data/agents.json</a>.</p>
   </div>
 </section>
 
 <section class="panel wrap" id="operator" aria-labelledby="op-h">
-  <div class="panel-box" data-tag="PANEL 01">
+  <div class="panel-box">
     <div class="op">
       <div class="op-text">
-        <p class="kicker">The operator</p>
         <h2 id="op-h">A pastry chef who became a manager of agents</h2>
         <p style="margin-top:1rem">“In a kitchen I managed recipes, standards and a team. Now I manage agents and rules. It's the same job underneath: <strong>set the standard, hand out the work, and check the result.</strong>”<a class="src" href="#s-i">[I]</a></p>
-        <p>Yiheng moved from pastry to product development, then to project management.<a class="src" href="#s-i">[I]</a> At Web Summit 2026 she was the project manager of the RiskMandate team: the structure, the deadlines, the logistics (printing, merchandise, deliveries, the stand) and everyone's schedule.<a class="src" href="#s-b">[B]</a><a class="src" href="#s-t">[T]</a> She was also one of the three editors of PrompTugal.news: she decided which stories were published, set the main categories and withdrew articles when sources failed.<a class="src" href="#s-i">[I]</a></p>
-        <p>She works mostly through one conductor agent. It hands out the work, the agents report back to it, and she reads one morning brief and deals only with the items marked for her.<a class="src" href="#s-i">[I]</a> Dinis Cruz, who ran the team, wrote that she managed at two altitudes, direction where the work was outside her expertise and depth where she knew best, and that <strong>“she became a manager, not a micromanager”</strong>.<a class="src" href="#s-n1">[N1]</a></p>
+        <p>At Web Summit 2026 she was the project manager of the RiskMandate team: the structure, the deadlines, the logistics (printing, merchandise, deliveries, the stand) and everyone's schedule.<a class="src" href="#s-b">[B]</a><a class="src" href="#s-t">[T]</a> She was also one of the three editors of PrompTugal.news: she decided which stories were published, set the main categories and withdrew articles when sources failed.<a class="src" href="#s-i">[I]</a></p>
+        <p>She reads one morning brief from her conductor and deals only with the items marked for her.<a class="src" href="#s-i">[I]</a> Dinis Cruz, who ran the team, wrote that she managed at two altitudes, direction where the work was outside her expertise and depth where she knew best, and that <strong>“she became a manager, not a micromanager”</strong>.<a class="src" href="#s-n1">[N1]</a></p>
         <p>“I didn't write a single line of code myself. Most of my time went on deciding what to do next and checking what the agents said they had done.”<a class="src" href="#s-l">[L]</a></p>
         <ul class="facts">
-          <li><b>Role wanted</b>Project manager, project or PMO coordinator</li>
-          <li><b>Set-up</b>Level L6, all steps done, by 3 Nov; 9 of 9 on the team's leaderboard <a class="src" href="#s-p">[P]</a><a class="src" href="#s-b">[B]</a></li>
-          <li><b>Team</b>Six people and around 250 agents over ten days, 3 to 13 Nov <a class="src" href="#s-n2">[N2]</a></li>
+          <li><b>Set-up</b>All steps done; 9 of 9 on the team's leaderboard <a class="src" href="#s-p">[P]</a><a class="src" href="#s-b">[B]</a></li>
           <li><b>Output</b>26 articles from her desks in the seven days to 16 Nov <a class="src" href="#s-p">[P]</a></li>
         </ul>
       </div>
       <div class="cams">
-        <figure class="cam a"><span class="tag">CAM 01 · WEB SUMMIT</span><img src="/assets/photos/yiheng-at-work.jpg" width="931" height="1600" loading="lazy" alt="Yiheng Wang working on a laptop at a table at Web Summit 2026, in a lilac hoodie"></figure>
-        <figure class="cam b"><span class="tag">CAM 02 · ARENA</span><img src="/assets/photos/yiheng-smiling.jpg" width="900" height="900" loading="lazy" alt="Yiheng Wang smiling in the arena at Web Summit 2026, in a lilac hoodie and summit badge"></figure>
-        <p class="cap c">Photos supplied by Yiheng, 2026-11-16, shown with a duotone treatment. Teammates are cropped out.</p>
+        <figure class="cam a"><img src="/assets/photos/yiheng-at-work.jpg" width="931" height="1600" loading="lazy" alt="Yiheng Wang working on a laptop at a table at Web Summit 2026, in a lilac hoodie"></figure>
+        <figure class="cam b"><img src="/assets/photos/yiheng-smiling.jpg" width="900" height="900" loading="lazy" alt="Yiheng Wang smiling in the arena at Web Summit 2026, in a lilac hoodie and summit badge"></figure>
+        <p class="cap c">Photos supplied by Yiheng, 2026-11-16. Teammates are cropped out.</p>
       </div>
     </div>
   </div>
 </section>
 
 <section class="panel wrap" id="how" aria-labelledby="how-h">
-  <div class="panel-box" data-tag="PANEL 02">
+  <div class="panel-box">
     <div class="sec-head">
-      <div>
-        <p class="kicker">Incident log</p>
-        <h2 id="how-h">How she works, entry by entry</h2>
-        <p>Five moments from her own account, each logged as what happened, what she decided and what came of it.</p>
-      </div>
-      <span class="chip">5 entries · all closed</span>
+      <h2 id="how-h">How she works, entry by entry</h2>
     </div>
     <ol class="log">
       <li class="inc">
@@ -385,12 +364,11 @@ footer.site{margin:64px auto 0;padding:24px var(--gut) 40px;max-width:var(--max)
       <li class="inc">
         <div class="inc-h"><span class="id">INC-02</span><span>Nov 2026, day not stated</span><span>Quality</span><span class="st">Closed</span></div>
         <div class="inc-b">
-          <h3>The image check: 15 + 12 = 27</h3>
+          <h3>The image check</h3>
           <dl>
             <dt>Happened</dt><dd>She asked the reviewer to move the main image in every published article. It reported 15.</dd>
             <dt>Decided</dt><dd>She opened some herself, found two storm articles it had missed, and sent them back. <q>When an agent says it's done, it usually is, but not always. I still check a few things myself.</q></dd>
             <dt>Outcome</dt><dd>
-              12 more were found: 27 fixed in all.
               <div class="cells" role="img" aria-label="15 articles reported by the reviewer, plus 12 more found after her check, makes 27"><span id="cells15" style="display:contents"></span><span class="plus">+</span><span id="cells12" style="display:contents"></span><span class="plus">= 27</span></div>
               <span class="cells-key"><i style="background:var(--teal)"></i>reported done by the agent <i style="background:var(--gold);margin-left:.8rem"></i>found after she checked</span>
             </dd>
@@ -439,43 +417,32 @@ footer.site{margin:64px auto 0;padding:24px var(--gut) 40px;max-width:var(--max)
 </section>
 
 <section class="panel wrap" id="rules" aria-labelledby="rules-h">
-  <div class="panel-box" data-tag="PANEL 03">
+  <div class="panel-box">
     <div class="sec-head">
-      <div>
-        <p class="kicker">Operating rules</p>
-        <h2 id="rules-h">What she learnt, as rules</h2>
-        <p>Quoted lines are her words from her interview <a class="src" href="#s-i">[I]</a>; the rest is how she worked, from the same source.</p>
-      </div>
+      <h2 id="rules-h">What she learnt, as rules<a class="src" href="#s-i">[I]</a></h2>
     </div>
     <ol class="rules">
-      <li class="big"><p>“Set the standard, hand out the work, and check the result.”</p></li>
       <li><p><strong>“Start with one conductor and only talk to that one. Let it hand out the work.”</strong></p></li>
-      <li><p><strong>“When an agent says it's done, it usually is, but not always.</strong> I still check a few things myself.”</p></li>
       <li><p><strong>“If you don't understand a technical choice, ask for the options and the reasons. Then decide.”</strong></p></li>
       <li><p><strong>“Don't add a rule as soon as you think of it.</strong> Talk it through with your conductor first.”</p></li>
       <li><p><strong>Fit the model to the job.</strong> She moved lighter tasks from Opus to Sonnet to keep the cost down.</p></li>
       <li><p><strong>Make reports fit how you work.</strong> She rebuilt her morning brief: her actions first, the most urgent at the top, each with where to go, what to reply and why.</p></li>
       <li><p><strong>Keep a rhythm.</strong> Two stand-ups a day, at 12:00 and 18:00, before and during the summit.</p></li>
-      <li><p><strong>Make stopping certain.</strong> Every agent checks four stop files at the start of each run.</p></li>
       <li><p><strong>Ask for help early.</strong> When stuck, she asked Dinis Cruz's agents for help.</p></li>
     </ol>
   </div>
 </section>
 
 <section class="panel wrap" id="journey" aria-labelledby="journey-h">
-  <div class="panel-box" data-tag="PANEL 04">
+  <div class="panel-box">
     <div class="sec-head">
-      <div>
-        <p class="kicker">Journey readout</p>
-        <h2 id="journey-h">From the pastry kitchen to an agent team</h2>
-        <p>“You don't need a technical background to start. I don't have one either. Two weeks ago I was starting from zero.”<a class="src" href="#s-i">[I]</a></p>
-      </div>
+      <h2 id="journey-h">From the pastry kitchen to an agent team</h2>
     </div>
     <ol class="path">
-      <li><span class="t">Years</span><b>Pastry chef</b><p>Recipes, standards and a team.<a class="src" href="#s-i">[I]</a></p></li>
-      <li><span class="t">Next</span><b>Product development</b><p>From the kitchen to building products.<a class="src" href="#s-i">[I]</a></p></li>
+      <li><span class="t">Years</span><b>Pastry chef<a class="src" href="#s-i">[I]</a></b></li>
+      <li><span class="t">Next</span><b>Product development<a class="src" href="#s-i">[I]</a></b></li>
       <li><span class="t">Next</span><b>Project management</b><p>Used AI for her job search, a portfolio site and her documents.<a class="src" href="#s-i">[I]</a></p></li>
-      <li><span class="t">2 to 14 Nov 2026</span><b>Running 26 agents</b><p>Her own team, Web Summit, PrompTugal.news.<a class="src" href="#s-p">[P]</a></p></li>
+      <li><span class="t">2 to 14 Nov 2026</span><b>Running an agent team</b><p>Her own team, Web Summit, PrompTugal.news.<a class="src" href="#s-p">[P]</a></p></li>
       <li class="now"><span class="t">Now</span><b>Your project or operations team</b><p>“I'm still learning every day.”<a class="src" href="#s-i">[I]</a></p></li>
     </ol>
     <div class="gantt" role="group" aria-labelledby="g-h">
@@ -485,35 +452,30 @@ footer.site{margin:64px auto 0;padding:24px var(--gut) 40px;max-width:var(--max)
       <div class="g-row"><span class="g-lab">Project manager, RiskMandate team <a class="src" href="#s-b">[B]</a></span><div class="g-track"><span class="g-bar gold" style="--s:2;--e:13" title="3 to 13 Nov"></span></div></div>
       <div class="g-row"><span class="g-lab">Six people, around 250 agents <a class="src" href="#s-n2">[N2]</a></span><div class="g-track"><span class="g-bar" style="--s:2;--e:13" title="3 to 13 Nov"></span></div></div>
       <div class="g-row"><span class="g-lab">Web Summit Lisbon, at the stand <a class="src" href="#s-i">[I]</a></span><div class="g-track"><span class="g-bar violet" style="--s:8;--e:12" title="9 to 12 Nov"></span></div></div>
-      <div class="g-row"><span class="g-lab">Storm night, temporary agent <a class="src" href="#s-i">[I]</a></span><div class="g-track"><span class="g-bar red" style="--s:9;--e:10" title="10 Nov"></span></div></div>
+      <div class="g-row"><span class="g-lab">Storm night <a class="src" href="#s-i">[I]</a></span><div class="g-track"><span class="g-bar red" style="--s:9;--e:10" title="10 Nov"></span></div></div>
       <div class="g-row"><span class="g-lab">Her interview published <a class="src" href="#s-i">[I]</a></span><div class="g-track"><span class="g-bar gold" style="--s:13;--e:14" title="14 Nov"></span></div></div>
-      <p class="cap" style="margin:10px 0 0">Each column is one day, 2 to 16 Nov 2026. The earlier steps have no dates in the sources, so they are not drawn to scale.</p>
+      <p class="cap" style="margin:10px 0 0">The earlier steps have no dates in the sources, so they are not drawn to scale.</p>
     </div>
   </div>
 </section>
 
 <section class="panel wrap" id="office" aria-labelledby="office-h">
-  <div class="panel-box" data-tag="PANEL 05">
+  <div class="panel-box">
     <div class="sec-head">
-      <div>
-        <p class="kicker">Live feed, captured</p>
-        <h2 id="office-h">Her Live AI Office (screenshot)</h2>
-        <p>The view this page is modelled on: her agent team as she sees it.</p>
-      </div>
+      <h2 id="office-h">Her Live AI Office (screenshot)</h2>
     </div>
     <figure class="shot">
       <div class="frame"><img src="/assets/photos/live-ai-office.jpg" width="2000" height="1318" loading="lazy" alt="Screenshot of Yiheng Wang's Live AI Office: her name and an orb on the left, four counters in the middle, and curved lines to her agents on the right, each with a message count"></div>
-      <figcaption><span class="chip">Screenshot</span>Supplied by Dinis Cruz, 2026-11-16. At the moment it was taken it showed 23 agents, 20 with a policy and 3 without, 13 pairs talking, and the conductor at 165 messages. That is a different moment from the 26 agents counted on her dashboard on 2026-11-16 <a class="src" href="#s-p">[P]</a>, so the two sets of numbers do not match.</figcaption>
+      <figcaption>Supplied by Dinis Cruz, 2026-11-16. At the moment it was taken it showed 23 agents, 20 with a policy and 3 without, 13 pairs talking, and the conductor at 165 messages. That is a different moment from the dashboard figures above, so the numbers do not match.</figcaption>
     </figure>
   </div>
 </section>
 
 <section class="panel wrap" id="contact" aria-labelledby="contact-h">
-  <div class="panel-box" data-tag="CHANNEL">
+  <div class="panel-box">
     <div class="channel">
       <div>
-        <p class="kicker">Open a channel</p>
-        <h2 id="contact-h">Hire Yiheng as your project manager or PMO coordinator</h2>
+        <h2 id="contact-h">Hire Yiheng</h2>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/yihengwang9">linkedin.com/in/yihengwang9</a> &middot; Email: <a href="mailto:yihengw2994@gmail.com">yihengw2994@gmail.com</a> &middot; <a href="/assets/cv/YihengWang_CV.pdf">Download her CV (PDF)</a></p>
       </div>
       <div><a class="btn" href="/agents/#hiring">Ask your AI assistant about Yiheng</a></div>
@@ -522,7 +484,7 @@ footer.site{margin:64px auto 0;padding:24px var(--gut) 40px;max-width:var(--max)
 </section>
 
 <section class="panel wrap" id="sources" aria-labelledby="src-h">
-  <div class="panel-box" data-tag="SOURCES">
+  <div class="panel-box">
     <h2 id="src-h" style="font-size:28px;margin-bottom:16px">Sources</h2>
     <ul class="sources">
       <li id="s-i"><span class="k">[I]</span><span>Her approved interview, PrompTugal.news, 2026-11-14: <a href="https://promptugal.news/articles/humans-and-ai-vicky-wang.html">promptugal.news/articles/humans-and-ai-vicky-wang.html</a></span></li>
@@ -594,7 +556,6 @@ footer.site{margin:64px auto 0;padding:24px var(--gut) 40px;max-width:var(--max)
     toggle.hidden = n <= SHOW;
     toggle.textContent = open ? 'Show top 12' : `+${n - SHOW} more · show all ${n}`;
     toggle.setAttribute('aria-expanded', String(open));
-    $('me-n').textContent = n;
     list.querySelectorAll('.ag').forEach(b => {
       const a = agents.find(x => x.handle === b.dataset.h);
       b.addEventListener('mouseenter', () => show(a));

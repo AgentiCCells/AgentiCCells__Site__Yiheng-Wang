@@ -45,6 +45,7 @@ h3{font-size:clamp(22px,2.4vw,28px);letter-spacing:-.01em}
 .sec{padding:clamp(64px,9vw,120px) 0}
 .sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 48px;align-items:end;margin-bottom:clamp(32px,5vw,56px);border-top:3px double var(--rule);padding-top:22px}
 .sec-head p{margin:0;color:var(--ink-2);font-size:19px;max-width:34em}
+.sec-head>div:only-child{grid-column:1 / -1}
 @media (max-width:760px){.sec-head{grid-template-columns:1fr}}
 
 /* masthead */
@@ -62,7 +63,7 @@ h3{font-size:clamp(22px,2.4vw,28px);letter-spacing:-.01em}
 .hero h1{font-size:clamp(68px,11.5vw,156px);line-height:.9;letter-spacing:-.035em;font-weight:700;margin:0 0 .35em;color:var(--plum)}
 @media (prefers-color-scheme:dark){.hero h1{color:var(--ink)}}
 .hero h1 span{display:block;font-style:italic;font-weight:400;color:var(--accent-ink);padding-left:.45em}
-.pos{font-size:clamp(22px,2.4vw,30px);line-height:1.32;margin:0 0 .9em;max-width:22em;color:var(--ink)}
+.pos{font-size:clamp(22px,2.4vw,30px);line-height:1.32;margin:0 0 1.4em;max-width:22em;color:var(--ink)}
 .pos strong{font-weight:700}
 .sub{font:400 17px/1.6 var(--sans);color:var(--ink-2);max-width:34em;margin:0 0 1.8em}
 .ctas{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center}
@@ -79,14 +80,10 @@ h3{font-size:clamp(22px,2.4vw,28px);letter-spacing:-.01em}
 .portrait::before{content:"";position:absolute;left:0;bottom:0;width:calc(100% - 30px);height:calc(100% - 30px);border:2px solid var(--accent);border-radius:999px 999px 28px 28px;z-index:-1}
 .portrait .disc{position:absolute;left:-26px;bottom:64px;width:132px;height:132px;border-radius:50%;overflow:hidden;border:6px solid var(--paper);box-shadow:0 10px 30px -10px rgba(0,0,0,.4)}
 .portrait .disc img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
-.stamp{position:absolute;right:-14px;top:18%;width:124px;height:124px;border-radius:50%;background:var(--accent);color:#fff8ef;display:grid;place-items:center;text-align:center;font:600 12px/1.25 var(--sans);letter-spacing:.06em;text-transform:uppercase;transform:rotate(8deg);box-shadow:0 12px 26px -12px rgba(0,0,0,.45)}
-@media (prefers-color-scheme:dark){.stamp{background:#b9541f}}
-.stamp b{display:block;font:700 40px/1 var(--serif);letter-spacing:0;text-transform:none}
 .cap{font:italic 400 14px/1.45 var(--serif);color:var(--muted);margin:.9rem 0 0 30px}
 @media (max-width:860px){
   .hero-grid{grid-template-columns:1fr}
   .hero-fig{width:min(88%,340px);justify-self:start;margin-left:8px!important}
-  .stamp{width:100px;height:100px;right:-10px;font-size:10.5px}.stamp b{font-size:32px}
   .portrait .disc{width:96px;height:96px;left:-14px;bottom:50px}
 }
 
@@ -321,7 +318,7 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media print{
   body{background:#fff;color:#000;font-size:11pt}
-  .mast nav,.skip,.ctas,.stamp,.disc,.banner,.how-photo img,.bring-ph,.contact figure,.contact .ctas{display:none!important}
+  .mast nav,.skip,.ctas,.disc,.banner,.how-photo img,.bring-ph,.contact figure,.contact .ctas{display:none!important}
   .team,.contact,.c-edit{background:#fff!important;color:#000!important}
   .team *,.contact *,.c-edit *{color:#000!important}
   .sec{padding:24px 0}
@@ -357,10 +354,8 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
 <section class="hero" aria-labelledby="hero-h">
   <div class="wrap hero-grid">
     <div>
-      <p class="kick">Profile &middot; Lisbon, November 2026</p>
       <h1 id="hero-h">Yiheng <span>Wang</span></h1>
-      <p class="pos"><strong>Project Manager and PMO Coordinator.</strong> She ran a team of 26 AI agents at Web Summit 2026, with no technical background.</p>
-      <p class="sub">A pastry chef first, then product development and project management. In two weeks she learnt to run agents from zero; her journalists wrote about 53 of the 73 articles on PrompTugal.news. She is now looking for a project manager, project coordinator or PMO coordinator role.</p>
+      <p class="pos"><strong>Project Manager and PMO Coordinator.</strong> She ran a team of AI agents at Web Summit 2026.</p>
       <div class="ctas">
         <a class="btn btn-main" href="#contact">Hire Yiheng <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="btn btn-ghost" href="#work">See her work</a>
@@ -370,7 +365,6 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
       <div class="portrait">
       <div class="arch"><img src="/assets/photos/yiheng-in-the-arena.jpg" width="729" height="1600" alt="Yiheng Wang in the arena at Web Summit 2026, in a grey hoodie and her summit badge"></div>
       <div class="disc"><img src="/assets/photos/yiheng-smiling.jpg" width="900" height="900" alt="Yiheng Wang smiling in the arena at Web Summit 2026, in a lilac hoodie and summit badge"></div>
-      <p class="stamp" aria-hidden="true"><span><b>26</b>AI agents<br>1 conductor</span></p>
       </div>
       <figcaption class="cap">In the arena, Web Summit Lisbon, November 2026.</figcaption>
     </figure>
@@ -400,8 +394,7 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
 <section class="sec" id="work" aria-labelledby="work-h">
   <div class="wrap">
     <header class="sec-head">
-      <div><p class="kick">Selected work</p><h2 id="work-h">Ten days that show the job</h2></div>
-      <p>Three pieces of work from November 2026: the event, the newsroom and the agent team. In each she set the standard, handed out the work and checked the result.</p>
+      <div><h2 id="work-h">Ten days that show the job</h2></div>
     </header>
 
     <div class="work-grid">
@@ -444,7 +437,7 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
 
       <article class="card c-team">
         <p class="tag">One of the largest agent teams at Web Summit</p>
-        <h3>Running a team of 26 AI agents</h3>
+        <h3>Running a team of AI agents</h3>
         <p>Journalists on several desks, a reviewer, a curator, a weather desk, a developer, a designer and more. She works mostly through one conductor agent: it hands out the work, the agents report back to it, and she reads one morning brief and deals only with the items marked for her. Her reviewer alone made 359 commits to PrompTugal.news.</p>
         <figure class="shot">
           <img src="/assets/photos/live-ai-office.jpg" width="2000" height="1318" loading="lazy" alt="Screenshot of Yiheng's Live AI Office view: her agents drawn around her, with counts of agents, policies and pairs talking">
@@ -455,7 +448,7 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
     </div>
 
     <figure class="banner">
-      <img src="/assets/photos/web-summit-main-stage.jpg" width="1600" height="331" loading="lazy" alt="The Web Summit main stage in Lisbon, its logo lit in white between violet and red screens">
+      <img src="/assets/photos/web-summit-main-stage.jpg" width="1600" height="331" loading="lazy" alt="The Web Summit main stage in Lisbon, its logo lit in white between columns of blue and violet light">
       <figcaption>The Web Summit main stage, Lisbon, November 2026.</figcaption>
     </figure>
   </div>
@@ -464,8 +457,7 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
 <section class="sec team" id="team" aria-labelledby="team-h">
   <div class="wrap">
     <header class="sec-head">
-      <div><p class="kick">The agent team at a glance</p><h2 id="team-h">Her at the centre, one conductor, four groups</h2></div>
-      <p>Each dot is one of her 26 agents, sized by its commits. Lines show how the work flows: she speaks to the conductor, and the conductor hands out the work.</p>
+      <div><h2 id="team-h">Her at the centre, one conductor, four groups</h2></div>
     </header>
     <div class="team-grid">
       <figure class="viz" id="viz">
@@ -490,7 +482,6 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
 
       <div class="roster" id="roster">
         <h3>The roster</h3>
-        <p>Every agent and its commit count. This list is also the chart's fallback when the data cannot be loaded.</p>
         <div class="grp"><h4><i style="background:#f7efe4"></i>Leads the team</h4>
           <ul>
 <li data-role="conductor" data-group="lead" data-commits="308" data-does="coordinates her agents, keeps her records, reads every agent&#x27;s report, relays anything urgent and writes her one brief a day"><span>conductor</span><b>308</b></li>
@@ -541,8 +532,7 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
 <section class="sec" id="how" aria-labelledby="how-h">
   <div class="wrap">
     <header class="sec-head">
-      <div><p class="kick">How she works</p><h2 id="how-h">Set the standard, hand out the work, check the result</h2></div>
-      <p>She manages at two altitudes: direction for agents outside her expertise, depth where she knows best, in editorial judgement. In Dinis Cruz's words, "she became a manager, not a micromanager".</p>
+      <div><h2 id="how-h">How she works</h2></div>
     </header>
     <div class="how-grid">
       <figure class="how-photo" style="margin:0">
@@ -554,12 +544,12 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
       </figure>
       <div>
         <ol class="steps">
-          <li><h3>Set the standard</h3><p>Rules are talked through before they are added: "Don't add a rule as soon as you think of it. Talk it through with your conductor first."</p></li>
-          <li><h3>Hand out the work</h3><p>One conductor, one morning brief: "Start with one conductor and only talk to that one. Let it hand out the work."</p></li>
+          <li><h3>Set the standard</h3><p>"Don't add a rule as soon as you think of it. Talk it through with your conductor first."</p></li>
+          <li><h3>Hand out the work</h3><p>"Start with one conductor and only talk to that one. Let it hand out the work."</p></li>
           <li><h3>Check the result</h3><p>"When an agent says it's done, it usually is, but not always. I still check a few things myself."</p></li>
         </ol>
         <figure class="check" style="margin:0">
-          <h3>Checking the work: 15 + 12 = 27</h3>
+          <h3>Checking the work</h3>
           <p>She asked the reviewer to move the main image in every published article. It said 15 were done. She opened some herself, found two storm articles it had missed and sent them back; the reviewer then found 12 more.</p>
           <div class="eq" role="img" aria-label="15 articles fixed at first, plus 12 found after her check, makes 27 fixed in all. Two of the twelve were the storm articles she found herself.">
             <figure><div class="blocks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><figcaption>15 reported done</figcaption></figure>
@@ -588,19 +578,18 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
 <section class="sec journey" id="journey" aria-labelledby="journey-h">
   <div class="wrap">
     <header class="sec-head">
-      <div><p class="kick">The journey</p><h2 id="journey-h">From the pastry kitchen to an agent team</h2></div>
-      <p>Years in a kitchen, product development and project management; then two weeks in November 2026 in which she went from zero to running one of the largest agent teams at Web Summit.</p>
+      <div><h2 id="journey-h">From the pastry kitchen to an agent team</h2></div>
     </header>
     <div class="spans" aria-hidden="true"><span>Years</span><span>Two weeks, November 2026</span></div>
     <ol class="path">
-      <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14a5 5 0 1 1 3-9 6 6 0 0 1 9 0 5 5 0 1 1 3 9v4H9z"/><path d="M9 22h14v5H9z"/></svg></span><span class="when">For years</span><h3>Pastry chef</h3><p>"In a kitchen I managed recipes, standards and a team."</p></li>
-      <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10l11-5 11 5-11 5z"/><path d="M5 10v12l11 5 11-5V10M16 15v12"/></svg></span><span class="when">Then</span><h3>Product development</h3><p>From recipes to products.</p></li>
-      <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="6" width="18" height="22" rx="2"/><path d="M12 4h8v4h-8zM11 15l3 3 6-6M11 23h10"/></svg></span><span class="when">Then</span><h3>Project management</h3><p>Already using AI for her job search, a portfolio site and her documents.</p></li>
+      <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14a5 5 0 1 1 3-9 6 6 0 0 1 9 0 5 5 0 1 1 3 9v4H9z"/><path d="M9 22h14v5H9z"/></svg></span><span class="when">Before 2022</span><h3>Pastry chef</h3><p>Kitchens in Australia and China.</p></li>
+      <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10l11-5 11 5-11 5z"/><path d="M5 10v12l11 5 11-5V10M16 15v12"/></svg></span><span class="when">2022 to 2023</span><h3>Project coordinator</h3><p>Ninth Heaven Technology, Shenzhen: order errors from 30% to under 5%.</p></li>
+      <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="6" width="18" height="22" rx="2"/><path d="M12 4h8v4h-8zM11 15l3 3 6-6M11 23h10"/></svg></span><span class="when">2025</span><h3>Production coordination</h3><p>Un P'tit Truc, Lisbon: 98% on time.</p></li>
       <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="16" r="5"/><path d="M16 16h12M24 16v4M28 16v3"/></svg></span><span class="when">2 to 3 Nov</span><h3>Setup level L6</h3><p>L5 on 2 Nov, L6, the vaults fully wired, on 3 Nov: 9 of 9 on the setup leaderboard.</p></li>
-      <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="22" height="20" rx="2"/><path d="M5 13h22M11 4v6M21 4v6M10 18h4M18 18h4M10 22h4"/></svg></span><span class="when">3 to 13 Nov</span><h3>Project manager</h3><p>The RiskMandate team at Web Summit: structure, deadlines, logistics, schedules.</p></li>
-      <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a4 4 0 1 0-4-4M4 18h20a4 4 0 1 1-4 4M4 24h8"/></svg></span><span class="when">Tue 10 Nov</span><h3>The storm night</h3><p>A temporary storm agent, a lead story and a new home page, the same night.</p></li>
+      <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="22" height="20" rx="2"/><path d="M5 13h22M11 4v6M21 4v6M10 18h4M18 18h4M10 22h4"/></svg></span><span class="when">3 to 13 Nov</span><h3>Project manager</h3><p>The RiskMandate team at Web Summit.</p></li>
+      <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a4 4 0 1 0-4-4M4 18h20a4 4 0 1 1-4 4M4 24h8"/></svg></span><span class="when">Tue 10 Nov</span><h3>The storm night</h3></li>
       <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="20" height="21" rx="2"/><path d="M24 11h4v13a3 3 0 0 1-6 0M8 11h12M8 16h12M8 21h8"/></svg></span><span class="when">14 Nov</span><h3>Her interview</h3><p>Approved and published on PrompTugal.news.</p></li>
-      <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16h18M18 9l7 7-7 7"/></svg></span><span class="when">Now</span><h3>Your team?</h3><p>Looking for a project manager or PMO coordinator role.</p></li>
+      <li class="stop"><span class="ic" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16h18M18 9l7 7-7 7"/></svg></span><span class="when">Now</span><h3>Your team?</h3></li>
     </ol>
     <p class="src">Sources: <a href="https://promptugal.news/articles/humans-and-ai-vicky-wang.html">her interview</a>; setup levels from <a href="https://web-summit.sgit.ai/people/vicky/index.html">her dashboard</a> and <a href="https://web-summit.sgit.ai/brief-vicky/index.html">her brief</a> (read 2026-11-16); team role from the <a href="https://web-summit.sgit.ai/">team site</a>.</p>
     <div class="journey-foot">
@@ -613,20 +602,19 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
 <section class="sec" id="bring" aria-labelledby="bring-h">
   <div class="wrap">
     <header class="sec-head">
-      <div><p class="kick">For a hiring manager</p><h2 id="bring-h">What she would bring to your team</h2></div>
-      <p>Five things, each with the evidence behind it. "And you don't need a technical background to start. I don't have one either."</p>
+      <div><h2 id="bring-h">What she would bring to your team</h2></div>
     </header>
     <div class="bring-grid">
       <figure class="bring-ph" style="margin:0">
-        <img src="/assets/photos/yiheng-with-the-team.jpg" width="574" height="1600" loading="lazy" alt="Yiheng Wang standing in a hall at Web Summit, in a lilac hoodie">
+        <img src="/assets/photos/yiheng-with-the-team.jpg" width="574" height="1600" loading="lazy" alt="Yiheng Wang standing in a corridor at the arena at Web Summit 2026, in a lilac hoodie">
         <figcaption>At Web Summit, November 2026.</figcaption>
       </figure>
       <ol class="skills">
-        <li><h3>Project management<small>Structure, deadlines, schedules</small></h3><div><p>Project manager for the RiskMandate team of six at Web Summit 2026: the structure, the deadlines and everyone's schedule, with two stand-ups a day.</p><p class="src"><a href="https://web-summit.sgit.ai/brief-vicky/index.html">Her brief</a>, <a href="https://newsroom.sgit.ai/articles/ten-days-at-web-summit.html">Ten days at Web Summit</a>.</p></div></li>
-        <li><h3>Operations<small>Reporting, hand-overs, cost</small></h3><div><p>Ran 26 agents through one conductor and a morning brief she redesigned around her own actions. Handed the conductor over to its successor in about an hour with nothing lost, and moved lighter tasks to a cheaper model.</p><p class="src"><a href="https://promptugal.news/articles/humans-and-ai-vicky-wang.html">Her interview</a>, <a href="https://web-summit.sgit.ai/people/vicky/index.html">her dashboard</a>.</p></div></li>
-        <li><h3>Logistics<small>Things that must arrive on time</small></h3><div><p>Printing, merchandise, deliveries and the stand for Web Summit, with a logistics agent tracking sizes, print sign-offs and the printer's dates.</p><p class="src"><a href="https://web-summit.sgit.ai/brief-vicky/index.html">Her brief</a>, <a href="/data/agents.json">agents.json</a>.</p></div></li>
-        <li><h3>Editorial judgement<small>Deciding what goes out</small></h3><div><p>One of the three editors of PrompTugal.news: chose what was published, set the categories, withdrew articles when sources failed, and led the storm night coverage.</p><p class="src"><a href="https://promptugal.news/articles/humans-and-ai-vicky-wang.html">Her interview</a>, <a href="https://promptugal.news/">promptugal.news</a>.</p></div></li>
-        <li><h3>Managing agents safely<small>Checks, stops and rules</small></h3><div><p>Checks the work herself (15 became 27). Switched off 25 scheduled tasks by hand when one agent ignored a stop, then made every agent check four stop files. Chose a weekly security check that no rule changed without her word.</p><p class="src"><a href="https://promptugal.news/articles/humans-and-ai-vicky-wang.html">Her interview</a>.</p></div></li>
+        <li><h3>Project management</h3><p><a href="#work">The RiskMandate team at Web Summit</a></p></li>
+        <li><h3>Operations</h3><p><a href="#team">Her agent team</a></p></li>
+        <li><h3>Logistics</h3><div><p>A logistics agent tracked sizes, print sign-offs and the printer's dates.</p><p class="src"><a href="https://web-summit.sgit.ai/brief-vicky/index.html">Her brief</a>, <a href="/data/agents.json">agents.json</a>.</p></div></li>
+        <li><h3>Editorial judgement</h3><p><a href="#work">PrompTugal.news</a></p></li>
+        <li><h3>Managing agents safely</h3><p><a href="#how">How she works</a></p></li>
       </ol>
     </div>
   </div>
@@ -635,13 +623,14 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
 <section class="sec" id="sources" aria-labelledby="sources-h" style="padding-top:0">
   <div class="wrap">
     <header class="sec-head">
-      <div><p class="kick">Sources</p><h2 id="sources-h">Where every figure comes from</h2></div>
-      <p>Every figure on this page names its source. The public sources call her Vicky Wang, her team name; it is the same person.</p>
+      <div><h2 id="sources-h">Where every figure comes from</h2></div>
+      <p>The public sources call her Vicky Wang, her team name; it is the same person.</p>
     </header>
     <ul class="srcs">
       <li><span class="k">I</span><span><a href="https://promptugal.news/articles/humans-and-ai-vicky-wang.html">Humans and AI: her approved interview</a><small>PrompTugal.news, 2026-11-14</small></span></li>
       <li><span class="k">N1</span><span><a href="https://newsroom.sgit.ai/articles/dont-micromanage-your-agents.html">Don't micromanage your agents</a><small>Dinis Cruz, newsroom.sgit.ai, 2026-11-15</small></span></li>
       <li><span class="k">N2</span><span><a href="https://newsroom.sgit.ai/articles/ten-days-at-web-summit.html">Ten days at Web Summit</a><small>newsroom.sgit.ai</small></span></li>
+      <li><span class="k">CV</span><span><a href="/assets/cv/YihengWang_CV.pdf">Her CV</a> and <a href="https://www.linkedin.com/in/yihengwang9">LinkedIn profile</a><small>Supplied by Yiheng, 2026-11-16</small></span></li>
       <li><span class="k">L</span><span>Her LinkedIn post sharing Ten days at Web Summit<small>About 15 Nov 2026; from a screenshot supplied by Dinis Cruz, 2026-11-16</small></span></li>
       <li><span class="k">P</span><span><a href="https://web-summit.sgit.ai/people/vicky/index.html">Her dashboard on the team's site</a><small>Read 2026-11-16</small></span></li>
       <li><span class="k">B</span><span><a href="https://web-summit.sgit.ai/brief-vicky/index.html">Her brief</a> and <a href="https://web-summit.sgit.ai/team/vicky/index.html">role page</a><small>Read 2026-11-16</small></span></li>
@@ -654,7 +643,6 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
 <section class="sec contact" id="contact" aria-labelledby="contact-h">
   <div class="wrap contact-grid">
     <div>
-      <p class="kick">Get in touch</p>
       <h2 id="contact-h">Hire <em>Yiheng</em></h2>
       <p>She is looking for a role as a Project Manager, Project Coordinator, PMO Coordinator or Junior Project Manager, in Lisbon (on-site or hybrid) or remote.</p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/yihengwang9">linkedin.com/in/yihengwang9</a> &middot; Email: <a href="mailto:yihengw2994@gmail.com">yihengw2994@gmail.com</a> &middot; <a href="/assets/cv/YihengWang_CV.pdf">Download her CV (PDF)</a></p>
@@ -665,7 +653,7 @@ main p.src{font:400 13.5px/1.5 var(--sans)!important}
     </div>
     <figure>
       <img src="/assets/photos/yiheng-at-the-stand.jpg" width="348" height="1600" loading="lazy" alt="Yiheng Wang at the RiskMandate stand, thumbs up">
-      <figcaption>"I'm sure people alone could never have done it."</figcaption>
+      <figcaption>"I'm sure people alone could never have done it." Her interview, 2026-11-14.</figcaption>
     </figure>
   </div>
 </section>
