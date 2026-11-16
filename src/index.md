@@ -23,7 +23,7 @@ Yiheng is looking for a role as a **Project Manager, Project Coordinator, PMO Co
 - **I run teams to a standard.** In a kitchen, at an event stand, and in a newsroom of AI agents.
 - **I deliver under pressure.** Four days of Web Summit Lisbon 2026, and a storm night on a live news site.
 - **I check the result.** When an agent said 15 articles were fixed, she checked, found 12 more, and 27 were fixed in all.
-- **If you have a problem, I'm the one you come to for solutions.**
+- **If you have a problem, I'm the one you come to for solutions.** [Y]
 
 ## Key figures
 
