@@ -127,7 +127,7 @@
    "role": "logistics",
    "project": "web-summit",
    "handle": "logistics@web-summit",
-   "does": "printing, merchandise and deliveries: sizes, print sign-offs, the printer's dates",
+   "does": "kept the team's merch sizes and print sign-offs in one place, and noted the printer's dates, for the teammate who bought and collected the order",
    "commits": 32,
    "group": "operations"
   },
