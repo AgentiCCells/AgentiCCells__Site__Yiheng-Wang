@@ -57,10 +57,10 @@ The site says she spent years as a pastry chef, and that in a kitchen she manage
 
 ## 5. Web Summit 2026: project manager for the RiskMandate team
 
-The site has: the structure, the deadlines, the logistics (printing, merchandise, deliveries, the stand) and everyone's schedule; two stand-ups a day; the stand and pitching.
+The site has: the structure, the deadlines and everyone's schedule; two stand-ups a day; the stand and pitching.
 
 1. What exactly did you get printed and delivered? How many items, how many suppliers, and what was the tightest deadline?
-2. What nearly went wrong with the logistics, and how did you save it?
+2. What did your logistics agent do, and for whom? (The site no longer says you ran printing, merchandise or deliveries: Yiheng, 2026-11-16, said that was teammates' work.)
 3. How did you plan everyone's schedule over the four days? How many meetings or people did the team see?
 4. What did you say when you pitched at the stand? What did people ask most?
 5. How did you cope when Wednesday was called off for the storm? What changed in the plan?

@@ -40,8 +40,7 @@ Yiheng is looking for a role as a **Project Manager, Project Coordinator, PMO Co
 
 ### Web Summit Lisbon 2026: project manager for the RiskMandate team
 
-- Kept the team on one plan: the structure, the deadlines, the logistics and everyone's schedule [B].
-- Ran the logistics: printing, merchandise, deliveries and the stand [B].
+- Kept the team on one plan: the structure, the deadlines and everyone's schedule [B].
 - Two stand-ups a day, at 12:00 and 18:00, before and during the summit [I].
 - At the stand (9 to 12 November), talked to visitors and pitched; now following up the people she met [I].
 - The team: six people and around 250 agents, 3 to 13 November [N2].
