@@ -72,9 +72,12 @@ section{padding:clamp(64px,9vw,120px) 0;border-bottom:1px solid var(--rule);posi
 /* hero */
 .hero{padding:clamp(40px,6vw,80px) 0 0;border-bottom:0;background:linear-gradient(180deg,var(--paper) 0,var(--paper) 70%,var(--paper-2) 100%)}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:clamp(28px,5vw,72px);align-items:end}
-.hero h1{font-size:clamp(42px,6.4vw,84px);line-height:.98;letter-spacing:-.025em;margin:18px 0 26px}
-.hero h1 span{display:block}
-.hero h1 em{font-style:italic;color:var(--rasp)}
+.hero h1{font-size:clamp(46px,7vw,92px);line-height:.98;letter-spacing:-.025em;margin:10px 0 10px}
+.hero .avail{font:600 13px/1.3 var(--cond);font-stretch:condensed;letter-spacing:.14em;text-transform:uppercase;color:var(--rasp);margin:0}
+.hero .title{font-size:clamp(22px,2.4vw,30px);line-height:1.2;margin:0 0 14px;color:var(--ink)}
+.hero .motto{font-size:clamp(20px,2vw,26px);line-height:1.3;margin:0 0 18px;color:var(--ink-2)}
+.hero .motto em{font-style:italic;color:var(--rasp)}
+.hero .reach{font-size:15px;color:var(--muted);margin:14px 0 0}
 .who{display:flex;flex-wrap:wrap;gap:.4rem .9rem;align-items:center;margin-bottom:6px}
 .who .pill{font:600 12px/1 var(--cond);font-stretch:condensed;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--rasp);color:var(--rasp);padding:.45rem .7rem;border-radius:999px}
 .hero .lede{max-width:40ch}
@@ -345,7 +348,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
   <div class="wrap top-in">
     <a class="mark" href="#main"><strong>Yiheng Wang</strong><span>The Pass</span></a>
     <nav aria-label="Sections"><ul class="nav">
-      <li><a href="#work">The brigade</a></li><li><a href="#setup">Mise en place</a></li><li><a href="#service">Service</a></li><li><a href="#how">At the pass</a></li><li><a href="#recipes">Recipes</a></li><li><a href="#journey">Journey</a></li><li><a href="#contact">Hire</a></li>
+      <li><a href="#work">Agent team</a></li><li><a href="#setup">Preparation</a></li><li><a href="#service">Web Summit</a></li><li><a href="#how">Quality checks</a></li><li><a href="#recipes">Method</a></li><li><a href="#journey">Experience</a></li><li><a href="#contact">Contact</a></li>
     </ul></nav>
   </div>
 </header>
@@ -356,38 +359,32 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="who"><span class="label"><b>Yiheng Wang</b></span><span class="pill">Project manager</span><span class="pill">Project coordinator</span><span class="pill">PMO coordinator</span></div>
-        <h1 id="h-top"><span>Set the standard.</span><span>Hand out the work.</span><span><em>Check the result.</em></span></h1>
-        <p class="lede">Yiheng was a pastry chef. In November 2026, with no technical background and two weeks of learning<a class="fn" href="#s-i">I</a>, she ran <strong>a team of 26 AI agents</strong><a class="fn" href="#s-p">P</a> at Web Summit, and her journalists wrote <strong>about 53 of the 73 articles</strong> on PrompTugal.news<a class="fn" href="#s-n1">N1</a>. She is looking for a role as a project or operations manager.</p>
-        <div class="ctas"><a class="btn solid" href="#contact">Hire Yiheng</a><a class="btn" href="#work">Meet the brigade</a></div>
+        <p class="avail">Lisbon &middot; available now &middot; authorised to work in Portugal</p>
+        <h1 id="h-top">Yiheng Wang</h1>
+        <p class="title">Project Manager and PMO Coordinator</p>
+        <p class="motto">Set the standard. Hand out the work. <em>Check the result.</em></p>
+        <div class="who"><span class="pill">Project manager</span><span class="pill">Project coordinator</span><span class="pill">PMO coordinator</span><span class="pill">Junior project manager</span></div>
+        <p class="lede">A pastry chef turned project coordinator. In November 2026 she ran <strong>a team of 26 AI agents</strong><a class="fn" href="#s-p">P</a> at Web Summit as project manager for the RiskMandate team, and her journalists wrote <strong>about 53 of the 73 articles</strong> on PrompTugal.news<a class="fn" href="#s-n1">N1</a>.</p>
+        <div class="ctas"><a class="btn solid" href="https://www.linkedin.com/in/yihengwang9">LinkedIn</a><a class="btn" href="mailto:yihengw2994@gmail.com">Email</a><a class="btn" href="/assets/cv/YihengWang_CV.pdf">CV (PDF)</a></div>
+        <p class="reach">yihengw2994@gmail.com &middot; linkedin.com/in/yihengwang9 &middot; Lisbon (on-site or hybrid) or remote</p>
       </div>
       <figure class="frame" style="margin-top:0">
         <img src="/assets/photos/yiheng-at-the-stand.jpg" width="245" height="1200" alt="Yiheng Wang at the RiskMandate stand at Web Summit 2026, thumbs up">
         <figcaption class="tag"><b>At the stand</b><span>Web Summit, Lisbon, Nov 2026</span></figcaption>
       </figure>
     </div>
-    <div class="rail" aria-label="Order rail: four figures, each with its source">
+    <div class="rail" aria-label="Four results, each with its source">
       <div class="rail-bar" aria-hidden="true"></div>
       <div class="tickets">
         <div class="ticket"><div class="label">Agents</div><div class="n">26</div><div class="t">in her team, 25 running<a class="fn" href="#s-p">P</a></div></div>
-        <div class="ticket"><div class="label">Commits</div><div class="n">1,171</div><div class="t">by her agents to PrompTugal.news<a class="fn" href="#s-n1">N1</a></div></div>
-        <div class="ticket"><div class="label">Articles</div><div class="n">53/73</div><div class="t">about 53 of the site's 73, from her desks<a class="fn" href="#s-n1">N1</a></div></div>
-        <div class="ticket"><div class="label">Learnt in</div><div class="n">2 wks</div><div class="t">from zero, no technical background<a class="fn" href="#s-i">I</a></div></div>
+        <div class="ticket"><div class="label">Order errors</div><div class="n">&lt;5%</div><div class="t">down from 30% in three months, Ninth Heaven Technology, Shenzhen<a class="fn" href="#s-cv">CV</a></div></div>
+        <div class="ticket"><div class="label">On time</div><div class="n">98%</div><div class="t">across 200+ units a day, Un P'tit Truc, Lisbon<a class="fn" href="#s-cv">CV</a></div></div>
+        <div class="ticket"><div class="label">Certified</div><div class="n">3</div><div class="t">PSM I, Certified Agile Facilitator, Google Project Management<a class="fn" href="#s-cv">CV</a></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- The line -->
-<section class="bigq" aria-label="In her words">
-  <div class="wrap">
-    <p class="label">In her words</p>
-    <figure style="margin:0">
-      <blockquote><p style="margin:0">&ldquo;Seeing six people and around 250 agents build all of this, I think the hard part is no longer the doing. <em>It's knowing what to ask for and what to check.</em>&rdquo;</p></blockquote>
-      <figcaption>Yiheng Wang, in a LinkedIn post about the team's ten days at Web Summit<a class="fn" href="#s-l">L</a>. And from her interview: &ldquo;In a kitchen I managed recipes, standards and a team. Now I manage agents and rules. It's the same job underneath.&rdquo;<a class="fn" href="#s-i">I</a></figcaption>
-    </figure>
-  </div>
-</section>
 
 <!-- The brigade -->
 <section id="work" aria-labelledby="h-work">
@@ -609,20 +606,21 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 <section id="journey" aria-labelledby="h-journey">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="no"><span class="label"><b>No. 6</b> The journey</span></div>
-      <h2 id="h-journey">From the pastry kitchen to the agent team</h2>
+      <div class="no"><span class="label"><b>No. 6</b> Experience</span></div>
+      <h2 id="h-journey">From the pastry kitchen to project management</h2>
     </div>
     <div class="jgrid">
       <div class="menu rv">
         <p class="label">Menu</p>
-        <p class="mh">Yiheng Wang, in five courses</p>
-        <p class="small muted" style="margin:0">Each course from her interview or the team's pages<a class="fn" href="#s-i">I</a><a class="fn" href="#s-b">B</a></p>
+        <p class="mh">Yiheng Wang, course by course</p>
+        <p class="small muted" style="margin:0">Titles and dates as on her CV and LinkedIn profile<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-li">LI</a></p>
         <ol class="courses">
-          <li class="course"><span class="cn">First course</span><h3>Pastry chef</h3><p>For years. &ldquo;In a kitchen I managed recipes, standards and a team.&rdquo;<a class="fn" href="#s-i">I</a></p></li>
-          <li class="course"><span class="cn">Second course</span><h3>Product development</h3><p>The step out of the kitchen<a class="fn" href="#s-i">I</a>.</p></li>
-          <li class="course"><span class="cn">Third course</span><h3>Project management</h3><p>Already using AI for her job search, a portfolio website and her documents<a class="fn" href="#s-i">I</a>.</p></li>
-          <li class="course"><span class="cn">Fourth course</span><h3>An agent team</h3><p>L5 on 2 Nov, L6 on 3 Nov; Web Summit 3 to 13 Nov with 26 agents; her interview on PrompTugal.news on 14 Nov<a class="fn" href="#s-p">P</a><a class="fn" href="#s-i">I</a>.</p><span class="when">2 to 14 Nov 2026</span></li>
-          <li class="course now"><span class="cn">Next</span><h3>Your project or operations team</h3><p>&ldquo;I'm still learning every day, and I'm glad this is where I started.&rdquo;<a class="fn" href="#s-i">I</a></p></li>
+          <li class="course"><span class="cn">2015 to 2017, then years in kitchens</span><h3>Pastry chef and kitchen team lead</h3><p>Le Cordon Bleu, Sydney; kitchens in Australia and China, leading kitchen teams in China<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-li">LI</a>. &ldquo;In a kitchen I managed recipes, standards and a team.&rdquo;<a class="fn" href="#s-i">I</a></p></li>
+          <li class="course"><span class="cn">Sep 2022 to Oct 2023</span><h3>Project Coordinator, Ninth Heaven Technology</h3><p>Shenzhen. Sole coordinator between clients in China and the US head office, 12 hours apart; order errors from 30% to under 5% in three months<a class="fn" href="#s-cv">CV</a>.</p></li>
+          <li class="course"><span class="cn">Mar to Nov 2025</span><h3>Pastry Chef (Production Coordination), Un P'tit Truc</h3><p>Lisbon. Daily stand-ups for a team of four, 98% on time across 200+ units a day; production time cut by 17%<a class="fn" href="#s-cv">CV</a>.</p></li>
+          <li class="course"><span class="cn">Dec 2025 to Sep 2026</span><h3>Into project management</h3><p>PSM I, Google Project Management Certificate, Certified Agile Facilitator; event volunteering in Lisbon<a class="fn" href="#s-cv">CV</a>.</p></li>
+          <li class="course"><span class="cn">Oct 2026 to now</span><h3>Project Manager, RiskMandate; Editor, PrompTugal.news</h3><p>Web Summit 3 to 13 Nov with 26 agents<a class="fn" href="#s-p">P</a>; 18 agent-policy tests; a two-day audit of 206 claims<a class="fn" href="#s-cv">CV</a>.</p><span class="when">Part-time</span></li>
+          <li class="course now"><span class="cn">Next</span><h3>Your project team</h3><p>&ldquo;I'm still learning every day, and I'm glad this is where I started.&rdquo;<a class="fn" href="#s-i">I</a></p></li>
         </ol>
       </div>
       <figure class="jphoto rv" style="margin:0">
@@ -663,6 +661,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
     <div class="sec-head"><div class="no"><span class="label"><b>Footnotes</b> Sources</span></div><h2 id="h-src" style="font-size:clamp(28px,3.4vw,40px)">Every figure names its source</h2></div>
     <ol>
       <li id="s-i"><b>I</b><a href="https://promptugal.news/articles/humans-and-ai-vicky-wang.html">Humans and AI: her approved interview</a>, PrompTugal.news, 2026-11-14. All her quoted words except [L].</li>
+      <li id="s-cv"><b>CV</b><a href="/assets/cv/YihengWang_CV.pdf">Her CV</a>, supplied by Yiheng, 2026-11-16.</li>
+      <li id="s-li"><b>LI</b><a href="https://www.linkedin.com/in/yihengwang9">Her LinkedIn profile</a>, supplied by Yiheng, 2026-11-16.</li>
       <li id="s-l"><b>L</b>Her LinkedIn post, about 2026-11-15, sharing the Ten days article (screenshot supplied by Dinis Cruz, 2026-11-16; no link yet).</li>
       <li id="s-n1"><b>N1</b><a href="https://newsroom.sgit.ai/articles/dont-micromanage-your-agents.html">Don't micromanage your agents</a>, Dinis Cruz, newsroom.sgit.ai, 2026-11-15. Figures from the PrompTugal.news repository, read 2026-11-15.</li>
       <li id="s-n2"><b>N2</b><a href="https://newsroom.sgit.ai/articles/ten-days-at-web-summit.html">Ten days at Web Summit</a>, newsroom.sgit.ai.</li>
