@@ -317,6 +317,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
   .lanes .bar{grid-column:1/-1!important;grid-row:auto!important;margin:0}
   .bar b::after{content:attr(data-d);float:right;color:inherit;opacity:.85}
   .jphoto{order:-1}
+  .banner figcaption{position:static;padding:8px 0 0;max-width:none}
+  .plan.all .ord.on{opacity:.14}
   .jphoto img{height:360px;width:70%;margin:0 auto}
   .slips{grid-template-columns:minmax(0,1fr)}
   .svc-grid{grid-template-columns:minmax(0,1fr)}
@@ -360,7 +362,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
         <div class="ctas"><a class="btn solid" href="#contact">Hire Yiheng</a><a class="btn" href="#work">Meet the brigade</a></div>
       </div>
       <figure class="frame" style="margin-top:0">
-        <img src="/assets/photos/yiheng-at-the-stand.jpg" width="365" height="1200" alt="Yiheng Wang at the RiskMandate stand at Web Summit 2026, thumbs up">
+        <img src="/assets/photos/yiheng-at-the-stand.jpg" width="245" height="1200" alt="Yiheng Wang at the RiskMandate stand at Web Summit 2026, thumbs up">
         <figcaption class="tag"><b>At the stand</b><span>Web Summit, Lisbon, Nov 2026</span></figcaption>
       </figure>
     </div>
@@ -776,7 +778,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
     });
     // her and the conductor
     el('line', { class: 'talk', x1: me[0] + 46, y1: me[1], x2: cond[0] - rad(308), y2: cond[1] }, svg);
-    txt(svg, (me[0] + cond[0]) / 2 + 8, me[1] - 10, 'one voice', 'note', { 'text-anchor': 'middle' });
+    txt(svg, (me[0] + 46 + cond[0] - rad(308)) / 2, me[1] - 9, 'one voice', 'note', { 'text-anchor': 'middle', style: 'font-size:12.5px' });
     el('circle', { cx: me[0], cy: me[1], r: 47, fill: 'var(--rasp)' }, svg);
     el('image', { href: '/assets/photos/yiheng-main-stage.jpg', x: me[0] - 44, y: me[1] - 44, width: 88, height: 88, 'clip-path': 'url(#meClip)', preserveAspectRatio: 'xMidYMid slice' }, svg);
     txt(svg, me[0], me[1] + 68, 'Yiheng', 'me-l');
