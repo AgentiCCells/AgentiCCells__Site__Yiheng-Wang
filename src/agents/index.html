@@ -5,25 +5,29 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Use this site with AI: Yiheng Wang</title>
 <meta name="description" content="How to use Yiheng Wang's website with an AI agent: ask it about her as a candidate, or, for Yiheng and her editors, change the site through your own agents.">
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/assets/chrome.css">
+<script src="/assets/chrome.js" data-slug="page" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
 <nav class="top" aria-label="Sections">
   <div class="wrap">
-    <a href="../">Home</a>
-    <a href="../#work">Selected work</a>
-    <a href="../#how">How I work</a>
-    <a href="../photos/">Photos and videos</a>
-    <a href="./" aria-current="page">Use with AI</a>
-    <a href="../#contact">Get in touch</a>
+    <a href="/">Home</a>
+    <a href="#hiring">If you are hiring</a>
+    <a href="#yiheng">If you are Yiheng</a>
+    <a href="#questions">Questions for Yiheng</a>
+    <a href="#editor">Editors</a>
+    <a href="/photos/">Photos</a>
+    <a href="/#contact">Get in touch</a>
   </div>
 </nav>
 
 <main id="main" class="wrap">
   <header class="hero">
+    <p class="kicker">Yiheng Wang, project and operations manager</p>
     <h1>Use this site with AI</h1>
-    <p class="lead">This site is written for people and for AI agents. Point your agent at <a href="../llms.txt">llms.txt</a> and tell it who you are; it will find the right instructions.</p>
+    <p class="lead">This site is written for people and for AI agents. Point your agent at <a href="/llms.txt">llms.txt</a> and tell it who you are; it will find the right instructions.</p>
   </header>
 
   <section id="hiring" aria-labelledby="hiring-h">
@@ -35,7 +39,7 @@ instructions for a hiring manager. I am hiring for: [describe the role].
 Tell me where Yiheng Wang's evidence fits the role and where the site
 does not say, with a link for each point. Then answer my questions.</code></pre>
     <p>Questions worth asking: how big was what she managed; how she works under pressure; how she manages work outside her own expertise; how she checks quality.</p>
-    <p class="src">Instructions for the agent: <a href="hiring.md">agents/hiring.md</a>. The whole site as Markdown: <a href="../index.md">index.md</a>.</p>
+    <p class="src">Instructions for the agent: <a href="hiring.md">agents/hiring.md</a>. The whole site as Markdown: <a href="/index.md">index.md</a>.</p>
   </section>
 
   <section id="yiheng" aria-labelledby="yiheng-h">
@@ -47,8 +51,23 @@ https://yiheng-wang.agenticcells.site. Read
 https://yiheng-wang.agenticcells.site/agents/yiheng.md and follow it.
 Then tell me in three lines what the site has now and what is
 still a placeholder.</code></pre>
-    <p>Waiting on you: your contact details, your exact words for "How I work", and your photos and videos.</p>
+    <p>The instructions explain the five designs, where each fact lives, and how to add a photo with one command (it removes the location and other metadata first).</p>
+    <p>Waiting on you: your contact details, your kitchen and product years in your own words, the role you want, and more photos.</p>
     <p class="src">Instructions for the agent: <a href="yiheng.md">agents/yiheng.md</a>.</p>
+  </section>
+
+  <section id="questions" aria-labelledby="questions-h">
+    <h2 id="questions-h">Questions for Yiheng: make the site stronger</h2>
+    <p>The best facts are still in Yiheng's head: the kitchens she worked in, the products she developed, the hardest service she remembers, the role she wants next. Her own AI can interview her for them, one question at a time, and propose each change for her approval.</p>
+    <p>Paste this into Claude or ChatGPT:</p>
+    <pre><code>Read https://yiheng-wang.agenticcells.site/agents/questions.md and
+https://yiheng-wang.agenticcells.site/index.md. Then interview me for
+my website. Ask one question at a time, starting with section 1.
+After each section, show me what you would add or change on the
+site, in my words, and wait for my yes before you keep it. Write my
+answers to a file called interview-notes.md that I can keep.</code></pre>
+    <p>Ten sections: the role she wants, the kitchen years, product development, project management, Web Summit, the agent team, PrompTugal.news, working with people, training, and photos and contact.</p>
+    <p class="src">The question bank: <a href="questions.md">agents/questions.md</a>.</p>
   </section>
 
   <section id="editor" aria-labelledby="editor-h">
@@ -75,7 +94,7 @@ what it is and where you propose to put it before you add it.</code></pre>
 
 <footer class="site">
   <div class="wrap">
-    <p>Made with the AgentiCCells site factory; a first version, materials to follow.</p>
+    <p>For AI agents: <a href="/llms.txt">llms.txt</a> · <a href="/index.md">the site as Markdown</a>.</p>
     <p>Version __VERSION__ · Code Apache-2.0, text CC BY 4.0.</p>
   </div>
 </footer>

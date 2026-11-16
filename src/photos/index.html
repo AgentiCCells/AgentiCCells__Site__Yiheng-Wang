@@ -3,49 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Photos and videos: Yiheng Wang</title>
-<meta name="description" content="Photos and videos of Yiheng Wang's work, including Web Summit Lisbon 2026. Coming soon.">
-<link rel="stylesheet" href="../style.css">
+<title>Photos: Yiheng Wang</title>
+<meta name="description" content="Photos of Yiheng Wang at work, including Web Summit Lisbon 2026 and a screenshot of her Live AI Office.">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/assets/chrome.css">
+<script src="/assets/chrome.js" data-slug="page" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
 <nav class="top" aria-label="Sections">
   <div class="wrap">
-    <a href="../">Home</a>
-    <a href="../#work">Selected work</a>
-    <a href="../#how">How I work</a>
-    <a href="../#background">Background</a>
-    <a href="../#links">Links</a>
-    <a href="./" aria-current="page">Photos and videos</a>
-    <a href="../agents/">Use with AI</a>
-    <a href="../#contact">Get in touch</a>
+    <a href="/">Home</a>
+    <a href="/#work">Selected work</a>
+    <a href="/#how">How she works</a>
+    <a href="/photos/" aria-current="page">Photos</a>
+    <a href="/agents/">Use with AI</a>
+    <a href="/#contact">Get in touch</a>
   </div>
 </nav>
 
-<main id="main" class="wrap">
+<main id="main" class="wrap wide">
   <header class="hero">
-    <h1>Photos and videos</h1>
-    <p class="role">Yiheng Wang, project and operations manager</p>
+    <p class="kicker">Yiheng Wang, project and operations manager</p>
+    <h1>Photos</h1>
+    <p class="lead">At Web Summit Lisbon 2026 with the RiskMandate team, and her agent team at work. More to come from Yiheng.</p>
   </header>
 
-  <section aria-labelledby="soon-h">
-    <h2 id="soon-h">Coming soon</h2>
-    <p class="placeholder"><strong>Materials to follow.</strong> Photos and videos from Yiheng's work, including Web Summit Lisbon 2026, will be added here once Yiheng has chosen and approved them.</p>
-    <div class="tiles" aria-hidden="true">
-      <div class="tile">Photo to follow</div>
-      <div class="tile">Photo to follow</div>
-      <div class="tile">Video to follow</div>
-      <div class="tile">Photo to follow</div>
+  <section aria-label="Photos">
+    <div class="gallery" id="gallery">
+      <figure><img src="/assets/photos/yiheng-at-the-stand.jpg" alt="Yiheng Wang at the RiskMandate stand at Web Summit 2026, giving a thumbs up" width="365" height="1200" loading="lazy"><figcaption>At the RiskMandate stand, Web Summit Lisbon 2026</figcaption></figure>
+      <figure><img src="/assets/photos/yiheng-at-work.jpg" alt="Yiheng Wang working on her laptop at a table at Web Summit" width="934" height="1200" loading="lazy"><figcaption>Working with her agents between meetings</figcaption></figure>
+      <figure><img src="/assets/photos/yiheng-main-stage.jpg" alt="Yiheng Wang in front of the Web Summit main stage, in purple light" width="440" height="440" loading="lazy"><figcaption>In front of the main stage</figcaption></figure>
+      <figure><img src="/assets/photos/live-ai-office.jpg" alt="A screenshot of Yiheng's Live AI Office: her at the centre, linked to her agents" width="2000" height="1318" loading="lazy"><figcaption>Her Live AI Office, a screenshot</figcaption></figure>
     </div>
-    <p><a href="../">Back to the home page</a></p>
+    <p class="src">The list of photos is <a href="/data/photos.json">data/photos.json</a>. All photos were supplied by Dinis Cruz on 2026-11-16, with their metadata removed; teammates are cropped out until they agree to appear. Licence CC BY 4.0.</p>
+  </section>
+
+  <section aria-labelledby="add-h" class="no-print">
+    <h2 id="add-h">Adding photos</h2>
+    <p>Yiheng adds photos through her own AI agent: <a href="/agents/yiheng.md">the instructions</a> include a script that removes the metadata (including location), resizes the photo and lists it here.</p>
   </section>
 </main>
 
 <footer class="site">
   <div class="wrap">
-    <p>Made with the AgentiCCells site factory; a first version, materials to follow.</p>
+    <p>For AI agents: <a href="/llms.txt">llms.txt</a> · <a href="/index.md">the site as Markdown</a> · <a href="/agents/">use this site with AI</a>.</p>
     <p>Version __VERSION__ · Code Apache-2.0, text CC BY 4.0.</p>
   </div>
 </footer>
+<script>
+// Rebuild the gallery from data/photos.json, so a photo added with scripts/add-photo.py appears here.
+fetch('/data/photos.json').then(r => r.json()).then(d => {
+  const g = document.getElementById('gallery');
+  const esc = s => String(s || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  g.innerHTML = d.photos.map(p => `<figure><img src="${esc(p.file)}" alt="${esc(p.alt)}" width="${p.width}" height="${p.height}" loading="lazy"><figcaption>${esc(p.caption)}${p.credit ? `<span class="credit">${esc(p.credit)}</span>` : ''}</figcaption></figure>`).join('');
+}).catch(() => {});
+</script>
 </body>
 </html>

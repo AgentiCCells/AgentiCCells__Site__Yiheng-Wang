@@ -1,0 +1,231 @@
+{
+ "about": "Yiheng Wang's AI agents at Web Summit 2026 and PrompTugal.news, as listed on her public dashboard. Each agent's name has the form role@project.person; the person part on the source pages is her team name, vicky.",
+ "source": "https://web-summit.sgit.ai/people/vicky/index.md",
+ "read": "2026-11-16",
+ "total": 26,
+ "running": 25,
+ "commits_total": 1124,
+ "commits_note": "Commits to the team's site repository and the newsroom repository by each agent, as the dashboard counted them on 2026-11-16; other figures on this site (767 on the team's site, 1,171 to PrompTugal.news) come from other sources and count differently.",
+ "talks_to": [
+  "Dinis Cruz and his agents (conductor, newsroom, security, dev)",
+  "the conductors of four other teammates",
+  "one other teammate"
+ ],
+ "talks_to_note": "Who her agents wrote to, from the same dashboard. This site names no teammate other than Dinis Cruz.",
+ "groups": {
+  "lead": "Leads the team",
+  "newsroom": "Newsroom desks (PrompTugal.news)",
+  "operations": "Operations and project management",
+  "specialist": "Specialists and safeguards"
+ },
+ "agents": [
+  {
+   "role": "conductor",
+   "project": "web-summit",
+   "handle": "conductor@web-summit",
+   "does": "coordinates her agents, keeps her records, reads every agent's report, relays anything urgent and writes her one brief a day",
+   "commits": 308,
+   "group": "lead"
+  },
+  {
+   "role": "reviewer",
+   "project": "PrompTugal",
+   "handle": "reviewer@PrompTugal",
+   "does": "checks her journalists' drafts against their sources and tidies their style; publishes a Ready draft only when she asks",
+   "commits": 123,
+   "group": "newsroom"
+  },
+  {
+   "role": "curator",
+   "project": "PrompTugal",
+   "handle": "curator@PrompTugal",
+   "does": "maps the researcher's captures (beats, organisations, what is new, story candidates, gaps) for the journalists",
+   "commits": 68,
+   "group": "newsroom"
+  },
+  {
+   "role": "dashboard",
+   "project": "web-summit",
+   "handle": "dashboard@web-summit",
+   "does": "keeps her dashboard, the page she reads first",
+   "commits": 60,
+   "group": "operations"
+  },
+  {
+   "role": "pm",
+   "project": "web-summit",
+   "handle": "pm@web-summit",
+   "does": "project management and writing: board health, alignment, deadlines and dependencies; guides and process documents",
+   "commits": 57,
+   "group": "operations"
+  },
+  {
+   "role": "journalist-ai",
+   "project": "PrompTugal",
+   "handle": "journalist-ai@PrompTugal",
+   "does": "the AI-beat journalist: writes article drafts",
+   "commits": 55,
+   "group": "newsroom"
+  },
+  {
+   "role": "researcher",
+   "project": "web-summit",
+   "handle": "researcher@web-summit",
+   "does": "public facts on the summit, Portugal, Europe and announcements, one capture per source with its date",
+   "commits": 52,
+   "group": "newsroom"
+  },
+  {
+   "role": "journalist-connections",
+   "project": "PrompTugal",
+   "handle": "journalist-connections@PrompTugal",
+   "does": "the connections-beat journalist: writes article drafts",
+   "commits": 43,
+   "group": "newsroom"
+  },
+  {
+   "role": "dev",
+   "project": "PrompTugal",
+   "handle": "dev@PrompTugal",
+   "does": "changes to the newsroom site on demand, when she asks",
+   "commits": 41,
+   "group": "specialist"
+  },
+  {
+   "role": "journalist-portugal",
+   "project": "PrompTugal",
+   "handle": "journalist-portugal@PrompTugal",
+   "does": "the Portugal-beat journalist: writes article drafts",
+   "commits": 41,
+   "group": "newsroom"
+  },
+  {
+   "role": "journalist-europe",
+   "project": "PrompTugal",
+   "handle": "journalist-europe@PrompTugal",
+   "does": "the Europe-beat journalist: writes article drafts",
+   "commits": 39,
+   "group": "newsroom"
+  },
+  {
+   "role": "internal",
+   "project": "web-summit",
+   "handle": "internal@web-summit",
+   "does": "the internal journalist: what her agents actually do, from the record only, each claim with its evidence",
+   "commits": 34,
+   "group": "operations"
+  },
+  {
+   "role": "vault",
+   "project": "web-summit",
+   "handle": "vault@web-summit",
+   "does": "creates and manages her encrypted vaults, and audits each before its read key is published",
+   "commits": 33,
+   "group": "specialist"
+  },
+  {
+   "role": "logistics",
+   "project": "web-summit",
+   "handle": "logistics@web-summit",
+   "does": "printing, merchandise and deliveries: sizes, print sign-offs, the printer's dates",
+   "commits": 32,
+   "group": "operations"
+  },
+  {
+   "role": "checker",
+   "project": "PrompTugal",
+   "handle": "checker@PrompTugal",
+   "does": "fact-checks published newsroom articles written by desks outside hers",
+   "commits": 23,
+   "group": "newsroom"
+  },
+  {
+   "role": "scout",
+   "project": "web-summit",
+   "handle": "scout@web-summit",
+   "does": "studies how other agents work and writes learning notes with numbered proposals; changes nothing itself",
+   "commits": 23,
+   "group": "specialist"
+  },
+  {
+   "role": "security",
+   "project": "web-summit",
+   "handle": "security@web-summit",
+   "does": "security checks, including a weekly check that no rule changed without her word",
+   "commits": 17,
+   "group": "specialist"
+  },
+  {
+   "role": "designer",
+   "project": "PrompTugal",
+   "handle": "designer@PrompTugal",
+   "does": "cover graphics and charts from an article's sourced numbers, on request only",
+   "commits": 16,
+   "group": "newsroom"
+  },
+  {
+   "role": "reporter",
+   "project": "PrompTugal",
+   "handle": "reporter@PrompTugal",
+   "does": "evidence roadmaps of what agents actually do at other organisations, for the curator",
+   "commits": 15,
+   "group": "newsroom"
+  },
+  {
+   "role": "analyst",
+   "project": "PrompTugal",
+   "handle": "analyst@PrompTugal",
+   "does": "the analysis desk: checks every figure at its primary source and writes pieces labelled Analysis",
+   "commits": 12,
+   "group": "newsroom"
+  },
+  {
+   "role": "inbox",
+   "project": "web-summit",
+   "handle": "inbox@web-summit",
+   "does": "the only agent that touches her mailbox: reads, labels and drafts, never sends",
+   "commits": 11,
+   "group": "operations"
+  },
+  {
+   "role": "journalist",
+   "project": "web-summit",
+   "handle": "journalist@web-summit",
+   "does": "an early journalist",
+   "commits": 8,
+   "group": "newsroom"
+  },
+  {
+   "role": "programme",
+   "project": "web-summit",
+   "handle": "programme@web-summit",
+   "does": "the summit programme",
+   "commits": 7,
+   "group": "operations"
+  },
+  {
+   "role": "synthetic",
+   "project": "web-summit",
+   "handle": "synthetic@web-summit",
+   "does": "",
+   "commits": 5,
+   "group": "specialist"
+  },
+  {
+   "role": "mentor",
+   "project": "web-summit",
+   "handle": "mentor@web-summit",
+   "does": "her mentor during set-up; handed over and stopped",
+   "commits": 1,
+   "group": "specialist"
+  },
+  {
+   "role": "tools",
+   "project": "web-summit",
+   "handle": "tools@web-summit",
+   "does": "",
+   "commits": 0,
+   "group": "specialist"
+  }
+ ]
+}

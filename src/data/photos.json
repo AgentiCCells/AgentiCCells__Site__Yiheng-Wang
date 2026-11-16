@@ -1,0 +1,98 @@
+{
+ "about": "The photos on this site. scripts/add-photo.py adds to this list; the photos page reads it.",
+ "photos": [
+  {
+   "file": "/assets/photos/yiheng-at-the-stand.jpg",
+   "alt": "Yiheng Wang at the RiskMandate stand at Web Summit 2026, giving a thumbs up",
+   "caption": "At the RiskMandate stand, Web Summit Lisbon 2026",
+   "credit": "Supplied by Dinis Cruz, 2026-11-16; teammates cropped out",
+   "date": "2026-11",
+   "width": 365,
+   "height": 1200,
+   "tags": [
+    "summit"
+   ],
+   "added": "2026-11-16"
+  },
+  {
+   "file": "/assets/photos/yiheng-at-the-stand-2.jpg",
+   "alt": "Yiheng Wang smiling at the RiskMandate stand, wearing the team T-shirt and her badge",
+   "caption": "The team T-shirt, on the stand",
+   "credit": "Supplied by Dinis Cruz, 2026-11-16; teammates cropped out",
+   "date": "2026-11",
+   "width": 400,
+   "height": 1200,
+   "tags": [
+    "summit"
+   ],
+   "added": "2026-11-16"
+  },
+  {
+   "file": "/assets/photos/yiheng-at-work.jpg",
+   "alt": "Yiheng Wang working on her laptop at a table at Web Summit",
+   "caption": "Working with her agents between meetings",
+   "credit": "Supplied by Dinis Cruz, 2026-11-16; teammates cropped out",
+   "date": "2026-11",
+   "width": 934,
+   "height": 1200,
+   "tags": [
+    "summit",
+    "work"
+   ],
+   "added": "2026-11-16"
+  },
+  {
+   "file": "/assets/photos/yiheng-with-the-team.jpg",
+   "alt": "Yiheng Wang standing in a hall at Web Summit, in a lilac hoodie",
+   "caption": "With the team at the summit",
+   "credit": "Supplied by Dinis Cruz, 2026-11-16; teammates cropped out",
+   "date": "2026-11",
+   "width": 267,
+   "height": 1200,
+   "tags": [
+    "summit"
+   ],
+   "added": "2026-11-16"
+  },
+  {
+   "file": "/assets/photos/yiheng-main-stage.jpg",
+   "alt": "Yiheng Wang in front of the Web Summit main stage, in purple light",
+   "caption": "In front of the main stage",
+   "credit": "Supplied by Dinis Cruz, 2026-11-16; cropped from a group photo",
+   "date": "2026-11",
+   "width": 440,
+   "height": 440,
+   "tags": [
+    "summit"
+   ],
+   "added": "2026-11-16"
+  },
+  {
+   "file": "/assets/photos/web-summit-main-stage.jpg",
+   "alt": "The Web Summit main stage in Lisbon, lit in red and blue",
+   "caption": "The main stage, Web Summit Lisbon 2026",
+   "credit": "Supplied by Dinis Cruz, 2026-11-16",
+   "date": "2026-11",
+   "width": 1600,
+   "height": 330,
+   "tags": [
+    "summit"
+   ],
+   "added": "2026-11-16"
+  },
+  {
+   "file": "/assets/photos/live-ai-office.jpg",
+   "alt": "A screenshot of Yiheng's Live AI Office: her at the centre, linked to her agents, with counts of agents, policies and pairs talking",
+   "caption": "Her Live AI Office, a screenshot: at that moment 23 agents, 20 with policy, 13 pairs talking. The team site listed 26 agents on 16 Nov.",
+   "credit": "Screenshot supplied by Dinis Cruz, 2026-11-16",
+   "date": "2026-11",
+   "width": 2000,
+   "height": 1318,
+   "tags": [
+    "work",
+    "agents"
+   ],
+   "added": "2026-11-16"
+  }
+ ]
+}

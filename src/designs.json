@@ -1,0 +1,11 @@
+{
+ "about": "The same site, the same facts and sources, in five designs. The design picker on every page reads this file.",
+ "default": "profile",
+ "designs": [
+  { "slug": "profile", "name": "The Profile", "tagline": "Warm and editorial, like a magazine profile. The default.", "path": "/", "thumb": "/assets/designs/profile.jpg" },
+  { "slug": "control", "name": "Mission Control", "tagline": "Dark and live: her 26 agents as a working network.", "path": "/d/control/", "thumb": "/assets/designs/control.jpg" },
+  { "slug": "pass", "name": "The Pass", "tagline": "From the pastry kitchen to the agent team: the same brigade.", "path": "/d/pass/", "thumb": "/assets/designs/pass.jpg" },
+  { "slug": "brief", "name": "The Brief", "tagline": "For recruiters: one clear page that prints.", "path": "/d/brief/", "thumb": "/assets/designs/brief.jpg" },
+  { "slug": "journey", "name": "The Journey", "tagline": "Photo-led: her path told as a story, in pictures.", "path": "/d/journey/", "thumb": "/assets/designs/journey.jpg" }
+ ]
+}

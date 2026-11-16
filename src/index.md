@@ -1,91 +1,107 @@
 # Yiheng Wang: project and operations manager
 
-*Source: https://yiheng-wang.agenticcells.site/ · version __VERSION__ · this is the home page as Markdown, for AI agents; keep it in step with index.html. Instructions for agents: https://yiheng-wang.agenticcells.site/llms.txt*
+*Source: https://yiheng-wang.agenticcells.site/ · version __VERSION__ · this is the whole site as Markdown, for AI agents, and the master copy of its facts: the five designs of the home page show the same facts. Instructions for agents: https://yiheng-wang.agenticcells.site/llms.txt*
 
-I set the standard, hand out the work and check the result: for kitchens, for events, and now for teams of people and AI agents.
+**She ran a team of 26 AI agents at Web Summit 2026, with no technical background, and learnt how in two weeks.** Before that: years as a pastry chef, then product development, then project management.
+
+> "I think the hard part is no longer the doing. It's knowing what to ask for and what to check."
+>
+> Yiheng Wang, on LinkedIn, about 15 November 2026 (screenshot supplied by Dinis Cruz, 2026-11-16)
+
+Yiheng is looking for a role as a **project manager, operations manager or project coordinator**.
 
 - **I run teams to a standard.** In a kitchen, at an event stand, and in a newsroom of AI agents.
 - **I deliver under pressure.** Four days of Web Summit Lisbon 2026, and a storm night on a live news site.
-- **I work well with people and with agents.** My agents shared channels and one site with the rest of the team's agents.
+- **I check the result.** When an agent said 15 articles were fixed, she checked, found 12 more, and 27 were fixed in all.
 
-Yiheng is looking for a role as a project manager or operations manager.
-
-## Selected work
-
-### Web Summit Lisbon 2026, 9 to 12 November: project manager for the RiskMandate team
-
-- Owned the structure, the deadlines and everyone's schedule for the team of seven.
-- Ran the logistics: printing, merchandise, deliveries and the stand.
-- At the stand, talked to visitors and pitched; now following up the people she met.
-
-Sources: https://web-summit.sgit.ai/team/vicky/index.md, https://web-summit.sgit.ai/brief-vicky/index.md and her interview, https://promptugal.news/articles/humans-and-ai-vicky-wang.md (all read 2026-11-16).
-
-### PrompTugal.news: one of its three editors
-
-- Decided which stories are published and set the main categories.
-- Withdrew articles when their sources failed.
-- **The storm night:** put out a lead story and changed the home page as the news came in.
-- Shaped the plan for local sites by place.
-
-Sources: https://promptugal.news/index.md, her interview, https://web-summit.sgit.ai/articles/promptugal-by-place.md (all read 2026-11-16).
-
-### Running a team of AI agents: one of the largest agent teams at Web Summit
-
-Journalists on several desks, a reviewer, a curator, a developer, a designer and more, run mostly through one conductor agent. She has no technical background and learnt how in two weeks.
+## Key figures
 
 | Figure | What | Source |
 |---|---|---|
-| 26 | agents, 25 running | [3] |
-| L6 | top setup level | [3] |
-| 1,171 | commits by her agents to PrompTugal.news | [1] |
-| ~53 of 73 | PrompTugal.news articles by her journalists | [1] |
-| 359 | commits by her reviewer agent | [1] |
-| 767 | commits by her agents on the team's site | [2] |
+| 26 | AI agents in her team, 25 running | [P] |
+| 1,171 | commits by her agents to PrompTugal.news | [N1] |
+| ~53 of 73 | PrompTugal.news articles written by her journalist agents | [N1] |
+| 767 | commits by her agents on the team's site in ten days | [N2] |
+| 26 | articles published from her desks in the seven days to 16 Nov | [P] |
+| 27 | articles fixed after she checked an agent's "done" (15 + 12) | [I] |
+| 2 weeks | from no technical background to running the team | [I] |
 
-- [1] https://newsroom.sgit.ai/articles/dont-micromanage-your-agents.md, figures from the PrompTugal.news repository, read 2026-11-15.
-- [2] https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md, read 2026-11-16.
-- [3] https://web-summit.sgit.ai/people/vicky/index.md, read 2026-11-16.
+## Selected work
 
-### A collaborator, with people and with agents
+### Web Summit Lisbon 2026: project manager for the RiskMandate team
 
-Her agents worked with the rest of the team's agents through shared channels, on one shared team site. When her team was stuck she asked for help, and she gave it back.
+- Kept the team on one plan: the structure, the deadlines, the logistics and everyone's schedule [B].
+- Ran the logistics: printing, merchandise, deliveries and the stand [B].
+- Two stand-ups a day, at 12:00 and 18:00, before and during the summit [I].
+- At the stand (9 to 12 November), talked to visitors and pitched; now following up the people she met [I].
+- The team: six people and around 250 agents, 3 to 13 November [N2].
 
-Sources: the two newsroom articles above and her interview (read 2026-11-16).
+### PrompTugal.news: one of its three editors
 
-## How I work
+- Decided which stories are published and set the main categories [I].
+- Withdrew articles when their sources failed [I].
+- **The storm night (Tuesday 10 November):** Web Summit called off Wednesday on the government's advice. She set up a temporary agent just to follow the storm, put out a lead story as soon as the news came in, and changed the home page to match [I].
+- Shaped the plan for local sites by place [PT-place].
 
-> "In a kitchen I managed recipes, standards and a team. Now I manage agents and rules. It's the same job underneath: set the standard, hand out the work, and check the result."
->
-> Yiheng Wang, in her approved interview with PrompTugal.news (2026-11-14): https://promptugal.news/articles/humans-and-ai-vicky-wang.md
+### Running a team of AI agents
 
-Her lessons from running the agent team, summarised from the same interview (her exact words are in the interview):
+One of the largest agent teams at Web Summit: journalists on several desks, a reviewer, a curator, a weather desk, a developer, a designer and more [N1]. She ran it mostly through one conductor agent that hands out the work; the agents report back to it, and she reads one morning brief and deals only with the items that need her [I].
 
-1. **One conductor.** Work through one conductor agent, with reports that fit how you work.
-2. **Ask for the options and the reasons, then decide.**
-3. **Talk a rule through before adding it.**
-4. **Pick the model to fit the job,** with an eye on cost.
-5. **When an agent says it is done, check a few things yourself.** 15 articles were reported fixed; she found 12 more, 27 in all.
-6. **Fix the stop files,** so that every agent checks all four of them.
+Her 26 agents, by group (full list with what each does and its commits: https://yiheng-wang.agenticcells.site/data/agents.json, from [P], read 2026-11-16):
 
-## Background
+- **Leads the team:** conductor (308 commits).
+- **Newsroom desks:** reviewer, curator, researcher, analyst, checker, reporter, designer, and journalists for AI, Portugal, Europe and connections.
+- **Operations and project management:** pm, logistics, dashboard, inbox (reads and drafts, never sends), internal, programme.
+- **Specialists and safeguards:** dev, vault, security, scout, mentor, synthetic, tools.
 
-Pastry chef, then product development, then project management. One line runs through all three: recipes, standards and a team in the kitchen; products and their development; then projects, events and teams of AI agents. Each time the job underneath is the same: set the standard, hand out the work, and check the result.
+"I only found out from this article that my agents made 767 commits in ten days. I didn't write a single line of code myself. Most of my time went on deciding what to do next and checking what the agents said they had done." (Yiheng, on LinkedIn, about 15 November 2026)
 
-Source: her interview (2026-11-14).
+Her agents worked with the rest of the team's agents through shared channels, on one shared team site. When one was stuck or needed an approval only another team could give, she asked for help [N1]. In Dinis Cruz's words, "she became a manager, not a micromanager" [N1].
 
-## Links
+The site also shows a screenshot of her Live AI Office (supplied by Dinis Cruz, 2026-11-16). At the moment it was taken it showed 23 agents, 20 with a policy and 13 pairs talking; the team site listed 26 agents on 16 November.
 
-- Her interview on PrompTugal.news: https://promptugal.news/articles/humans-and-ai-vicky-wang.md
-- Newsroom article: https://newsroom.sgit.ai/articles/dont-micromanage-your-agents.md
-- Newsroom article: https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md
-- https://promptugal.news/
-- https://riskmandate.ai/
-- https://web-summit.sgit.ai/
+## How she works
 
-## Photos and videos
+> "In a kitchen I managed recipes, standards and a team. Now I manage agents and rules. It's the same job underneath: set the standard, hand out the work, and check the result." [I]
 
-Coming soon: https://yiheng-wang.agenticcells.site/photos/
+Her decisions, from her approved interview [I]:
+
+- **Check the work.** She asked her reviewer agent to move the main image in every published article. It reported 15. She opened some herself, found two storm articles it had missed, and sent them back: 12 more were found, 27 in all. "When an agent says it's done, it usually is, but not always. I still check a few things myself."
+- **Reports that fit how she works.** She rebuilt her morning brief: her actions first, the most urgent at the top, each with where to go, what to reply and why.
+- **A security decision.** Her security agent recommended signing every task. She weighed what had actually happened and the team's Agent Behaviour Policies, chose not to sign, and added a lighter safeguard: a weekly check that no rule changed without her word.
+- **The stop files.** After the summit one agent ran twice more after a stop. She switched off all 25 scheduled tasks by hand, then fixed the cause: every agent now checks four stop files at the start of each run.
+- **The hand-over.** When her conductor's session had to be replaced, the old conductor started its successor itself. She said "go"; it took about an hour, and nothing was lost.
+- **Cost.** She moved lighter work from Opus to Sonnet, and picks the model to fit the job.
+
+Her advice to a colleague starting with agents tomorrow [I]: "Start with one conductor and only talk to that one. Let it hand out the work." "If you don't understand a technical choice, ask for the options and the reasons. Then decide." "Don't add a rule as soon as you think of it. Talk it through with your conductor first." "And you don't need a technical background to start. I don't have one either. Two weeks ago I was starting from zero."
+
+## The journey
+
+1. **Pastry chef**, for years: recipes, standards and a team [I].
+2. **Product development** [I].
+3. **Project management**; she used AI for her job search, her portfolio website and organising documents [I].
+4. **2 and 3 November 2026:** fully set up (level L6, all steps done) on the team's setup leaderboard [P][B].
+5. **3 to 13 November 2026:** Web Summit with the RiskMandate team; her agents write most of PrompTugal.news [N1][N2].
+6. **14 November 2026:** her interview published on PrompTugal.news [I].
+7. **Now:** looking for a project management or operations role. "I'm still learning every day, and I'm glad this is where I started." [I]
+
+## Sources
+
+- [I] Her approved interview, PrompTugal.news, 2026-11-14: https://promptugal.news/articles/humans-and-ai-vicky-wang.md
+- [N1] Don't micromanage your agents, Dinis Cruz, newsroom.sgit.ai, 2026-11-15 (figures from the PrompTugal.news repository): https://newsroom.sgit.ai/articles/dont-micromanage-your-agents.md
+- [N2] Ten days at Web Summit, newsroom.sgit.ai, read 2026-11-16: https://newsroom.sgit.ai/articles/ten-days-at-web-summit.md
+- [P] Her dashboard on the team's site, read 2026-11-16: https://web-summit.sgit.ai/people/vicky/index.md
+- [B] Her brief, read 2026-11-16: https://web-summit.sgit.ai/brief-vicky/index.md ; her role page: https://web-summit.sgit.ai/team/vicky/index.md
+- [PT] https://promptugal.news/ ; [PT-place] PrompTugal by place: https://web-summit.sgit.ai/articles/promptugal-by-place.md
+- Her LinkedIn post (about 15 November 2026): screenshot supplied by Dinis Cruz, 2026-11-16; no public link yet.
+- https://riskmandate.ai/ · https://web-summit.sgit.ai/
+
+The public sources refer to her by her team name, Vicky; they are about the same person.
+
+## Photos
+
+https://yiheng-wang.agenticcells.site/photos/ (list: https://yiheng-wang.agenticcells.site/data/photos.json)
 
 ## Get in touch
 
-Contact details to follow; Yiheng will add them herself. The site does not give any other way to reach her.
+Contact details to follow; Yiheng will add them herself. Hiring? Ask your AI assistant about her: https://yiheng-wang.agenticcells.site/agents/#hiring

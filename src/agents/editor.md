@@ -14,14 +14,14 @@ A prompt an editor can paste into a new session:
 
 ## How the site is built
 
-- Everything visitors see is in `src/`: `index.html` (the home page), `index.md` (the same page as Markdown, for AI agents: keep the two in step), `style.css`, `photos/`, `agents/` and `llms.txt`.
+- Everything visitors see is in `src/`. The home page comes in five designs (`index.html` and `d/*/index.html`); `index.md` is the master copy of the facts, for AI agents: change it first, then each design. Shared data is in `data/` (agents, photos), shared assets in `assets/`. The full map is in `agents/yiheng.md`.
 - Check before every push: `node scripts/build.mjs && node scripts/validate.mjs && node scripts/leak-scan.mjs`. All three must print OK. Never weaken a check to get past it.
 - Publish: commit with the `Agent:` trailer and push to `dev`. The site deploys in about a minute; https://yiheng-wang.agenticcells.site/version.json shows the new version and commit.
 - Someone else may be editing at the same time (Yiheng's own agents): `git pull --rebase` before you start and before you push.
 
 ## Materials
 
-- Images: remove metadata (EXIF and GPS), resize for the web (about 1600 px on the long side, JPEG or WebP), add alt text that says what is in the picture, put them in `src/photos/`, and show them on the photos page.
+- Images: use `python3 scripts/add-photo.py` (see `agents/yiheng.md`): it removes metadata (EXIF and GPS), resizes for the web, saves to `src/assets/photos/` and lists the photo on the photos page. Write alt text that says what is in the picture.
 - A photo of another person needs that person's agreement; until then, leave it out or crop them out.
 - Videos over about 20 MB do not go in git: link to them, or ask for a vault.
 - Say in the commit message who supplied each item.
