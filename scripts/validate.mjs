@@ -23,6 +23,18 @@ for (const f of [...files, 'hub.json', 'README.md']) {
     if (!/<title>[^<]+<\/title>/.test(s)) fail(`${f}: no <title>`);
     if (!/<meta name="description" content="[^"]+"/.test(s)) fail(`${f}: no description`);
     if (!/<html lang="/.test(s)) fail(`${f}: no lang on <html>`);
+    // Link previews (WhatsApp, LinkedIn, Slack, iMessage): every page needs Open Graph tags with an
+    // absolute https image, served by this site, at most 300 KB (WhatsApp drops larger images).
+    // From scripts/validate.mjs in AgentiCCells__Site__Gabriel-DaCruz (commit 16fb163, 2026-11-17).
+    const meta = n => (s.match(new RegExp(`<meta (?:property|name)="${n}" content="([^"]*)"`)) || [])[1];
+    for (const n of ['og:title', 'og:description', 'og:url', 'og:image', 'og:image:width', 'og:image:height', 'twitter:card']) if (!meta(n)) fail(`${f}: no ${n} (link previews)`);
+    const img = meta('og:image'), url = meta('og:url');
+    if (img && !/^https:\/\//.test(img)) fail(`${f}: og:image must be an absolute https URL`);
+    if (img && url && /^https:\/\//.test(img) && new URL(img).host === new URL(url).host) {
+      const local = join('_site', decodeURIComponent(new URL(img).pathname));
+      if (!existsSync(local)) fail(`${f}: og:image ${img} is not in the site`);
+      else if (statSync(local).size > 300 * 1024) fail(`${f}: og:image is ${Math.round(statSync(local).size / 1024)} KB; keep it at most 300 KB`);
+    }
     for (const m of s.matchAll(/<script[^>]+src="([^"]+)"/g)) if (/^(https?:)?\/\//.test(m[1])) fail(`${f}: third-party script ${m[1]}`);
     for (const m of s.matchAll(/<link[^>]+rel="stylesheet"[^>]+href="([^"]+)"/g)) if (/^(https?:)?\/\//.test(m[1])) fail(`${f}: third-party stylesheet ${m[1]}`);
     for (const m of s.matchAll(/(?:href|src)="([^"#?]+)/g)) {
