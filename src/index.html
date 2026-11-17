@@ -412,6 +412,14 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 #project.fitting [data-fit]{opacity:.28;filter:grayscale(.6)}
 #project.fitting [data-fit].hit{opacity:1;filter:none;box-shadow:0 0 0 3px var(--rasp)}
 @media (prefers-reduced-motion:reduce){[data-fit]{transition:none}}
+
+/* "Hire her" label that follows the mouse (pointer devices only) */
+.hire-tag{position:fixed;left:0;top:0;z-index:50;pointer-events:none;display:none;align-items:flex-start;gap:2px;transform:translate(-100px,-100px);transition:opacity .2s ease}
+.hire-tag b{background:var(--rasp);color:#fff;font:600 15px/1 var(--sans,system-ui);padding:8px 12px;border-radius:4px;box-shadow:0 6px 18px -6px rgba(0,0,0,.35);white-space:nowrap}
+.hire-tag i{width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid var(--rasp);transform:rotate(-35deg);margin:-4px 0 0 -2px;order:-1}
+.hire-tag.off{opacity:0}
+@media (hover:hover) and (pointer:fine){.hire-tag{display:flex}}
+@media print{.hire-tag{display:none!important}}
 </style>
 </head>
 <body>
@@ -829,6 +837,18 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
     items.forEach(el => el.classList.toggle('hit', r !== 'all' && el.dataset.fit.split(' ').includes(r)));
   };
   btns.forEach(b => b.addEventListener('click', () => pick(b.dataset.role)));
+})();
+</script>
+<div class="hire-tag off" aria-hidden="true"><i></i><b>Hire her</b></div>
+<script>
+/* Moves the "Hire her" label with the mouse; hides it over links and buttons so it never covers what you click. Code Apache-2.0. */
+(() => {
+  const t = document.querySelector('.hire-tag'); if (!t || !matchMedia('(hover:hover) and (pointer:fine)').matches) return;
+  const still = matchMedia('(prefers-reduced-motion:reduce)').matches;
+  let x = -100, y = -100, tx = x, ty = y, raf = 0;
+  const step = () => { x += (tx - x) * (still ? 1 : .25); y += (ty - y) * (still ? 1 : .25); t.style.transform = `translate(${x}px,${y}px)`; raf = Math.abs(tx - x) + Math.abs(ty - y) > .5 ? requestAnimationFrame(step) : 0; };
+  addEventListener('pointermove', e => { tx = e.clientX + 14; ty = e.clientY + 16; t.classList.toggle('off', !!e.target.closest('a,button,summary,input,select,textarea,.yw-bar,.yw-pick,#plan')); if (!raf) raf = requestAnimationFrame(step); }, { passive: true });
+  document.addEventListener('pointerleave', () => t.classList.add('off'));
 })();
 </script>
 </body>
