@@ -21,10 +21,11 @@ body .yw-bar a:hover{text-decoration:underline;text-underline-offset:2px}
 @media (prefers-reduced-motion:reduce){.yw-pick-card{transition:none}}
 @media print{.yw-bar,.yw-pick{display:none!important}}
 
-/* "Hire her" label that follows the mouse on computers; colours set per design in chrome.js */
-.hire-tag{position:fixed;left:0;top:0;z-index:50;pointer-events:none;display:none;align-items:flex-start;transform:translate(-100px,-100px);transition:opacity .2s ease}
-.hire-tag b{background:var(--ht-bg,#2b1a14);color:var(--ht-fg,#fff);font:600 15px/1 "Avenir Next","Segoe UI","Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;padding:8px 12px;border-radius:4px;box-shadow:0 6px 18px -6px rgba(0,0,0,.4);white-space:nowrap}
-.hire-tag i{width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid var(--ht-bg,#2b1a14);transform:rotate(-35deg);margin:-4px -2px 0 0}
-.hire-tag.off{opacity:0}
-@media (hover:hover) and (pointer:fine){.hire-tag{display:flex}}
+/* "Hire her" cursor on computers: replaces the mouse arrow, colours set per design in chrome.js */
+.hire-tag{position:fixed;left:0;top:0;z-index:2147483000;pointer-events:none;display:none;transform:translate(-200px,-200px)}
+.hire-tag svg{display:block;width:20px;height:24px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.35))}
+.hire-tag b{position:absolute;left:16px;top:20px;background:var(--ht-bg,#2b1a14);color:var(--ht-fg,#fff);font:600 15px/1 "Avenir Next","Segoe UI","Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;padding:8px 12px;border-radius:4px;box-shadow:0 6px 18px -6px rgba(0,0,0,.4);white-space:nowrap}
+.hire-tag.off{visibility:hidden}
+html.ht-on,html.ht-on body,html.ht-on body *{cursor:none!important}
+@media (hover:hover) and (pointer:fine){.hire-tag{display:block}}
 @media print{.hire-tag{display:none!important}}
