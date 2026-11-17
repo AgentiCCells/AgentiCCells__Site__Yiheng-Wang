@@ -15,7 +15,7 @@ A prompt Yiheng can paste into a new session:
 
 ## How the site is built
 
-The same site comes in **six designs**. A visitor can switch with the "Choose a design" button in the top bar; the home page always shows the default (The Pass).
+The same site comes in **five designs**. A visitor can switch with the "Choose a design" button in the top bar; the home page always shows the default (The Pass).
 
 | Design | File | Look |
 |---|---|---|
@@ -24,7 +24,6 @@ The same site comes in **six designs**. A visitor can switch with the "Choose a 
 | The Brief | `src/d/brief/index.html` | one clear page for recruiters; prints |
 | The Profile | `src/d/profile/index.html` | warm, editorial |
 | The Journey | `src/d/journey/index.html` | photo-led story of her path |
-| The Layers | `src/d/layers/index.html` | her career as a layer cake that builds as you scroll |
 
 Shared by all five:
 

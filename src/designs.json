@@ -1,5 +1,5 @@
 {
- "about": "The same site, the same facts and sources, in six designs. The design picker on every page reads this file.",
+ "about": "The same site, the same facts and sources, in five designs. The design picker on every page reads this file.",
  "default": "pass",
  "designs": [
   {
@@ -36,13 +36,6 @@
    "tagline": "Photo-led: her path told as a story, in pictures.",
    "path": "/d/journey/",
    "thumb": "/assets/designs/journey.jpg"
-  },
-  {
-   "slug": "layers",
-   "name": "The Layers",
-   "tagline": "Her career as a layer cake that builds as you scroll.",
-   "path": "/d/layers/",
-   "thumb": "/assets/designs/layers.jpg"
   }
  ]
 }

@@ -1,6 +1,6 @@
 # Yiheng (Vicky) Wang: Project Manager and AI Operations
 
-*Source: https://yiheng-wang.agenticcells.site/ · version __VERSION__ · this is the whole site as Markdown, for AI agents, and the master copy of its facts: the six designs of the home page show the same facts; The Pass (https://yiheng-wang.agenticcells.site/) is the default. Instructions for agents: https://yiheng-wang.agenticcells.site/llms.txt*
+*Source: https://yiheng-wang.agenticcells.site/ · version __VERSION__ · this is the whole site as Markdown, for AI agents, and the master copy of its facts: the five designs of the home page show the same facts; The Pass (https://yiheng-wang.agenticcells.site/) is the default. Instructions for agents: https://yiheng-wang.agenticcells.site/llms.txt*
 
 **She ran a team of 26 AI agents at Web Summit 2026, with no technical background, and learnt how in two weeks.** Before that: pastry chef in Sydney and Shenzhen, including product development and R&D [I][Y], then head pastry chef at Daily Bakery, Shenzhen (2020 to 2022) [LI][Y], project coordinator in Shenzhen (2022 to 2023), then production coordination in Lisbon (2025) [CV][LI].
 
