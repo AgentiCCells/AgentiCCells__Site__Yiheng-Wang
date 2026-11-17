@@ -1,4 +1,4 @@
-# Yiheng Wang: Project Manager and AI Operations
+# Yiheng (Vicky) Wang: Project Manager and AI Operations
 
 *Source: https://yiheng-wang.agenticcells.site/ · version __VERSION__ · this is the whole site as Markdown, for AI agents, and the master copy of its facts: the five designs of the home page show the same facts; The Pass (https://yiheng-wang.agenticcells.site/) is the default. Instructions for agents: https://yiheng-wang.agenticcells.site/llms.txt*
 
