@@ -24,4 +24,17 @@
   function close() { box.hidden = true; document.body.style.overflow = ''; document.querySelector('[data-yw-picker]')?.focus(); }
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && box && !box.hidden) close(); });
   document.querySelectorAll('[data-yw-picker]').forEach(b => b.addEventListener('click', open));
+
+  // "Hire her" label that follows the mouse, in each design's own colour. Hidden over links and buttons, and on touch screens.
+  const HT = { pass: ['#2b1a14', '#fffdf9'], brief: ['#4a1fa3', '#ffffff'], profile: ['#4a2052', '#f7efe4'], control: ['#e3bd72', '#06110e'], journey: ['#ffd58a', '#1d1426'] };
+  if (HT[slug] && matchMedia('(hover:hover) and (pointer:fine)').matches) {
+    const t = document.createElement('div'); t.className = 'hire-tag off'; t.setAttribute('aria-hidden', 'true');
+    t.innerHTML = '<i></i><b>Hire her</b>'; t.style.setProperty('--ht-bg', HT[slug][0]); t.style.setProperty('--ht-fg', HT[slug][1]);
+    document.body.appendChild(t);
+    const still = matchMedia('(prefers-reduced-motion:reduce)').matches;
+    let x = -100, y = -100, tx = x, ty = y, raf = 0;
+    const step = () => { x += (tx - x) * (still ? 1 : .25); y += (ty - y) * (still ? 1 : .25); t.style.transform = `translate(${x}px,${y}px)`; raf = Math.abs(tx - x) + Math.abs(ty - y) > .5 ? requestAnimationFrame(step) : 0; };
+    addEventListener('pointermove', e => { tx = e.clientX + 14; ty = e.clientY + 16; t.classList.toggle('off', !!e.target.closest('a,button,summary,input,select,textarea,svg,canvas,.yw-bar,.yw-pick,#plan')); if (!raf) raf = requestAnimationFrame(step); }, { passive: true });
+    document.addEventListener('pointerleave', () => t.classList.add('off'));
+  }
 })();
