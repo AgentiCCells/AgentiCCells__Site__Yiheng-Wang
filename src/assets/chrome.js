@@ -26,7 +26,7 @@
   document.querySelectorAll('[data-yw-picker]').forEach(b => b.addEventListener('click', open));
 
   // "Hire her" cursor in each design's own colour: it replaces the mouse arrow. Over links and buttons the normal pointer returns.
-  const HT = { pass: ['#8c1f4f', '#ffffff'], brief: ['#4a1fa3', '#ffffff'], profile: ['#4a2052', '#f7efe4'], control: ['#e3bd72', '#06110e'], journey: ['#ffd58a', '#1d1426'] };
+  const HT = { pass: ['#8c1f4f', '#ffffff'], brief: ['#4a1fa3', '#ffffff'], profile: ['#c4602a', '#ffffff'], control: ['#e3bd72', '#06110e'], journey: ['#ffd58a', '#1d1426'] };
   if (HT[slug] && matchMedia('(hover:hover) and (pointer:fine)').matches) {
     const t = document.createElement('div'); t.className = 'hire-tag off'; t.setAttribute('aria-hidden', 'true');
     t.innerHTML = `<svg viewBox="0 0 20 24"><path d="M1.5 1.5 L1.5 19 L6 14.6 L9.2 22 L12.4 20.6 L9.3 13.4 L15.5 13.4 Z" fill="${HT[slug][0]}" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg><b>Hire her</b>`;
