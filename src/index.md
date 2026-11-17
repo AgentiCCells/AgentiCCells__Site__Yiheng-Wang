@@ -2,7 +2,7 @@
 
 *Source: https://yiheng-wang.agenticcells.site/ · version __VERSION__ · this is the whole site as Markdown, for AI agents, and the master copy of its facts: the five designs of the home page show the same facts; The Pass (https://yiheng-wang.agenticcells.site/) is the default. Instructions for agents: https://yiheng-wang.agenticcells.site/llms.txt*
 
-**She ran a team of 26 AI agents at Web Summit 2026, with no technical background, and learnt how in two weeks.** Before that: pastry chef in kitchens in Australia and China, including product development and R&D [I][Y], project coordinator in Shenzhen (2022 to 2023), then production coordination in Lisbon (2025) [CV][LI].
+**She ran a team of 26 AI agents at Web Summit 2026, with no technical background, and learnt how in two weeks.** Before that: pastry chef in Sydney and Shenzhen, including product development and R&D [I][Y], then head pastry chef at Daily Bakery, Shenzhen (2020 to 2022) [LI][Y], project coordinator in Shenzhen (2022 to 2023), then production coordination in Lisbon (2025) [CV][LI].
 
 > "I think the hard part is no longer the doing. It's knowing what to ask for and what to check."
 >
@@ -87,10 +87,17 @@ Her advice to a colleague starting with agents tomorrow [I]: "Start with one con
 
 How she starts in a new job [Y]: "First I work out what the job actually needs me to do, where I sit in the company, and who I work with. For a project, I get as much material as I can: the background, the result they want, and what counts as done. Every day there's a morning brief and a short stand-up about blockers and problems. Every meeting must end with action items; otherwise it probably didn't need to happen."
 
+Habits from the kitchen she still uses [Y] (some answers translated from Mandarin):
+
+- **Group similar tasks.** "At Un P'tit Truc I cut the morning production from 2 hours to 1h40 by grouping similar tasks: while one cream whipped, I measured the next and piped the last."
+- **Manage by the result.** "With experienced people I only describe the result I want; the order of the steps can be different. Beginners watch me once. After two or three times with no problems, they work alone."
+- **Check a sample.** "Each day we picked one product to check before it went out."
+- **Plan first, and don't panic.** "Before I start, I run through the direction in my head, so I know roughly how it will go. And when something happens, don't panic. Everything can be solved."
+
 ## The journey
 
 1. **2015 to 2017:** Advanced Diploma of Hospitality Management, Le Cordon Bleu, Sydney [CV].
-2. **Pastry chef**, for years, in professional kitchens in Australia and China, including leading kitchen teams in China: recipes, standards and a team [I][LI].
+2. **2015 to 2022: Pastry chef in Sydney and Shenzhen, then Head Pastry Chef at Daily Bakery, Shenzhen (2020 to 2022).** Led a team of four producing for three shops, ran a new-product launch every quarter, and set the daily checklists that passed every health inspection. On the busiest day, Halloween, the team of four made about 400 to 500 cupcakes and around 20 cake orders [LI][Y].
 3. **Sep 2022 to Oct 2023: Project Coordinator, Ninth Heaven Technology, Shenzhen.** Sole coordinator between clients in China and the US technical head office; order errors from 30% to under 5% in three months [CV].
 4. **Dec 2023 to Feb 2025:** moved to Lisbon; Portuguese language programme, University of Lisbon [CV][LI].
 5. **Mar to Nov 2025: Pastry Chef (Production Coordination), Un P'tit Truc, Lisbon.** 98% on-time delivery across 200+ units a day; production time cut by 17%; spoilage cut by about a third [CV].
@@ -103,7 +110,7 @@ How she starts in a new job [Y]: "First I work out what the job actually needs m
 
 ## Sources
 
-- [Y] Yiheng, in her own words, 2026-11-16, from her interview notes.
+- [Y] Yiheng, in her own words, 2026-11-16 and 2026-11-17, from her interview notes; some answers translated from Mandarin.
 - [CV] Her CV, supplied by Yiheng, 2026-11-16: https://yiheng-wang.agenticcells.site/assets/cv/YihengWang_CV.pdf
 - [LI] Her LinkedIn profile, supplied by Yiheng, 2026-11-16: https://www.linkedin.com/in/yihengwang9
 - [I] Her approved interview, PrompTugal.news, 2026-11-14: https://promptugal.news/articles/humans-and-ai-vicky-wang.md

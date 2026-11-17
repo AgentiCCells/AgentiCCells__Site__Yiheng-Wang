@@ -24,7 +24,7 @@ You are helping a person decide whether Yiheng Wang fits a role, most likely a p
 - How does she work with others? (A collaborator; her interview, on working with the rest of the team)
 - Can she manage work outside her own expertise? (Her developer and designer agents; "two altitudes" in Don't micromanage your agents)
 - How does she check quality? (When an agent says it is done, check a few things yourself: 15 reported, 12 more found, 27 in all)
-- What did she do before? (The journey: pastry chef in Australia and China, including product development and R&D, project coordinator in Shenzhen 2022 to 2023, production coordination in Lisbon 2025, then project management)
+- What did she do before? (The journey: pastry chef in Sydney and Shenzhen, including product development and R&D, then head pastry chef at Daily Bakery, Shenzhen (2020 to 2022), project coordinator in Shenzhen 2022 to 2023, production coordination in Lisbon 2025, then project management)
 - What does she think matters now? (Her LinkedIn post: "the hard part is no longer the doing. It's knowing what to ask for and what to check.")
 
 ## A prompt a person can paste into their own AI
