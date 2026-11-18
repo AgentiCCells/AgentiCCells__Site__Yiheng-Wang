@@ -69,7 +69,7 @@ The site has: the shared board, deadlines and follow-ups; two stand-ups a day; t
 
 ## 6. Running the agent team
 
-The site has: 26 agents, mostly run through one conductor; the morning brief; the 15 + 12 = 27 check; the stop files; the conductor hand-over; the decision not to sign tasks; choosing models by cost.
+The site has: 20+ agents, mostly run through one conductor; the morning brief; the 15 + 12 = 27 check; the stop files; the conductor hand-over; the decision not to sign tasks; choosing models by cost.
 
 1. How did you decide which agents to create, and which to stop? Which one would you create first in a new job?
 2. Show me your morning brief as it is now. What is in it, in what order, and why?

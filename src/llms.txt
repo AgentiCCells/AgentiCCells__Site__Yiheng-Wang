@@ -1,6 +1,6 @@
 # Yiheng (Vicky) Wang
 
-> Personal website of Yiheng (Vicky) Wang, Project Manager and AI Operations in Lisbon, looking for a role as a Project Manager, Project Coordinator, PMO Coordinator or Junior Project Manager, or in AI operations working with AI agents; most interested in B2B, consulting and tech, ideally a larger company bringing in AI agents (Lisbon on-site or hybrid, or remote; available now; authorised to work in Portugal). Contact: LinkedIn https://www.linkedin.com/in/yihengwang9 or yihengw2994@gmail.com. CV: https://yiheng-wang.agenticcells.site/assets/cv/YihengWang_CV.pdf. She was project manager for the RiskMandate team at Web Summit Lisbon 2026, one of the three editors of PrompTugal.news, and ran one of the largest teams of AI agents there (26 agents) without a technical background. Every fact on this site names its public source and the date it was read.
+> Personal website of Yiheng (Vicky) Wang, Project Manager and AI Operations in Lisbon, looking for a role as a Project Manager, Project Coordinator, PMO Coordinator or Junior Project Manager, or in AI operations working with AI agents; most interested in B2B, consulting and tech, ideally a larger company bringing in AI agents (Lisbon on-site or hybrid, or remote; available now; authorised to work in Portugal). Contact: LinkedIn https://www.linkedin.com/in/yihengwang9 or yihengw2994@gmail.com. CV: https://yiheng-wang.agenticcells.site/assets/cv/YihengWang_CV.pdf. She was project manager for the RiskMandate team at Web Summit Lisbon 2026, one of the three editors of PrompTugal.news, and ran one of the largest teams of AI agents there (20+ agents) without a technical background. Every fact on this site names its public source and the date it was read.
 
 This file is for AI agents and the people using them. Pick the instructions that match who you are acting for, read them in full, then follow them.
 
@@ -16,7 +16,7 @@ If you cannot tell which, use the hiring manager's instructions: they change not
 
 - [The whole site, as Markdown](https://yiheng-wang.agenticcells.site/index.md): her work, how she works, her journey, figures and sources. The master copy of the facts.
 - [The home page, as HTML](https://yiheng-wang.agenticcells.site/), in five designs with the same facts: [The Pass](https://yiheng-wang.agenticcells.site/) (the default), [The Brief](https://yiheng-wang.agenticcells.site/d/brief/), [The Profile](https://yiheng-wang.agenticcells.site/d/profile/), [Mission Control](https://yiheng-wang.agenticcells.site/d/control/), [The Journey](https://yiheng-wang.agenticcells.site/d/journey/) (list: [designs.json](https://yiheng-wang.agenticcells.site/designs.json)).
-- [Her agent team, as data](https://yiheng-wang.agenticcells.site/data/agents.json): 26 agents, what each does, commits, with source and date.
+- [Her agent team, as data](https://yiheng-wang.agenticcells.site/data/agents.json): her agents, what each does, commits, with source and date.
 - [Photos](https://yiheng-wang.agenticcells.site/photos/) and [their list](https://yiheng-wang.agenticcells.site/data/photos.json).
 - [Questions for Yiheng](https://yiheng-wang.agenticcells.site/agents/questions.md): what her own AI should ask her to improve the site.
 - [The AI agents page](https://yiheng-wang.agenticcells.site/agents/): the same three sets of instructions, for people.

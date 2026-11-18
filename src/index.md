@@ -2,7 +2,7 @@
 
 *Source: https://yiheng-wang.agenticcells.site/ · version __VERSION__ · this is the whole site as Markdown, for AI agents, and the master copy of its facts: the five designs of the home page show the same facts; The Pass (https://yiheng-wang.agenticcells.site/) is the default. Instructions for agents: https://yiheng-wang.agenticcells.site/llms.txt*
 
-**She ran a team of 26 AI agents at Web Summit 2026, with no technical background, and learnt how in two weeks.** Before that: pastry chef in Sydney and Shenzhen, including product development and R&D [I][Y], then head pastry chef at Daily Bakery, Shenzhen (2020 to 2022) [LI][Y], project coordinator in Shenzhen (2022 to 2023), then production coordination in Lisbon (2025) [CV][LI].
+**She ran a team of 20+ AI agents at Web Summit 2026, with no technical background, and learnt how in two weeks.** Before that: pastry chef in Sydney and Shenzhen, including product development and R&D [I][Y], then head pastry chef at Daily Bakery, Shenzhen (2020 to 2022) [LI][Y], project coordinator in Shenzhen (2022 to 2023), then production coordination in Lisbon (2025) [CV][LI].
 
 > "I think the hard part is no longer the doing. It's knowing what to ask for and what to check."
 >
@@ -14,7 +14,7 @@ Yiheng is looking for a role as a **Project Manager, Project Coordinator, PMO Co
 
 **Three results:**
 
-- **26 AI agents** run at Web Summit 2026 as project manager for the RiskMandate team; they wrote about 53 of the 73 articles on PrompTugal.news [P][N1].
+- **20+ AI agents** run at Web Summit 2026 as project manager for the RiskMandate team; they wrote about 53 of the 73 articles on PrompTugal.news [P][N1].
 - **Order errors from 30% to under 5%** in three months, as sole coordinator between clients in China and a US head office, Ninth Heaven Technology, 2022 to 2023 [CV].
 - **98% on-time delivery** across 200+ units a day, running daily stand-ups for a production team of four, Un P'tit Truc, Lisbon, 2025 [CV].
 
@@ -29,7 +29,7 @@ Yiheng is looking for a role as a **Project Manager, Project Coordinator, PMO Co
 
 | Figure | What | Source |
 |---|---|---|
-| 26 | AI agents in her team, 25 running | [P] |
+| 20+ | AI agents in her team | [P][CV] |
 | 1,171 | commits by her agents to PrompTugal.news | [N1] |
 | ~53 of 73 | PrompTugal.news articles written by her journalist agents | [N1] |
 | 767 | commits by her agents on the team's site in ten days | [N2] |
@@ -57,7 +57,7 @@ Yiheng is looking for a role as a **Project Manager, Project Coordinator, PMO Co
 
 One of the largest agent teams at Web Summit: journalists on several desks, a reviewer, a curator, a weather desk, a developer, a designer and more [N1]. She ran it mostly through one conductor agent that hands out the work; the agents report back to it, and she reads one morning brief and deals only with the items that need her [I].
 
-Her 26 agents, by group (full list with what each does and its commits: https://yiheng-wang.agenticcells.site/data/agents.json, from [P], read 2026-11-16):
+Her 20+ agents, by group (full list with what each does and its commits: https://yiheng-wang.agenticcells.site/data/agents.json, from [P]):
 
 - **Leads the team:** conductor (308 commits).
 - **Newsroom desks:** reviewer, curator, researcher, analyst, checker, reporter, designer, and journalists for AI, Portugal, Europe and connections.
@@ -68,7 +68,7 @@ Her 26 agents, by group (full list with what each does and its commits: https://
 
 Her agents worked with the rest of the team's agents through shared channels, on one shared team site. When one was stuck or needed an approval only another team could give, she asked for help [N1]. In Dinis Cruz's words, "she became a manager, not a micromanager" [N1].
 
-The site also shows a screenshot of her Live AI Office (supplied by Dinis Cruz, 2026-11-16). At the moment it was taken it showed 23 agents, 20 with a policy and 13 pairs talking; the team site listed 26 agents on 16 November.
+The site also shows a screenshot of her Live AI Office (supplied by Dinis Cruz, 2026-11-16). At the moment it was taken it showed 23 agents, 20 with a policy and 13 pairs talking.
 
 ## How she works
 
@@ -94,6 +94,18 @@ Habits from the kitchen she still uses [Y] (some answers translated from Mandari
 - **Check a sample.** "Each day we picked one product to check before it went out."
 - **Plan first, and don't panic.** "Before I start, I run through the direction in my head, so I know roughly how it will go. And when something happens, don't panic. Everything can be solved."
 
+## AI governance in practice
+
+Responsible AI in daily work, as a specialisation on top of her project management. [Y]
+
+- **Human oversight.** Agents draft and a person signs off on outbound work. A reviewer agent checks every claim, and she approves judgement calls. Human-in-the-loop by design. [CV][Y]
+- **Standing rules.** 20+ AI agents run under one coordinating agent, with about 90 written rules on who does what and when to escalate to a person. [CV][Y]
+- **Access control.** Private material stays in encrypted vaults. Each agent only gets the keys it needs, and a security agent checks rules and access every week. [CV][Y]
+- **Audit trail.** Every decision is logged with its date. [LI][Y]
+- **Continuous improvement.** She added verification steps after agents reported work as done too early. Risk and issue tracking, then change management. [LI][Y]
+- **Source audit.** Re-checked 206 claims on 101 company pages in two days: 47 re-sourced, 159 removed, 98 pages republished. [CV][Y]
+- **Agent Behaviour Policies.** Tested RiskMandate's agent behaviour policy tool on riskmandate.ai 18 times and gave feedback, using its reach, mandate and "what stops it" framework. [CV][Y]
+
 ## The journey
 
 1. **2015 to 2017:** Advanced Diploma of Hospitality Management, Le Cordon Bleu, Sydney [CV].
@@ -110,7 +122,7 @@ Habits from the kitchen she still uses [Y] (some answers translated from Mandari
 
 ## Sources
 
-- [Y] Yiheng, in her own words, 2026-11-16 and 2026-11-17, from her interview notes; some answers translated from Mandarin.
+- [Y] Yiheng, in her own words, 2026-11-16 to 2026-11-18, from her interview notes; some answers translated from Mandarin.
 - [CV] Her CV, supplied by Yiheng, 2026-11-16: https://yiheng-wang.agenticcells.site/assets/cv/YihengWang_CV.pdf
 - [LI] Her LinkedIn profile, supplied by Yiheng, 2026-11-16: https://www.linkedin.com/in/yihengwang9
 - [I] Her approved interview, PrompTugal.news, 2026-11-14: https://promptugal.news/articles/humans-and-ai-vicky-wang.md
