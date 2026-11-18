@@ -31,7 +31,7 @@ Yiheng is looking for a role as a **Project Manager, Project Coordinator, PMO Co
 |---|---|---|
 | 20+ | AI agents in her team | [P][CV] |
 | 1,171 | commits by her agents to PrompTugal.news | [N1] |
-| ~53 of 73 | PrompTugal.news articles written by her journalist agents | [N1] |
+| About 53 of 73 | PrompTugal.news articles written by her journalist agents | [N1] |
 | 767 | commits by her agents on the team's site in ten days | [N2] |
 | 26 | articles published from her desks in the seven days to 16 Nov | [P] |
 | 27 | articles fixed after she checked an agent's "done" (15 + 12) | [I] |
@@ -96,7 +96,7 @@ Habits from the kitchen she still uses [Y] (some answers translated from Mandari
 
 ## AI governance in practice
 
-Responsible AI in daily work, as a specialisation on top of her project management. [Y]
+Responsible AI in daily work, on top of her project management. [Y]
 
 - **Human oversight.** Agents draft and a person signs off on outbound work. A reviewer agent checks every claim, and she approves judgement calls. Human-in-the-loop by design. [CV][Y]
 - **Standing rules.** 20+ AI agents run under one coordinating agent, with about 90 written rules on who does what and when to escalate to a person. [CV][Y]

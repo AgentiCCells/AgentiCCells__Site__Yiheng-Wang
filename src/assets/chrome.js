@@ -6,7 +6,7 @@
   try { localStorage.removeItem('yw-design'); } catch {}
   const bar = document.createElement('div');
   bar.className = 'yw-bar';
-  bar.innerHTML = '<span>Yiheng (Vicky) Wang, Project Manager and AI Operations</span><span class="yw-bar-sep" aria-hidden="true">|</span><button type="button" class="yw-bar-pick" data-yw-picker>Choose a design</button><a href="/photos/">Photos</a><a href="/agents/">Use with AI</a><a href="/#contact">Contact</a><a href="/assets/cv/YihengWang_CV.pdf">CV (PDF)</a>';
+  bar.innerHTML = '<span>Yiheng (Vicky) Wang, Project Manager and AI Operations</span><span class="yw-bar-sep" aria-hidden="true">|</span><a href="/photos/">Photos</a><a href="/agents/">Use with AI</a><a href="/#contact">Contact</a><a href="/assets/cv/YihengWang_CV.pdf">CV (PDF)</a>';
   document.body.prepend(bar);
   let box;
   async function open() {
@@ -23,6 +23,9 @@
   }
   function close() { box.hidden = true; document.body.style.overflow = ''; document.querySelector('[data-yw-picker]')?.focus(); }
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && box && !box.hidden) close(); });
+  // "Choose a design" sits in the page footer (the last footer that is not part of a quote).
+  const foot = [...document.querySelectorAll('footer')].filter(f => !f.closest('blockquote,figure')).pop();
+  if (foot) { const p = document.createElement('p'); p.className = 'yw-foot-pick'; p.innerHTML = '<button type="button" data-yw-picker>Choose a design</button> &middot; this site comes in five designs with the same facts'; (foot.querySelector('.wrap') || foot).appendChild(p); }
   document.querySelectorAll('[data-yw-picker]').forEach(b => b.addEventListener('click', open));
 
   // "Hire her" cursor in each design's own colour: it replaces the mouse arrow. Over links and buttons the normal pointer returns.

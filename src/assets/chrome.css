@@ -29,3 +29,8 @@ body .yw-bar a:hover{text-decoration:underline;text-underline-offset:2px}
 html.ht-on,html.ht-on body,html.ht-on body *{cursor:none!important}
 @media (hover:hover) and (pointer:fine){.hire-tag{display:block}}
 @media print{.hire-tag{display:none!important}}
+
+/* "Choose a design" in the page footer */
+.yw-foot-pick{margin:.6em 0 0}
+.yw-foot-pick button{font:inherit;color:inherit;background:none;border:0;padding:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer;font-weight:600}
+.yw-foot-pick button:hover{text-decoration-thickness:2px}
