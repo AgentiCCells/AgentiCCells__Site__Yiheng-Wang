@@ -409,8 +409,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 .fit-sums{min-height:0}
 .fit-sum{margin:0 0 22px;max-width:70ch;font-size:17px;line-height:1.55;padding:14px 18px;border-left:4px solid var(--rasp);background:var(--card)}
 [data-fit]{transition:opacity .35s ease,filter .35s ease,box-shadow .35s ease}
-#project.fitting [data-fit]{opacity:.28;filter:grayscale(.6)}
-#project.fitting [data-fit].hit{opacity:1;filter:none;box-shadow:0 0 0 3px var(--rasp)}
+body.fitting [data-fit]{opacity:.28;filter:grayscale(.6)}
+body.fitting [data-fit].hit{opacity:1;filter:none;box-shadow:0 0 0 3px var(--rasp)}
+body.fitting .gov.hit{box-shadow:0 0 0 14px var(--paper),0 0 0 17px var(--rasp)}
 @media (prefers-reduced-motion:reduce){[data-fit]{transition:none}}
 
 .gov{max-width:none;margin:clamp(36px,5vw,56px) 0 0}
@@ -480,23 +481,23 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
     <div class="sec-head rv"><h2 id="h-project">Web Summit 2026: the project</h2></div>
     <div class="fit rv" role="group" aria-label="Hiring for">
       <span class="fit-l">Hiring for</span>
-      <div class="fit-b"><button type="button" data-role="all" aria-pressed="true">Everything</button><button type="button" data-role="pm" aria-pressed="false">Project Manager</button><button type="button" data-role="pc" aria-pressed="false">Project Coordinator</button><button type="button" data-role="pmo" aria-pressed="false">PMO Coordinator</button><button type="button" data-role="ai" aria-pressed="false">AI Operations</button></div>
+      <div class="fit-b"><button type="button" data-role="all" aria-pressed="true">Everything</button><button type="button" data-role="pm" aria-pressed="false">Project Manager or Coordinator</button><button type="button" data-role="pmo" aria-pressed="false">PMO Coordinator</button><button type="button" data-role="ai" aria-pressed="false">AI Operations and Governance</button></div>
     </div>
-    <div class="fit-sums" aria-live="polite"><p class="fit-sum" data-for="pm" hidden><b>For a Project Manager:</b> Ran the shared board, deadlines and follow-ups for a six-person team over ten days<a class="fn" href="#s-cv">CV</a>, re-planned coverage on the storm night<a class="fn" href="#s-i">I</a>, and checked the work before calling it done<a class="fn" href="#s-i">I</a>.</p><p class="fit-sum" data-for="pc" hidden><b>For a Project Coordinator:</b> The sole coordinator between clients in China and a US head office, 12 hours apart (order errors from 30% to under 5%)<a class="fn" href="#s-cv">CV</a>; daily stand-ups and 98% on time in Lisbon<a class="fn" href="#s-cv">CV</a>; 7 follow-up contacts from the stand<a class="fn" href="#s-cv">CV</a>.</p><p class="fit-sum" data-for="pmo" hidden><b>For a PMO Coordinator:</b> Quality gates that hold: 27 fixes after her own check<a class="fn" href="#s-i">I</a>, a two-day source audit of 206 claims on 101 company pages, 18 agent-policy tests, and PSM I and Certified Agile Facilitator<a class="fn" href="#s-cv">CV</a>.</p><p class="fit-sum" data-for="ai" hidden><b>For a role in AI operations:</b> Ran 20+ AI agents through one conductor, with human sign-off on outbound work and per-agent vault access<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-y">Y</a>. They wrote about 53 of 73 articles<a class="fn" href="#s-n1">N1</a>. She added stop files after an agent ran past a stop<a class="fn" href="#s-i">I</a> and tested RiskMandate&rsquo;s policy tool 18 times<a class="fn" href="#s-y">Y</a>.</p></div>
+    <div class="fit-sums" aria-live="polite"><p class="fit-sum" data-for="pm" hidden><b>For a Project Manager or Coordinator:</b> Ran the shared board, deadlines and follow-ups for a six-person team over ten days<a class="fn" href="#s-cv">CV</a>. Re-planned coverage on the storm night<a class="fn" href="#s-i">I</a> and checked the work before calling it done<a class="fn" href="#s-i">I</a>. Earlier, she was the sole coordinator between clients in China and a US head office, 12 hours apart, and cut order errors from 30% to under 5%<a class="fn" href="#s-cv">CV</a>. In Lisbon, daily stand-ups held delivery at 98% on time<a class="fn" href="#s-cv">CV</a>.</p><p class="fit-sum" data-for="pmo" hidden><b>For a PMO Coordinator:</b> Quality gates that hold: 27 fixes after her own check<a class="fn" href="#s-i">I</a>, a two-day source audit of 206 claims on 101 company pages, 18 agent-policy tests, and PSM I and Certified Agile Facilitator<a class="fn" href="#s-cv">CV</a>.</p><p class="fit-sum" data-for="ai" hidden><b>For a role in AI operations and governance:</b> Ran 20+ AI agents through one conductor, with human sign-off on outbound work, per-agent vault access and a dated audit trail<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-y">Y</a>. They wrote about 53 of 73 articles<a class="fn" href="#s-n1">N1</a>. She added stop files after an agent ran past a stop<a class="fn" href="#s-i">I</a> and tested RiskMandate&rsquo;s policy tool 18 times<a class="fn" href="#s-y">Y</a>.</p></div>
     <div class="tiles rv" aria-label="The project at a glance">
-      <div data-fit="pm pc" class="tile"><span class="n">3 to 13 Nov</span><span class="t">Web Summit Lisbon, ten days of team work<a class="fn" href="#s-t">T</a></span></div>
+      <div data-fit="pm" class="tile"><span class="n">3 to 13 Nov</span><span class="t">Web Summit Lisbon, ten days of team work<a class="fn" href="#s-t">T</a></span></div>
       <div data-fit="pm ai" class="tile"><span class="n">6 + about 250</span><span class="t">people and agents in the RiskMandate team<a class="fn" href="#s-n2">N2</a></span></div>
       <div data-fit="ai" class="tile"><span class="n">20+</span><span class="t">of those agents were hers<a class="fn" href="#s-p">P</a></span></div>
-      <div data-fit="pm pc pmo" class="tile"><span class="n">PM</span><span class="t">shared board, deadlines and follow-ups<a class="fn" href="#s-cv">CV</a></span></div>
+      <div data-fit="pm pmo" class="tile"><span class="n">PM</span><span class="t">shared board, deadlines and follow-ups<a class="fn" href="#s-cv">CV</a></span></div>
     </div>
     <p class="row-label">Results</p>
     <div class="tiles res rv" aria-label="Results">
       <div data-fit="pm ai" class="tile"><span class="n">About 53 / 73</span><span class="t">PrompTugal.news articles written by her agents<a class="fn" href="#s-n1">N1</a></span></div>
       <div data-fit="pmo ai pm" class="tile"><span class="n">27</span><span class="t">fixes after her own check (15 reported)<a class="fn" href="#s-i">I</a></span></div>
-      <div data-fit="pc pm" class="tile"><span class="n">7</span><span class="t">follow-up contacts from the stand<a class="fn" href="#s-cv">CV</a></span></div>
+      <div data-fit="pm" class="tile"><span class="n">7</span><span class="t">follow-up contacts from the stand<a class="fn" href="#s-cv">CV</a></span></div>
       <div data-fit="pmo ai" class="tile"><span class="n">18</span><span class="t">tests of RiskMandate&rsquo;s agent behaviour policy tool: tested and gave feedback<a class="fn" href="#s-cv">CV</a></span></div>
     </div>
-    <div data-fit="pm pc pmo" class="sheet rv" role="group" aria-label="Service sheet, 2 to 14 November 2026">
+    <div data-fit="pm pmo" class="sheet rv" role="group" aria-label="Service sheet, 2 to 14 November 2026">
       <div class="days" aria-hidden="true"><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span class="hot">9</span><span class="hot">10</span><span class="hot">11</span><span class="hot">12</span><span>13</span><span>14</span></div>
       <div class="lanes">
         <div class="bar setup" style="grid-column:1/3;grid-row:1"><b data-d="2 to 3 Nov">Set-up</b>L5, then L6<a class="fn" href="#s-p">P</a></div>
@@ -542,7 +543,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
         <div class="pkey"><span><i style="background:var(--steel);border:1px solid var(--steel-3)"></i>15 in the first report</span><span><i style="background:var(--rasp)"></i>12 found after her check</span></div>
       </div>
       <div class="stack">
-        <div data-fit="pm pc" class="menu-change rv">
+        <div data-fit="pm" class="menu-change rv">
         <span class="stamp">Changed</span>
         <p class="label"><b>Tue 10 Nov</b> The night the menu changed</p>
         <p class="old">Wednesday at Web Summit</p>
@@ -607,7 +608,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
     </article>
     <blockquote class="pq rv"><p style="margin:0">&ldquo;First I work out what the job actually needs me to do, where I sit in the company, and who I work with. For a project, I get as much material as I can: the background, the result they want, and what counts as done. Every day there's a morning brief and a short stand-up about blockers and problems. Every meeting must end with action items; otherwise it probably didn't need to happen.&rdquo;<a class="fn" href="#s-y">Y</a></p><cite>Yiheng Wang, on starting a new job</cite></blockquote>
     <div class="habits rv"><h3>Habits from the kitchen she still uses</h3><ul><li><b>Group similar tasks.</b> &ldquo;At Un P'tit Truc I cut the morning production from 2 hours to 1h40 by grouping similar tasks: while one cream whipped, I measured the next and piped the last.&rdquo;</li><li><b>Manage by the result.</b> &ldquo;With experienced people I only describe the result I want; the order of the steps can be different. Beginners watch me once. After two or three times with no problems, they work alone.&rdquo;</li><li><b>Check a sample.</b> &ldquo;Each day we picked one product to check before it went out.&rdquo;</li><li><b>Plan first, and don't panic.</b> &ldquo;Before I start, I run through the direction in my head, so I know roughly how it will go. And when something happens, don't panic. Everything can be solved.&rdquo;</li></ul><p class="small muted">Some answers translated from Mandarin<a class="fn" href="#s-y">Y</a></p></div>
-    <div class="gov rv" id="governance"><h3>AI governance in practice</h3><p class="gov-in">Responsible AI in daily work, on top of her project management.<a class="fn" href="#s-y">Y</a></p><ul><li><b>Human oversight</b>Agents draft and a person signs off on outbound work. A reviewer agent checks every claim, and she approves judgement calls. Human-in-the-loop by design.<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-y">Y</a></li><li><b>Standing rules</b>20+ AI agents run under one coordinating agent, with about 90 written rules on who does what and when to escalate to a person.<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-y">Y</a></li><li><b>Access control</b>Private material stays in encrypted vaults. Each agent only gets the keys it needs, and a security agent checks rules and access every week.<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-y">Y</a></li><li><b>Audit trail</b>Every decision is logged with its date.<a class="fn" href="#s-li">LI</a><a class="fn" href="#s-y">Y</a></li><li><b>Continuous improvement</b>She added verification steps after agents reported work as done too early. Risk and issue tracking, then change management.<a class="fn" href="#s-li">LI</a><a class="fn" href="#s-y">Y</a></li><li><b>Source audit</b>Re-checked 206 claims on 101 company pages in two days: 47 re-sourced, 159 removed, 98 pages republished.<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-y">Y</a></li><li><b>Agent Behaviour Policies</b>Tested RiskMandate's agent behaviour policy tool on riskmandate.ai 18 times and gave feedback, using its reach, mandate and “what stops it” framework.<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-y">Y</a></li></ul></div>
+    <div data-fit="ai" class="gov rv" id="governance"><h3>AI governance in practice</h3><p class="gov-in">Responsible AI in daily work, on top of her project management.<a class="fn" href="#s-y">Y</a></p><ul><li><b>Human oversight</b>Agents draft and a person signs off on outbound work. A reviewer agent checks every claim, and she approves judgement calls. Human-in-the-loop by design.<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-y">Y</a></li><li><b>Standing rules</b>20+ AI agents run under one coordinating agent, with about 90 written rules on who does what and when to escalate to a person.<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-y">Y</a></li><li><b>Access control</b>Private material stays in encrypted vaults. Each agent only gets the keys it needs, and a security agent checks rules and access every week.<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-y">Y</a></li><li><b>Audit trail</b>Every decision is logged with its date.<a class="fn" href="#s-li">LI</a><a class="fn" href="#s-y">Y</a></li><li><b>Continuous improvement</b>She added verification steps after agents reported work as done too early. Risk and issue tracking, then change management.<a class="fn" href="#s-li">LI</a><a class="fn" href="#s-y">Y</a></li><li><b>Source audit</b>Re-checked 206 claims on 101 company pages in two days: 47 re-sourced, 159 removed, 98 pages republished.<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-y">Y</a></li><li><b>Agent Behaviour Policies</b>Tested RiskMandate's agent behaviour policy tool on riskmandate.ai 18 times and gave feedback, using its reach, mandate and “what stops it” framework.<a class="fn" href="#s-cv">CV</a><a class="fn" href="#s-y">Y</a></li></ul></div>
   </div>
 </section>
 
@@ -829,11 +830,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 /* "Hiring for" switch: highlights the evidence for one role and fades the rest. Code Apache-2.0. */
 (() => {
   const sec = document.getElementById('project'); if (!sec) return;
-  const btns = sec.querySelectorAll('.fit-b button'), sums = sec.querySelectorAll('.fit-sum'), items = sec.querySelectorAll('[data-fit]');
+  const btns = sec.querySelectorAll('.fit-b button'), sums = sec.querySelectorAll('.fit-sum'), items = document.querySelectorAll('[data-fit]');
   const pick = r => {
     btns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.role === r)));
     sums.forEach(p => p.hidden = p.dataset.for !== r);
-    sec.classList.toggle('fitting', r !== 'all');
+    document.body.classList.toggle('fitting', r !== 'all');
     items.forEach(el => el.classList.toggle('hit', r !== 'all' && el.dataset.fit.split(' ').includes(r)));
   };
   btns.forEach(b => b.addEventListener('click', () => pick(b.dataset.role)));
